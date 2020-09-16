@@ -31,6 +31,164 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 </p>
 </details>
 
+- [x] 	`-0` vs. `+0`
+- [x] 	`fromEntries()`
+- [x] 	`this` keyword
+- [x] 	Arrays: concat()
+- [x] 	Arrays: copying & the problem with using Array 1 = Array 2
+- [x] 	Arrays: Creation and initialization
+- [x] 	Arrays: creation with an initial length of 20.
+- [x] 	Arrays: every() vs. some()
+- [x] 	Arrays: fill()
+- [x] 	Arrays: filter()
+- [x] 	Arrays: flat()
+- [x] 	Arrays: flatmap()
+- [x] 	Arrays: forEach()
+- [x] 	Arrays: forEach() vs. map()
+- [x] 	Arrays: from()
+- [x] 	Arrays: how to check for equality?
+- [x] 	Arrays: indexOf() vs. lastIndexOf() vs. includes()
+- [x] 	Arrays: join()
+- [x] 	Arrays: reduce()
+- [x] 	Arrays: reduce() vs. reduceRight()
+- [x] 	Arrays: slice()
+- [x] 	Arrays: slice() vs. splice()
+- [x] 	Arrays: splice()
+- [x] 	Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.
+- [x] 	Arrays: why is it Not recommended to use `for...in` loops to iterate over an array.
+- [x] 	Arrow functions vs. classic function expressions
+- [x] 	Async & Await
+- [x] 	Atomics
+- [x] 	Bitwise operators
+- [ ] 	BOM (Browser Object Model)
+- [x] 	Call vs. Apply
+- [x] 	Call vs. Apply vs. Bind
+- [ ] 	Callback
+- [x] 	Classes: Static method being called from the class constructor or from other non-static methods within the same class
+- [x] 	Classes: Static method calling another static method within the same class
+- [x] 	Classes: Static methods
+- [x] 	Closure
+- [x] 	CommonJS
+- [ ] 	Compiling vs. Transpiling
+- [x] 	console.log() vs. console.dir()
+- [x] 	Currying
+- [ ] 	Date and Time formatting
+- [ ] 	Debounce vs. throttle
+- [ ] 	Debounce: When do we use a debounce function?
+- [ ] 	Decimal points handling (since there is no Float data type)
+- [ ] 	Decorators
+- [ ] 	Design Pattern: Builder
+- [ ] 	Design Pattern: Factory
+- [ ] 	Design Pattern: Module
+- [ ] 	Design Pattern: Nullobject
+- [ ] 	Design Pattern: Singleton
+- [ ] 	Destructuring an object or an array (Give an example)
+- [ ] 	DOM (Document Object Model)
+- [ ] 	Encapsulation: How do you implement Encapsulation in JavaScript? (interview)
+- [ ] 	Error Handling
+- [ ] 	ES2020 (ES11) new features
+- [ ] 	eval()
+- [ ] 	Event bubbling vs. Event capturing
+- [ ] 	Event bubbling vs. Event propagation
+- [ ] 	Event delegation
+- [ ] 	Event listeners: target vs. currentTarget
+- [ ] 	Event listeners. Name 5 events JS could be listening to.
+- [ ] 	Event loop
+- [ ] 	Event loop: Call stack vs. Task queue
+- [ ] 	Event propagation. The three phases of event propagation.
+- [x] 	false vs. falsy
+- [x] 	Falsy values
+- [ ] 	Feature detection, feature inference, and using the UA string
+- [ ] 	Fetch API
+- [x] 	for in vs. for of
+- [x] 	Functions vs. methods
+- [ ] 	Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`
+- [x] 	Functions: Higher order functions
+- [x] 	Functions: Idempotent function
+- [x] 	Functions: Pure functions
+- [x] 	Functions: why do we say that in JavaScript, functions are first class citizens.
+- [x] 	Generator functions & yield keyword
+- [x] 	Generators
+- [x] 	Getters & Setters
+- [x] 	Hoisting
+- [ ] 	Host objects vs. native objects
+- [x] 	IIFE
+- [ ] 	Image carousel tutorial
+- [ ] 	Immutability
+- [ ] 	Immutable objects
+- [x] 	Importing a JavaScript file into HTML
+- [x] 	Interpreter vs. Compiler
+- [ ] 	Iterable vs. Enumerable
+- [ ] 	Iterators
+- [ ] 	Iterators used with Generators
+- [ ] 	Jasmine vs. Mocha vs. Chai
+- [x] 	JavaScript vs. ECMAScript
+- [x] 	JavaScript vs. TypeScript
+- [ ] 	JSON parse vs. stringify
+- [x] 	Let vs. const
+- [x] 	Let vs. var
+- [ ] 	Maps
+- [ ] 	Maps vs. WeakMaps
+- [ ] 	Modules
+- [ ] 	Modules: Tree shaking
+- [ ] 	Multi-threaded. Is JavaScript multi-threaded?
+- [ ] 	NaN: Where would be a situation in which you would see `NaN`. How to check for NaN?
+- [x] 	null == undefined ? How about null === undefined?
+- [x] 	Null vs. undefined
+- [x] 	Null: How to check if something is null? How about undefined?
+- [ ] 	Nullish coalescing operator
+- [x] 	Objects: assign()
+- [ ] 	Objects: assign() - Problem with not deep cloning
+- [x] 	Objects: cloning an object
+- [x] 	Objects: create()
+- [x] 	Objects: Creation and initialization
+- [x] 	Objects: freeze()
+- [x] 	Objects: How to check if an object is an array?
+- [ ] 	Objects: Is everything in JavaScript considered an object?
+- [ ] 	Objects: is()
+- [x] 	Objects: iterating over object properties
+- [x] 	Objects: the two ways to access an object's properties.
+- [ ] 	Pagination tutorial
+- [x] 	Parameters vs. Arguments
+- [ ] 	ParseInt vs. ParseFloat
+- [ ] 	Passing by value vs. Passing by reference
+- [x] 	Primitive data types
+- [ ] 	Promises
+- [x] 	Prototypal inheritance
+- [ ] 	Prototype vs. __proto__
+- [ ] 	Proxies
+- [ ] 	Pub/Sub architecture
+- [x] 	Rest vs. Spread operator
+- [ ] 	Same-origin policy with regards to JavaScript.
+- [ ] 	Scope: Global vs. Lexical
+- [x] 	Scope: lexical scope
+- [x] 	Sets & methods associated with them
+- [x] 	Sets: iterating over a set
+- [x] 	Shallow vs. Deep copying
+- [ ] 	Shimming
+- [x] 	Statically Typed vs. Dynamically Typed vs. Weakly Typed
+- [ ] 	stopPropagation vs. preventDefault (interview)
+- [x] 	Strict mode
+- [x] 	Strict mode: Can strict mode be used within functions or block statements?
+- [x] 	Strings: `trim()`
+- [x] 	Strings: 3 common methods for working with characters
+- [ ] 	Strings: An algorithm that returns the first duplicate character in a string (interview)
+- [ ] 	Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"
+- [x] 	Strings: padStart() and padEnd()
+- [x] 	Strings: Search() vs. indexOf()
+- [x] 	Strings: Search() vs. Match()
+- [x] 	Strings: substring vs. substr vs. slice
+- [ ] 	Symbols
+- [ ] 	Tagged template literal
+- [ ] 	Temporal dead zone
+- [ ] 	Ternary operator: what does the word "Ternary" indicate?
+- [ ] 	toString() parameters
+- [ ] 	Type Coercion (interview)
+- [x] 	typeof operator
+- [x] 	typeof vs. instanceof
+- [x] 	Unary operators
+- [x] 	V8 and SpiderMonkey.
+
 ## Interview
 
 - [ ] How do  you find a missing number in 1..n numbers. (interview)
