@@ -31,11 +31,11 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 </p>
 </details>
 
-- [x] 	`-0` vs. `+0`
-- [x] 	`fromEntries()`
+ ✔️ `-0` vs. `+0`  
+ ✅	`fromEntries()`  
 - [x] 	`this` keyword
-- [x] 	Arrays: concat()
-- [x] 	Arrays: copying & the problem with using Array 1 = Array 2
+- [x] 	Arrays: concat()  
+☑️ Arrays: copying & the problem with using Array 1 = Array 2
 - [x] 	Arrays: Creation and initialization
 - [x] 	Arrays: creation with an initial length of 20.
 - [x] 	Arrays: every() vs. some()
