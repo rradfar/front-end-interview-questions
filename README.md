@@ -59,7 +59,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 <details><summary><b>Answer</b></summary>
 <p>
 
-ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `lastIndexOf()`, available in all ECMAScript versions, and `includes()`, which was introduced in the ECMAScript 7 specification.
+- ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `lastIndexOf()`, available in all ECMAScript versions, and `includes()`, which was introduced in the ECMAScript 7 specification.
 
 </p></details>
 
