@@ -1,10 +1,7 @@
-# Interview Questions 😊
-
 <div align="center">
   <img height="60" src="./images/logos/js.png"> 
   <h1>Javascript & DOM</h1>
-
----
+</div>
 
 ### 1. What's the output?
 
@@ -33,8 +30,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 
 </p>
 </details>
-
----
 
 ## Interview
 
