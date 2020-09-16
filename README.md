@@ -12,6 +12,35 @@
 🌼 Arrays: fill()  
 🌼 Arrays: filter()  
 🌼 Arrays: flat()  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- It is used to flatten an array.
+- It can receive an optional depth level parameter specifying how deep a nested array structure should be flattened. Defaults to 1.
+
+```javascript
+let arr1 = [1, 2, [3, 4]];
+arr1.flat(); //=> [1, 2, 3, 4]
+
+let arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat(); //=> [1, 2, 3, 4, [5, 6]]
+
+let arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2); //=> [1, 2, 3, 4, 5, 6]
+
+let arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity); //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+- It can also used to remove empty slots in an array.
+
+```javascript
+let arr5 = [1, 2, , , 4, 5];
+arr5.flat(); //=> [1, 2, 4, 5]
+```
+
+</p></details>
 🌼 Arrays: flatmap()  
 🌼 Arrays: forEach()  
 🌼 Arrays: forEach() vs. map()  
@@ -34,7 +63,7 @@ ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `last
 
 </p></details>
 
-🌼 Arrays: why is it Not recommended to use `for...in` loops to iterate over an array.  
+🌼 Arrays: why is it Not recommended to use `for.. in` loops to iterate over an array.  
 🌼 Arrow functions vs. classic function expressions  
 🌼 Async & Await  
 🌼 Atomics  
@@ -49,7 +78,7 @@ ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `last
 🌼 Closure  
 🌼 CommonJS  
 🌱 Compiling vs. Transpiling  
-🌼 console.log() vs. console.dir()  
+🌼 `console.log()` vs. `console.dir()`  
 🌼 Currying  
 🌱 Date and Time formatting  
 🌱 Debounce vs. throttle  
@@ -80,10 +109,48 @@ document.querySelectorAll();
 
 </p></details>
 
+🌼 DOM: An important difference between `getElement(s)By*` methods and `querySelector(All)` methods
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- All `getElement(s)By*` methods return a live HTML collection of elements. Such collections always reflect the current state of the document and auto-update when it changes.
+- In contrast, `querySelector(All)` methods return a static NodeList object. It’s like a fixed array of elements. Because querySelectorAll() returns a list that is static from the moment it is called, its list of items cannot be updated thereafter even if changes are made to the DOM dynamically.
+
+```javascript
+<div>First div</div>
+
+<script>
+  let divs = document.getElementsByTagName('div');
+</script>
+
+<div>Second div</div>
+
+<script>
+  alert(divs.length); //=> 2
+</script>
+```
+
+```javascript
+<div>First div</div>
+
+<script>
+  let divs = document.querySelectorAll('div');
+</script>
+
+<div>Second div</div>
+
+<script>
+  alert(divs.length); //=> 1
+</script>
+```
+
+</p></details>
+
 🌱 Encapsulation: How do you implement Encapsulation in JavaScript? (interview)  
 🌱 Error Handling  
 🌱 ES2020 (ES11) new features  
-🌱 eval()  
+🌱 `eval()`  
 🌱 Event bubbling vs. Event capturing  
 🌱 Event bubbling vs. Event propagation  
 🌱 Event delegation  
@@ -96,22 +163,65 @@ document.querySelectorAll();
 🌼 Falsy values  
 🌱 Feature detection, feature inference, and using the UA string  
 🌱 Fetch API  
-🌼 for in vs. for of  
+🌼 `for.. in` vs. `for.. of`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `for.. in` iterates over all enumerable property **keys** of an object
+- `for.. of` iterates over the **values** of an iterable object.
+
+```javascript
+let arr = ['a', 'b', 'c'];
+
+for (let key in arr) {
+  console.log(key); //=> 0, 1, 2
+}
+
+for (let value of arr) {
+  console.log(value) //=> a, b, c
+}
+```
+
+</p></details>
+
 🌼 Functions vs. methods  
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
 🌼 Functions: Higher order functions  
-🌼 Functions: Idempotent function  
+🌼 Functions: Idempotent functions  
 🌼 Functions: Pure functions  
 🌼 Functions: why do we say that in JavaScript, functions are first class citizens.  
 🌼 Generator functions & yield keyword  
 🌼 Generators  
 🌼 Getters & Setters  
 🌼 Hoisting  
-🌱 Host objects vs. native objects  
+
+<details><summary><b>Answer</b></summary>
+<p>
+- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function). 
+  
+- It allows us to use a variable before it has been declared.
+
+- Hoisted variables are initialized to `undefined` until they are assigned a value.
+
+- Variables defined with let and const are hoisted to the top of the block, but not initialized.
+
+- Function and Class **expressions** are not hoisted.
+
+```javascript
+console.log(a); //=> undefined
+var a = 1;
+
+console.log(b);
+let b = 1;
+// "ReferenceError: Cannot access 'b' before initialization
+```
+
+</p></details>
+
 🌼 IIFE  
 🌱 Image carousel tutorial  
 🌱 Immutability  
-🌱 Immutable objects  
 🌼 Importing a JavaScript file into HTML  
 🌼 Interpreter vs. Compiler  
 🌱 Iterable vs. Enumerable  
@@ -121,29 +231,132 @@ document.querySelectorAll();
 🌼 JavaScript vs. ECMAScript  
 🌼 JavaScript vs. TypeScript  
 🌱 JSON parse vs. stringify  
-🌼 Let vs. const  
-🌼 Let vs. var  
+🌼 `let` vs. `const`  
+🌼 `let` vs. `var`  
 🌱 Maps  
 🌱 Maps vs. WeakMaps  
 🌱 Modules  
 🌱 Modules: Tree shaking  
-🌱 Multi-threaded. Is JavaScript multi-threaded?  
-🌱 NaN: Where would be a situation in which you would see `NaN`. How to check for NaN?  
-🌼 null == undefined ? How about null === undefined?  
-🌼 Null vs. undefined  
-🌼 Null: How to check if something is null? How about undefined?  
+🌱 Multi-threaded: is JavaScript multi-threaded?  
+🌱 NaN: where would be a situation in which you would see `NaN`. How to check for NaN?  
+🌼 `null == undefined` ? How about `null === undefined`?  
+🌼 `null` vs. `undefined`  
+🌼 Null: how to check if something is null? How about undefined?  
+🌼 Null: what does `typeof null` return?  
 🌱 Nullish coalescing operator  
-🌼 Objects: assign()  
-🌱 Objects: assign() - Problem with not deep cloning  
-🌼 Objects: cloning an object  
-🌼 Objects: create()  
+🌼 Objects: `assign()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
+
+```javascript
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+const returnedTarget = Object.assign(target, source);
+
+console.log(target); //=> Object { a: 1, b: 4, c: 5 }
+console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
+```
+
+</p></details>
+
+🌼 Objects: `assign()` - A problem when using `Object.assign()` to copy objects  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+Object.assign() only does shallow copying. For deep cloning, we need to use alternatives. A common hack is to use `JSON.parse(JSON.stringify(obj))` as such:
+
+```javascript
+  obj1 = { a: 0 , b: { c: 0}};
+  let obj2 = JSON.parse(JSON.stringify(obj1));
+  console.log(JSON.stringify(obj2)); //=> { "a": 0, "b": { "c": 0}}
+
+  obj1.a = 4;
+  obj1.b.c = 4;
+  console.log(JSON.stringify(obj2)); //=> { "a": 0, "b": { "c": 0}}
+  ```
+
+</p></details>
+
+🌼 Objects: shallow cloning an object (two ways)  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```javascript
+const obj = {a: 1};
+
+const copy1 = Object.assign({}, obj) ;
+console.log(copy1); //=> {a: 1}
+
+const copy2 = {...obj} ;
+console.log(copy2); //=> {a: 1}
+```
+
+</p></details>
+
+🌼 Objects: `create()`  
 🌼 Objects: Creation and initialization  
-🌼 Objects: freeze()  
-🌼 Objects: How to check if an object is an array?  
-🌱 Objects: Is everything in JavaScript considered an object?  
-🌱 Objects: is()  
+🌼 Objects: `freeze()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `Object.freeze()` makes it impossible to add, remove, or modify properties of an object (unless the property's value is another object).
+
+```javascript
+const obj = {
+  prop: 42
+};
+
+Object.freeze(obj);
+obj.prop = 33;
+console.log(obj.prop); //=> 42
+```
+
+</p></details>
+
+🌼 Objects: `hasOwnProperty()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `Object.hasOwnProperty()` method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
+
+```javascript
+obj = new Object();
+console.log(obj.hasOwnProperty('prop')); // false
+obj.prop = 'exists';
+console.log(obj.hasOwnProperty('prop')); // true
+console.log(obj.hasOwnProperty('toString')); // false
+```
+
+</p></details>
+
+🌱 Objects: host objects vs. native objects  
+🌼 Objects: how do we determine if an object is an array?  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+By using the `Array.isArray()` method:
+
+```javascript
+if (Array.isArray(obj)) {
+  // do something on the array
+}
+```
+
+</p></details>
+
+🌱 Objects: immutable objects  
+🌱 Objects: is everything in JavaScript considered an object?  
+🌱 Objects: `is()`  
 🌼 Objects: iterating over object properties  
-🌼 Objects: The optional chaining operator `?.`
+🌼 Objects: the optional chaining operator `?.`
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -164,8 +377,30 @@ console.log(dogName); //=> undefined
 
 </p></details>
 
-🌼 Objects: the two ways to access an object's properties.  
-🌱 Pagination tutorial  
+🌼 Objects: the two ways to access an object's properties and their differences  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- In JavaScript, we have two ways to access properties on an object: bracket notation, or dot notation.
+- With dot notation, JavaScript tries to find the property on the object with that exact name.
+- When we use bracket notation, it sees the first opening bracket [ and keeps going until it finds the closing bracket ]. Only then, it will evaluate the statement.
+
+```javascript
+const colorConfig = {
+  red: true,
+  blue: false,
+  green: true,
+  black: true,
+  yellow: false,
+};
+
+const colors = ['pink', 'red', 'blue'];
+console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a colors property.)
+```
+
+</p></details>
+
 🌼 Parameters vs. Arguments  
 🌱 ParseInt vs. ParseFloat  
 🌱 Passing by value vs. Passing by reference  
@@ -182,6 +417,18 @@ console.log(dogName); //=> undefined
 🌼 Sets & methods associated with them  
 🌼 Sets: iterating over a set  
 🌼 Shallow vs. Deep copying  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- In shallow copying, both items point to the same memory location.
+- In deep copying, the second item is assigned a separate memory location than the original item.
+- In other words, in a shallow copy, object B points to object A's location in memory. In deep copy, all things in object A's memory location get copied to object B's memory location.
+
+![Shallow versus deep cloning diagram](https://i.stack.imgur.com/AWKJa.jpg))
+
+</p></details>
+
 🌱 Shimming  
 🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
 🌱 stopPropagation vs. preventDefault (interview)  
@@ -211,6 +458,17 @@ console.log(dogName); //=> undefined
 <h1>CSS</h1>
 </div>
 
+🌼 Animations: `animation-fill-mode`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- This CSS property sets which values are applied before/after the animation. For example, you can set the last state of the animation to remain on screen (forwards), or you can set it to switch back to before when the animation began (backwards).
+
+- `animation-fill-mode: none|forwards|backwards|both;`
+
+</p></details>
+
 🌱 Attribute selectors  
 🌼 Background images  
 🌱 BEM vs. SMACSS  
@@ -233,6 +491,14 @@ console.log(dogName); //=> undefined
 🌼 Hex vs. RGB vs. HSL  
 🌼 HSL color model  
 🌼 Importing a CSS file into another  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+`@import url('navigation.css');` or `@import 'navigation.css';`
+
+</p></details>
+
 🌼 Line spacing  
 🌱 Linear vs. Radial gradient  
 🌼 list-style: none  
@@ -241,6 +507,36 @@ console.log(dogName); //=> undefined
 🌱 overflow-wrap  
 🌱 Position: relative vs. fixed vs. absolute vs. static  
 🌼 position:sticky vs. position:fixed  
+🌼 Prefixes  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. This may be done during a sort of testing and experimentation period where the browser manufacturer is determining exactly how these new CSS features will be implemented. These prefixes became very popular with the rise of CSS3 a few years ago.
+- The CSS browser prefixes that you can use (each of which is specific to a different browser) are:
+
+```css
+Android: -webkit-
+Chrome: -webkit-
+iOS: -webkit-
+Safari: -webkit-
+Firefox: -moz-
+Internet Explorer: -ms-
+Opera: -o-
+```
+
+```css
+.container {
+  -webkit-transition: all 4s ease;
+  -moz-transition: all 4s ease;
+  -ms-transition: all 4s ease;
+  -o-transition: all 4s ease;
+  transition: all 4s ease;
+}
+```
+
+</p></details>
+
 🌼 Preprocessor  
 🌱 Pseudo-classes  
 🌼 Pseudo-classes vs pseudo-elements  
@@ -248,6 +544,16 @@ console.log(dogName); //=> undefined
 🌼 rem vs. em  
 🌼 Reset vs. Normalize  
 🌼 RGB vs. RGBA  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- RGB is a 3-channel format containing data for Red, Green, and Blue.
+- RGBA is a 4-channel format containing data for Red, Green, Blue, and Alpha. `background-color:rgba(255,0,0,0.3);`
+- The value for A (alpha) is from `0` completely transparent, to `1` completely opaque.
+
+</p></details>
+
 🌼 Sass definition  
 🌱 Sass features & benefits  
 🌱 Selector specificity and how it works  
@@ -265,9 +571,24 @@ console.log(dogName); //=> undefined
 <h1>HTML</h1>
 </div>
 
-🌱 `icon` and `shortcut icon` when used in the `<link rel=" " ...>` tag.  
 🌱 `<dl>` vs. `<dt>` vs. `<dd>`  
 🌼 `<figure>`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The HTML `<figure>` (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption `<figcaption>` element. The figure, its caption, and its contents are referenced as a single unit.
+
+```html
+<figure>
+  <img src="discovery.jpg" alt="Space Shuttle">
+  <figcaption>NASA - Space Shuttle Discovery</figcaption>
+</figure>
+```
+
+</p>
+</details>
+
 🌼 `<input type="button" />` vs. `<button>...</button>` in a form  
 🌼 `<label>`: 2 advantages of using the `<label>` element in an HTML form.  
 🌼 `<label>`: How would you associate a label with its corresponding input element in an HTML form.  
@@ -297,6 +618,7 @@ or
 
 </p></details>
 
+🌱 Favicons: `icon` vs. `shortcut icon` when used in the `<link rel=" " ...>` tag.  
 🌱 How do you serve a page with content in multiple languages  
 🌱 How to draw rectangle using Canvas and SVG using HTML5.  
 🌼 HTML5 new features  
