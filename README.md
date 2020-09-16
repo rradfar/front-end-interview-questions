@@ -2,7 +2,6 @@
 <h1>Javascript & DOM</h1>
 </div>
 
-🌼 `fromEntries()`  
 🌼 `this` keyword  
 🌼 Arrays: concat()  
 🌼 Arrays: copying & the problem with using Array 1 = Array 2  
@@ -41,6 +40,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 ```
 
 </p></details>
+
 🌼 Arrays: flatmap()  
 🌼 Arrays: forEach()  
 🌼 Arrays: forEach() vs. map()  
@@ -198,6 +198,7 @@ for (let value of arr) {
 
 <details><summary><b>Answer</b></summary>
 <p>
+
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function). 
   
 - It allows us to use a variable before it has been declared.
@@ -220,7 +221,6 @@ let b = 1;
 </p></details>
 
 🌼 IIFE  
-🌱 Image carousel tutorial  
 🌱 Immutability  
 🌼 Importing a JavaScript file into HTML  
 🌼 Interpreter vs. Compiler  
@@ -267,7 +267,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 <details><summary><b>Answer</b></summary>
 <p>
 
-Object.assign() only does shallow copying. For deep cloning, we need to use alternatives. A common hack is to use `JSON.parse(JSON.stringify(obj))` as such:
+- Object.assign() only does shallow copying. For deep cloning, we need to use alternatives. A common hack is to use `JSON.parse(JSON.stringify(obj))` as such:
 
 ```javascript
   obj1 = { a: 0 , b: { c: 0}};
@@ -319,6 +319,7 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
+🌼 Objects: `fromEntries()`  
 🌼 Objects: `hasOwnProperty()`  
 
 <details><summary><b>Answer</b></summary>
@@ -342,7 +343,7 @@ console.log(obj.hasOwnProperty('toString')); // false
 <details><summary><b>Answer</b></summary>
 <p>
 
-By using the `Array.isArray()` method:
+- By using the `Array.isArray()` method.
 
 ```javascript
 if (Array.isArray(obj)) {
@@ -361,7 +362,8 @@ if (Array.isArray(obj)) {
 <details><summary><b>Answer</b></summary>
 <p>
 
-The optional chaining operator `?.` allows us to optionally access deeper nested properties within objects without having to expressly validate that each reference in the chain is valid. The `?.` operator functions similarly to the `.` chaining operator, except that instead of causing an error if a reference is nullish (`null` or `undefined`), the expression short-circuits with a return value of `undefined`. When used with function calls, it returns `undefined` if the given function does not exist.
+- The optional chaining operator `?.` allows us to optionally access deeper nested properties within objects without having to expressly validate that each reference in the chain is valid.  
+- The `?.` operator functions similarly to the `.` chaining operator, except that instead of causing an error if a reference is nullish (`null` or `undefined`), the expression short-circuits with a return value of `undefined`. When used with function calls, it returns `undefined` if the given function does not exist.
 
 ```javascript
 const adventurer = {
@@ -425,7 +427,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 - In deep copying, the second item is assigned a separate memory location than the original item.
 - In other words, in a shallow copy, object B points to object A's location in memory. In deep copy, all things in object A's memory location get copied to object B's memory location.
 
-![Shallow versus deep cloning diagram](https://i.stack.imgur.com/AWKJa.jpg))
+![Shallow versus deep cloning diagram](https://i.stack.imgur.com/AWKJa.jpg)
 
 </p></details>
 
@@ -515,7 +517,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 - CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. This may be done during a sort of testing and experimentation period where the browser manufacturer is determining exactly how these new CSS features will be implemented. These prefixes became very popular with the rise of CSS3 a few years ago.
 - The CSS browser prefixes that you can use (each of which is specific to a different browser) are:
 
-```css
+```
 Android: -webkit-
 Chrome: -webkit-
 iOS: -webkit-
