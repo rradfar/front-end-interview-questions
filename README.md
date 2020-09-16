@@ -31,443 +31,451 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 </p>
 </details>
 
-:blossom: `-0` vs. `+0`  
-:blossom: `fromEntries()`  
-:blossom: `this` keyword  
-:blossom: Arrays: concat()  
-:blossom: Arrays: copying & the problem with using Array 1 = Array 2  
-:blossom: Arrays: Creation and initialization  
-:blossom: Arrays: creation with an initial length of 20.  
-:blossom: Arrays: every() vs. some()  
-:blossom: Arrays: fill()  
-:blossom: Arrays: filter()  
-:blossom: Arrays: flat()  
-:blossom: Arrays: flatmap()  
-:blossom: Arrays: forEach()  
-:blossom: Arrays: forEach() vs. map()  
-:blossom: Arrays: from()  
-:blossom: Arrays: how to check for equality?  
-:blossom: Arrays: indexOf() vs. lastIndexOf() vs. includes()  
-:blossom: Arrays: join()  
-:blossom: Arrays: reduce()  
-:blossom: Arrays: reduce() vs. reduceRight()  
-:blossom: Arrays: slice()  
-:blossom: Arrays: slice() vs. splice()  
-:blossom: Arrays: splice()  
-:blossom: Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
-:blossom: Arrays: why is it Not recommended to use `for...in` loops to iterate over an array.  
-:blossom: Arrow functions vs. classic function expressions  
-:blossom: Async & Await  
-:blossom: Atomics  
-:blossom: Bitwise operators  
-:seedling: BOM (Browser Object Model)  
-:blossom: Call vs. Apply  
-:blossom: Call vs. Apply vs. Bind  
-:seedling: Callback  
-:blossom: Classes: Static method being called from the class constructor or from other non-static methods within the same class  
-:blossom: Classes: Static method calling another static method within the same class
-:blossom: Classes: Static methods
-:blossom: Closure
-:blossom: CommonJS
-- [ ] 	Compiling vs. Transpiling
-:blossom: console.log() vs. console.dir()
-:blossom: Currying
-- [ ] 	Date and Time formatting
-- [ ] 	Debounce vs. throttle
-- [ ] 	Debounce: When do we use a debounce function?
-- [ ] 	Decimal points handling (since there is no Float data type)
-- [ ] 	Decorators
-- [ ] 	Design Pattern: Builder
-- [ ] 	Design Pattern: Factory
-- [ ] 	Design Pattern: Module
-- [ ] 	Design Pattern: Nullobject
-- [ ] 	Design Pattern: Singleton
-- [ ] 	Destructuring an object or an array (Give an example)
-- [ ] 	DOM (Document Object Model)
-- [ ] 	Encapsulation: How do you implement Encapsulation in JavaScript? (interview)
-- [ ] 	Error Handling
-- [ ] 	ES2020 (ES11) new features
-- [ ] 	eval()
-- [ ] 	Event bubbling vs. Event capturing
-- [ ] 	Event bubbling vs. Event propagation
-- [ ] 	Event delegation
-- [ ] 	Event listeners: target vs. currentTarget
-- [ ] 	Event listeners. Name 5 events JS could be listening to.
-- [ ] 	Event loop
-- [ ] 	Event loop: Call stack vs. Task queue
-- [ ] 	Event propagation. The three phases of event propagation.
-:blossom: false vs. falsy
-:blossom: Falsy values
-- [ ] 	Feature detection, feature inference, and using the UA string
-- [ ] 	Fetch API
-:blossom: for in vs. for of
-:blossom: Functions vs. methods
-- [ ] 	Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`
-:blossom: Functions: Higher order functions
-:blossom: Functions: Idempotent function
-:blossom: Functions: Pure functions
-:blossom: Functions: why do we say that in JavaScript, functions are first class citizens.
-:blossom: Generator functions & yield keyword
-:blossom: Generators
-:blossom: Getters & Setters
-:blossom: Hoisting
-- [ ] 	Host objects vs. native objects
-:blossom: IIFE
-- [ ] 	Image carousel tutorial
-- [ ] 	Immutability
-- [ ] 	Immutable objects
-:blossom: Importing a JavaScript file into HTML
-:blossom: Interpreter vs. Compiler
-- [ ] 	Iterable vs. Enumerable
-- [ ] 	Iterators
-- [ ] 	Iterators used with Generators
-- [ ] 	Jasmine vs. Mocha vs. Chai
-:blossom: JavaScript vs. ECMAScript
-:blossom: JavaScript vs. TypeScript
-- [ ] 	JSON parse vs. stringify
-:blossom: Let vs. const
-:blossom: Let vs. var
-- [ ] 	Maps
-- [ ] 	Maps vs. WeakMaps
-- [ ] 	Modules
-- [ ] 	Modules: Tree shaking
-- [ ] 	Multi-threaded. Is JavaScript multi-threaded?
-- [ ] 	NaN: Where would be a situation in which you would see `NaN`. How to check for NaN?
-:blossom: null == undefined ? How about null === undefined?
-:blossom: Null vs. undefined
-:blossom: Null: How to check if something is null? How about undefined?
-- [ ] 	Nullish coalescing operator
-:blossom: Objects: assign()
-- [ ] 	Objects: assign() - Problem with not deep cloning
-:blossom: Objects: cloning an object
-:blossom: Objects: create()
-:blossom: Objects: Creation and initialization
-:blossom: Objects: freeze()
-:blossom: Objects: How to check if an object is an array?
-- [ ] 	Objects: Is everything in JavaScript considered an object?
-- [ ] 	Objects: is()
-:blossom: Objects: iterating over object properties
-:blossom: Objects: the two ways to access an object's properties.
-- [ ] 	Pagination tutorial
-:blossom: Parameters vs. Arguments
-- [ ] 	ParseInt vs. ParseFloat
-- [ ] 	Passing by value vs. Passing by reference
-:blossom: Primitive data types
-- [ ] 	Promises
-:blossom: Prototypal inheritance
-- [ ] 	Prototype vs. __proto__
-- [ ] 	Proxies
-- [ ] 	Pub/Sub architecture
-:blossom: Rest vs. Spread operator
-- [ ] 	Same-origin policy with regards to JavaScript.
-- [ ] 	Scope: Global vs. Lexical
-:blossom: Scope: lexical scope
-:blossom: Sets & methods associated with them
-:blossom: Sets: iterating over a set
-:blossom: Shallow vs. Deep copying
-- [ ] 	Shimming
-:blossom: Statically Typed vs. Dynamically Typed vs. Weakly Typed
-- [ ] 	stopPropagation vs. preventDefault (interview)
-:blossom: Strict mode
-:blossom: Strict mode: Can strict mode be used within functions or block statements?
-:blossom: Strings: `trim()`
-:blossom: Strings: 3 common methods for working with characters
-- [ ] 	Strings: An algorithm that returns the first duplicate character in a string (interview)
-- [ ] 	Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"
-:blossom: Strings: padStart() and padEnd()
-:blossom: Strings: Search() vs. indexOf()
-:blossom: Strings: Search() vs. Match()
-:blossom: Strings: substring vs. substr vs. slice
-- [ ] 	Symbols
-- [ ] 	Tagged template literal
-- [ ] 	Temporal dead zone
-- [ ] 	Ternary operator: what does the word "Ternary" indicate?
-- [ ] 	toString() parameters
-- [ ] 	Type Coercion (interview)
-:blossom: typeof operator
-:blossom: typeof vs. instanceof
-:blossom: Unary operators
-:blossom: V8 and SpiderMonkey.
+ 🌼 `-0` vs. `+0`  
+ 🌼 `fromEntries()`  
+ 🌼 `this` keyword  
+ 🌼 Arrays: concat()  
+ 🌼 Arrays: copying & the problem with using Array 1 = Array 2  
+ 🌼 Arrays: Creation and initialization  
+ 🌼 Arrays: creation with an initial length of 20.  
+ 🌼 Arrays: every() vs. some()  
+ 🌼 Arrays: fill()  
+ 🌼 Arrays: filter()  
+ 🌼 Arrays: flat()  
+ 🌼 Arrays: flatmap()  
+ 🌼 Arrays: forEach()  
+ 🌼 Arrays: forEach() vs. map()  
+ 🌼 Arrays: from()  
+ 🌼 Arrays: how to check for equality?  
+ 🌼 Arrays: indexOf() vs. lastIndexOf() vs. includes()  
+ 🌼 Arrays: join()  
+ 🌼 Arrays: reduce()  
+ 🌼 Arrays: reduce() vs. reduceRight()  
+ 🌼 Arrays: slice()  
+ 🌼 Arrays: slice() vs. splice()  
+ 🌼 Arrays: splice()  
+ 🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
+ 🌼 Arrays: why is it Not recommended to use `for...in` loops to iterate over an array.  
+ 🌼 Arrow functions vs. classic function expressions  
+ 🌼 Async & Await  
+ 🌼 Atomics  
+ 🌼 Bitwise operators  
+ 🌱 BOM (Browser Object Model)  
+ 🌼 Call vs. Apply  
+ 🌼 Call vs. Apply vs. Bind  
+ 🌱 Callback  
+ 🌼 Classes: Static method being called from the class constructor or from other non-static methods within the same class  
+ 🌼 Classes: Static method calling another static method within the same class  
+ 🌼 Classes: Static methods  
+ 🌼 Closure  
+ 🌼 CommonJS  
+ 🌱 Compiling vs. Transpiling  
+ 🌼 console.log() vs. console.dir()  
+ 🌼 Currying  
+ 🌱 Date and Time formatting  
+ 🌱 Debounce vs. throttle  
+ 🌱 Debounce: When do we use a debounce function?  
+ 🌱 Decimal points handling (since there is no Float data type)  
+ 🌱 Decorators  
+ 🌱 Design Pattern: Builder  
+ 🌱 Design Pattern: Factory  
+ 🌱 Design Pattern: Module  
+ 🌱 Design Pattern: Nullobject  
+ 🌱 Design Pattern: Singleton  
+ 🌱 Destructuring an object or an array (Give an example)  
+ 🌱 DOM (Document Object Model)  
+ 🌱 Encapsulation: How do you implement Encapsulation in JavaScript? (interview)  
+ 🌱 Error Handling  
+ 🌱 ES2020 (ES11) new features  
+ 🌱 eval()  
+ 🌱 Event bubbling vs. Event capturing  
+ 🌱 Event bubbling vs. Event propagation  
+ 🌱 Event delegation  
+ 🌱 Event listeners: target vs. currentTarget  
+ 🌱 Event listeners. Name 5 events JS could be listening to.  
+ 🌱 Event loop  
+ 🌱 Event loop: Call stack vs. Task queue  
+ 🌱 Event propagation. The three phases of event propagation.  
+ 🌼 false vs. falsy  
+ 🌼 Falsy values  
+ 🌱 Feature detection, feature inference, and using the UA string  
+ 🌱 Fetch API  
+ 🌼 for in vs. for of  
+ 🌼 Functions vs. methods  
+ 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
+ 🌼 Functions: Higher order functions  
+ 🌼 Functions: Idempotent function  
+ 🌼 Functions: Pure functions  
+ 🌼 Functions: why do we say that in JavaScript, functions are first class citizens.  
+ 🌼 Generator functions & yield keyword  
+ 🌼 Generators  
+ 🌼 Getters & Setters  
+ 🌼 Hoisting  
+ 🌱 Host objects vs. native objects  
+ 🌼 IIFE  
+ 🌱 Image carousel tutorial  
+ 🌱 Immutability  
+ 🌱 Immutable objects  
+ 🌼 Importing a JavaScript file into HTML  
+ 🌼 Interpreter vs. Compiler  
+ 🌱 Iterable vs. Enumerable  
+ 🌱 Iterators  
+ 🌱 Iterators used with Generators  
+ 🌱 Jasmine vs. Mocha vs. Chai  
+ 🌼 JavaScript vs. ECMAScript  
+ 🌼 JavaScript vs. TypeScript  
+ 🌱 JSON parse vs. stringify  
+ 🌼 Let vs. const  
+ 🌼 Let vs. var  
+ 🌱 Maps  
+ 🌱 Maps vs. WeakMaps  
+ 🌱 Modules  
+ 🌱 Modules: Tree shaking  
+ 🌱 Multi-threaded. Is JavaScript multi-threaded?  
+ 🌱 NaN: Where would be a situation in which you would see `NaN`. How to check for NaN?  
+ 🌼 null == undefined ? How about null === undefined?  
+ 🌼 Null vs. undefined  
+ 🌼 Null: How to check if something is null? How about undefined?  
+ 🌱 Nullish coalescing operator  
+ 🌼 Objects: assign()  
+ 🌱 Objects: assign() - Problem with not deep cloning  
+ 🌼 Objects: cloning an object  
+ 🌼 Objects: create()  
+ 🌼 Objects: Creation and initialization  
+ 🌼 Objects: freeze()  
+ 🌼 Objects: How to check if an object is an array?  
+ 🌱 Objects: Is everything in JavaScript considered an object?  
+ 🌱 Objects: is()  
+ 🌼 Objects: iterating over object properties  
+ 🌼 Objects: the two ways to access an object's properties.  
+ 🌱 Pagination tutorial  
+ 🌼 Parameters vs. Arguments  
+ 🌱 ParseInt vs. ParseFloat  
+ 🌱 Passing by value vs. Passing by reference  
+ 🌼 Primitive data types  
+ 🌱 Promises  
+ 🌼 Prototypal inheritance  
+ 🌱 Prototype vs. __proto__  
+ 🌱 Proxies  
+ 🌱 Pub/Sub architecture  
+ 🌼 Rest vs. Spread operator  
+ 🌱 Same-origin policy with regards to JavaScript.  
+ 🌱 Scope: Global vs. Lexical  
+ 🌼 Scope: lexical scope  
+ 🌼 Sets & methods associated with them  
+ 🌼 Sets: iterating over a set  
+ 🌼 Shallow vs. Deep copying  
+ 🌱 Shimming  
+ 🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
+ 🌱 stopPropagation vs. preventDefault (interview)  
+ 🌼 Strict mode  
+ 🌼 Strict mode: Can strict mode be used within functions or block statements?  
+ 🌼 Strings: `trim()`  
+ 🌼 Strings: 3 common methods for working with characters  
+ 🌱 Strings: An algorithm that returns the first duplicate character in a string (interview)  
+ 🌱 Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"  
+ 🌼 Strings: padStart() and padEnd()  
+ 🌼 Strings: Search() vs. indexOf()  
+ 🌼 Strings: Search() vs. Match()  
+ 🌼 Strings: substring vs. substr vs. slice  
+ 🌱 Symbols  
+ 🌱 Tagged template literal  
+ 🌱 Temporal dead zone  
+ 🌱 Ternary operator: what does the word "Ternary" indicate?  
+ 🌱 toString() parameters  
+ 🌱 Type Coercion (interview)  
+ 🌼 typeof operator  
+ 🌼 typeof vs. instanceof  
+ 🌼 Unary operators  
+ 🌼 V8 and SpiderMonkey.  
 
-## Interview
+<div align="center">
+  <img height="60" src="./images/logos/css.png"> 
+  <h1>CSS</h1>
+</div>
 
-- [ ] How do  you find a missing number in 1..n numbers. (interview)
-- [ ] Describe Type Coercion in JavaScript. (interview)
-- [ ] How do you implement Encapsulation in JavaScript? (interview)
-- [ ] An algorithm that returns the first duplicate character in a string (interview)
-- [ ] In a given sorted array of integers remove all the duplicates. (interview)
-- [ ] Write a method to decide if the given binary tree is a binary search tree or not. (interview)
-- [ ] Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"
-- [ ] how to sort a linked list using recursion only (interview)
+ 🌱 Attribute selectors  
+ 🌼 Background images  
+ 🌱 BEM vs. SMACSS  
+ 🌱 BFC (Block Formatting Context) and how it works  
+ 🌱 Border images  
+ 🌼 Box model  
+ 🌱 Box shadow vs. Text shadow  
+ 🌼 Box-shadow  
+ 🌼 box-sizing: border-box  
+ 🌼 Cascading in CSS  
+ 🌱 Combinators (4)  
+ 🌼 Combinators: child vs. descendant  
+ 🌼 contain vs. cover when using background-size  
+ 🌱 CSS animations vs. JavaScript animations: pros & cons of each  
+ 🌼 CSS3 new features  
+ 🌼 display: none vs. visibility: hidden  
+ 🌼 Grid vs. Flexbox  
+ 🌼 Grids: how do you make a div start at column 2 and end before column 4? (two ways)  
+ 🌱 GSAP vs. CSS animations  
+ 🌼 Hex vs. RGB vs. HSL  
+ 🌼 HSL color model  
+ 🌼 Importing a CSS file into another  
+ 🌼 Line spacing  
+ 🌱 Linear vs. Radial gradient  
+ 🌼 list-style: none  
+ 🌱 nth-of-type() vs. nth-child()  
+ 🌱 Overflow parameters  
+ 🌱 overflow-wrap  
+ 🌱 Position: relative vs. fixed vs. absolute vs. static  
+ 🌼 position:sticky vs. position:fixed  
+ 🌼 Preprocessor  
+ 🌱 Pseudo-classes  
+ 🌼 Pseudo-classes vs pseudo-elements  
+ 🌱 Pseudo-elements  
+ 🌼 rem vs. em  
+ 🌼 Reset vs. Normalize  
+ 🌼 RGB vs. RGBA  
+ 🌼 Sass definition  
+ 🌱 Sass features & benefits  
+ 🌱 Selector specificity and how it works  
+ 🌱 Sprites  
+ 🌱 TailwindCSS  
+ 🌱 transform-origin  
+ 🌼 Transition shorthand property  
+ 🌱 Transition vs. Transformation vs. Animation  
+ 🌼 Tweening  
+ 🌱 Webfonts: Pros and cons of using them  
+ 🌱 word-break vs. word-wrap  
+ 🌱 z-index and how stacking context is formed  
 
-## CSS
+<div align="center">
+  <img height="60" src="./images/logos/html.png"> 
+  <h1>HTML</h1>
+</div>
 
-- [x] What does cascading in CSS mean?
-- [x] What are some new features in CSS3?
-- [ ] Compared with CSS2, CSS3 has adopted a modular approach for incorporating new features. What does this mean?
-- [x] What is a CSS preprocessor?
-- [x] What is Sass?
-- [ ] What are some features of Sass?
-- [ ] CSS IDs vs. Classes: IDs are unique per page but classes can be reused
-- [x] CSS Child combinator vs. Descendant combinator
-- [ ] BEM vs. SMACSS
-- [x] How would you import a CSS file into another?
-- [x] Grid vs. Flexbox. When would you use one over the other?
-- [x] Using CSS grids, how do you make a div start at column 2 and end before column 4? (two ways)
-- [x] Describe the CSS box model.
-- [ ] What are the four CSS combinators?
-- [x] CSS pseudo-classes vs pseudo-elements
-- [ ] What are CSS pseudo-elements and how are they used?
-- [ ] What are CSS pseudo-classes and how are they used?
-- [ ] What are attribute selectors in CSS?
-- [ ] Explain some of the pros and cons for CSS animations versus JavaScript animations.
-- [ ] What is CSS selector specificity and how does it work?
-- [x] What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
-- [ ] Describe z-index and how stacking context is formed.
-- [ ] Describe BFC (Block Formatting Context) and how it works.
-- [x] What does `{ box-sizing: border-box; }` do? What are its advantages?
-- [ ] What's the difference between the `nth-of-type()` and `nth-child()` selectors?
-- [ ] Describe the usage of border images in CSS.
-- [x] Describe the usage of background images in CSS.
-- [x] contain vs. cover when using background-size in CSS.
-- [ ] What's the difference between a relative, fixed, absolute and statically positioned element?
-- [x] What is Tweening?
-- [ ] What is the use of CSS sprites?
-- [x] What CSS property would you use to hide the bullets in an unordered list?
-- [x] rem vs. em
-- [ ] word-break vs. word-wrap
-- [ ] overflow-wrap
-- [x] How do we adjust the spacing between lines in CSS?
-- [ ] Various overflow parameters
-- [x] Describe the HSL color model.
-- [x] Hex vs. RGB vs. HSL and pros & cons of each
-- [x] RGB vs. RGBA
-- [x] Describe the usage of box-shadow in CSS.
-- [ ] Box shadow vs. Text shadow
-- [ ] Linear vs. Radial gradient
-- [ ] Transition vs. Transformation vs. Animation
-- [x] How do you use the `transition` shorthand property in CSS?
-- [ ] Pros and cons of using web fonts
-- [ ] GSAP vs. CSS animations
-- [x] CSS `display: none` vs. `visibility: hidden`
-- [x] position:sticky vs. position:fixed
-- [ ] what is transform-origin?
+🌱 `icon` and `shortcut icon` when used in the `<link rel=" " ...>` tag.  
+🌱 `<dl>` vs. `<dt>` vs. `<dd>`  
+🌼 `<figure>`  
+🌼 `<input type="button" />` vs. `<button>...</button>` in a form  
+🌼 `<label>`: 2 advantages of using the `<label>` element in an HTML form.  
+🌼 `<label>`: How would you associate a label with its corresponding input element in an HTML form.  
+🌼 `<map>`  
+🌱 `<svg>` vs. `<canvas>`  
+🌱 Can a web page contain multiple `<header>` elements? What about `<footer>` elements?  
+🌱 data- attribute  
+🌱 datalist  
+🌼 defer vs. async when loading JavaScript scripts  
+🌼 Doctype  
+🌱 How do you serve a page with content in multiple languages  
+🌱 How to draw rectangle using Canvas and SVG using HTML5 .  
+🌼 HTML5 new features  
+🌼 Integrate CSS into a Web page (three ways)  
+🌱 MIME type  
+🌱 Should a website always have a `H1` tag? Is it possible to have multiple `H1` tags on a page?  
+🌱 srcset attribute in an image tag. Explain the process the browser uses when evaluating the content of this attribute.  
 
-## HTML
+<div align="center">
+  <img height="60" src="./images/logos/cs.png"> 
+  <h1>General CS</h1>
+</div>
 
-- [x] What is Doctype?
-- [ ] How do you serve a page with content in multiple languages?
-- [x] What are some new features of HTML5? (e.g. new tags introduced in HTML5)
-- [ ] What are `data-` attributes good for?
-- [ ] What is a MIME type?
-- [x] What is the difference between defer and async when loading JavaScript scripts?
-- [ ] Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.
-- [ ] Can a web page contain multiple `<header>` elements? What about `<footer>` elements?
-- [ ] What’s the difference between the `<svg>` and `<canvas>` elements?
-- [ ] How to draw rectangle using Canvas and SVG using HTML5 ?
-- [ ] What are `<dl>`, `<dt>` and `<dd>` tags used for?
-- [x] What is `<map>` used for in HTML?
-- [x] What is the use of `<figure>` in HTML5?
-- [ ] What is `<datalist>` used for in HTML?
-- [x] What are different ways to integrate a CSS into a Web page?
-- [ ] Should a website always have a `H1` tag? Is it possible to have multiple `H1` tags on a page?
-- [ ] In HTML, what is the difference between `icon` and `shortcut icon` when used in the `<link rel=" " ...>` tag?
-- [x] What are 2 advantages of using the `<label>` element in an HTML form?
-- [x] How would you associate a label with its corresponding input element in an HTML form?
-- [x] What is the difference between using `<input type="button" />` and `<button>...</button>` in a form?
+ 🌱 A/B testing  
+ 🌱 A11y: ARIA  
+ 🌱 A11y: best practices  
+ 🌱 A11y: How can we make a form more accessible? (interview)  
+ 🌱 A11y: skip links What benefit(s) do they provide some of their limitations  
+ 🌱 A11y: some of the tools available to test the accessibility of a website or web application  
+ 🌱 A11y: WCAG the differences between A, AA, and AAA compliance  
+ 🌱 Acceptance testing  
+ 🌱 Agile  
+ 🌱 Agile vs. Waterfall  
+ 🌱 AJAX  
+ 🌱 Ansible  
+ 🌼 API  
+ 🌱 Apollo  
+ 🌱 AWS  
+ 🌱 AWS Lambda  
+ 🌱 Babel  
+ 🌱 BDD vs. TDD  
+ 🌱 Bootstrap vs. Bulma  
+ 🌱 Bootstrap vs. Materialize  
+ 🌱 Caching  
+ 🌱 CI/CD  
+ 🌱 CLI  
+ 🌱 CMS  
+ 🌱 Concurrency vs. Parallelism  
+ 🌱 Content strategy  
+ 🌱 CORS. What issue does it address?  
+ 🌱 Cross Site Scripting (XSS)  
+ 🌱 CRUD  
+ 🌱 Data binding  
+ 🌱 Database sharding  
+ 🌱 Databases: ACID properties of a transaction  
+ 🌱 Deadlocks & Mutex  
+ 🌱 Dependency injection  
+ 🌱 DevTools: some ways that Chrome DevTools can help us with finding ways to improve our site performance  
+ 🌱 DNS  
+ 🌱 Docker  
+ 🌱 Elasticsearch  
+ 🌱 Extreme Programming (XP)  
+ 🌱 Flash of Unstyled Content (FOUC). How do you avoid FOUC?  
+ 🌱 Flutter  
+ 🌱 Forms: some best practices when designing a form  
+ 🌼 Four pillars of OOP  
+ 🌱 Functional programming. How does it differ from object oriented programming?  
+ 🌱 GraphQL  
+ 🌱 How would you go about accepting payments via Credit cards or PayPal for a shopping cart feature you are developing for a client  
+ 🌱 HTTP: How does a 403 differ from 404 error  
+ 🌱 HTTP: HTTP vs HTTPS  
+ 🌱 HTTP: Is HTTP the same as REST  
+ 🌱 HTTP: List some of the HTTP methods that you are familiar with.  
+ 🌱 HTTP: Purpose of a HTTP header  
+ 🌱 HTTP: some best practices for a 404 page  
+ 🌱 HTTP: some causes of a 500 error  
+ 🌱 HTTP: Status codes  
+ 🌱 HTTP: What happens behind the scenes when you enter a URL into the browser and press enter? (interview)  
+ 🌱 JIRA  
+ 🌱 JPEG vs. PNG vs. GIF  
+ 🌱 jQuery  
+ 🌱 jQuery: Why has jQuery become less popular in recent years?  
+ 🌱 JSON vs. XML  
+ 🌱 JSONP  
+ 🌱 Kubernetes  
+ 🌱 Lazyloading  
+ 🌼 Library vs. framework  
+ 🌱 Linters  
+ 🌼 Load Balancer and its advantages  
+ 🌱 Low-fidelity vs. High-fidelity prototyping  
+ 🌱 Microservices and how do they differ from monoliths  
+ 🌱 Middleware  
+ 🌱 MVC  
+ 🌱 MVC: Are MVCs and frameworks the same  
+ 🌱 MVC: some pros and cons of using an MVC  
+ 🌱 MVVC  
+ 🌱 Native vs. Hybrid apps  
+ 🌱 Nginx  
+ 🌼 Node.js  
+ 🌱 NPM & Yarn  
+ 🌱 ORM  
+ 🌱 Performance: CDN and the benefit of using one  
+ 🌱 Performance: domain pre-fetching and how does it help with performance  
+ 🌱 Performance: How many resources will a browser download from a given domain at a time the exceptions  
+ 🌱 Performance: Is it better to perform animations on a webpage using CSS or JavaScript  
+ 🌱 Performance: Minifying Is it always a good idea to minify  
+ 🌱 Performance: Name 3 ways to decrease page load (perceived or actual load time).  
+ 🌱 Performance: some things you can do to make a website compatible with some earlier versions of IE  
+ 🌱 Performance: some ways to improve performance of a page  
+ 🌱 Performance: some ways to increase code maintainability  
+ 🌱 Performance: some ways to optimize an image for web  
+ 🌱 Performance: What does it mean for an image to be optimized for web  
+ 🌱 Polyfill  
+ 🌱 Progressive enhancement vs. graceful degradation  
+ 🌱 Progressive rendering  
+ 🌼 PUT vs. PATCH methods in RESTful APIs  
+ 🌱 PWA  
+ 🌱 React  
+ 🌱 React: Is it always a better idea to use React than Vanilla JavaScript in a project  
+ 🌱 React: Is React a framework Why or why not  
+ 🌱 React: some advantages of using React over Vanilla JavaScript  
+ 🌱 ReactNative  
+ 🌱 Redis  
+ 🌱 Redux  
+ 🌱 REPL  
+ 🌼 REST  
+ 🌱 REST vs. SOAP APIs  
+ 🌼 RESTful API  
+ 🌼 RESTful APIs are stateless. What does this mean?  
+ 🌼 RESTful web service request (its four components)  
+ 🌱 SaaS vs. PaaS  
+ 🌱 Scrum  
+ 🌱 Scrum artifacts  
+ 🌱 Scrum ceremonies  
+ 🌱 Scrum vs. Kanban  
+ 🌱 Selenium  
+ 🌱 SEO: best practices  
+ 🌱 Server side rendering and why would you want to do it  
+ 🌱 Server side rendering vs. Client side rendering  
+ 🌱 Serverless architecture  
+ 🌱 Software Development Life Cycle (SDLC)  
+ 🌱 SOLID principles  
+ 🌱 SPA  
+ 🌱 SPA: When would you not want to use a Single Page Application  
+ 🌱 SQL injection: As front-end developers, do we need to worry about SQL injections? (interview)  
+ 🌱 SQL vs. NoSQL databases  
+ 🌱 SSH  
+ 🌱 SSL  
+ 🌱 Static site  
+ 🌱 Static cite: Gatsby vs. Jekyll  
+ 🌱 Storage: Cookie vs. SessionStorage vs. LocalStorage.  
+ 🌱 Storage: Cookies vs. Sessions  
+ 🌱 Storage: the lifetime of local storage  
+ 🌱 Svelte  
+ 🌱 SVG  
+ 🌼 TC39  
+ 🌱 TCP vs. UDP (Interview)  
+ 🌱 TCP/IP  
+ 🌱 Templating languages  
+ 🌱 Unit testing vs. functional/integration testing  
+ 🌱 URL vs. URI  
+ 🌱 URL: Clean URL  
+ 🌱 Usability testing  
+ 🌱 UX  
+ 🌱 UX personas  
+ 🌱 UX user journey maps  
+ 🌱 Vector vs. raster images  
+ 🌱 Virtual DOM  
+ 🌱 Visual hierarchy  
+ 🌱 VMs vs. Containers  
+ 🌱 Web 2.0  
+ 🌱 Web components  
+ 🌱 Web workers  
+ 🌱 Web workers vs. Service worker  
+ 🌼 WebAssembly (WASM)  
+ 🌱 WebPack  
+ 🌱 Websockets  
+ 🌱 Wireframes. Are you familiar with any wireframing tools?  
+ 🌱 WordPress  
+ 🌱 WordPress vs. Drupal vs. Joomla  
 
-## General (front-end tools & technologies, performance, testing, accessibility, SEO, basic DevOps, agile, etc.)
+<div align="center">
+  <img height="60" src="./images/logos/git.jpg"> 
+  <h1>Git</h1>
+</div>
 
-- [x] What is the difference between a library and a framework?
-- [x] What is Node.js?
-- [ ] Describe the event loop in Node.
-- [ ] What is React?
-- [ ] Is Node a framework?
-- [ ] Is React a framework? Why or why not?
-- [ ] What are some advantages of using React over Vanilla JavaScript?
-- [ ] Is it always a better idea to use React than Vanilla JavaScript in a project?
-- [ ] What is an SPA?
-- [ ] When would you not want to use a Single Page Application?
-- [ ] What do we mean by a static site?
-- [ ] What are tools like Gatsby or Jekyll used for?
-- [ ] What is CRUD?
-- [ ] What is an MVC? What are some pros and cons of using an MVC?
-- [ ] Are MVCs and frameworks the same?
-- [ ] What is an MVVC?
-- [ ] What is GraphQL?
-- [ ] What is Apollo?
-- [ ] What is WebPack?
-- [ ] What are NPM and Yarn used for?
-- [ ] What is jQuery?
-- [ ] Why has jQuery become less popular in recent years?
-- [ ] What is ReactNative?
-- [ ] What is Redux?
-- [ ] What is Svelte?
-- [ ] What is Flutter?
-- [ ] What is a linter?
-- [ ] What is a PWA?
-- [ ] What is a CMS?
-- [ ] What is WordPress?
-- [ ] WordPress vs. Drupal vs. Joomla
-- [ ] What is Docker?
-- [ ] What is AWS?
-- [ ] Describe the Serverless architecture?
-- [ ] What is AWS Lambda?
-- [ ] What is Ansible?
-- [ ] What is Kubernetes?
-- [ ] What is Elasticsearch?
-- [ ] VMs vs. Containers
-- [ ] SQL vs. NoSQL databases?
-- [ ] What is Redis?
-- [ ] What is Nginx?
-- [ ] What is a templating language?
-- [ ] What is a REPL?
-- [ ] What is a CLI?
-- [x] What does a Load Balancer do and what are some of its advantages?
-- [ ] Caching
-- [ ] What is database sharding?
-- [ ] CI/CD
-- [ ] What are web components?
-- [ ] What is lazyloading?
-- [ ] What are some ways to improve performance of a page?
-- [ ] What are some ways that Chrome DevTools can help us with finding ways to improve our site performance?
-- [ ] Name 3 ways to decrease page load (perceived or actual load time).
-- [ ] What are some ways to increase code maintainability?
-- [ ] What are some a11y guidelines?
-- [ ] Describe ARIA.
-- [ ] What are some of the tools available to test the accessibility of a website or web application?
-- [ ] What are skip links? What benefit(s) do they provide? What are some of their limitations?
-- [ ] What is WCAG? What are the differences between A, AA, and AAA compliance?
-- [ ] What are some SEO best practices?
-- [ ] Describe the difference between progressive enhancement and graceful degradation.
-- [ ] What is progressive rendering?
-- [ ] What is a polyfill?
-- [ ] What are some things you can do to make a website compatible with some earlier versions of IE?
-- [ ] How would you go about accepting payments via Credit cards or PayPal for a shopping cart feature you are developing for a client?
-- [ ] How many resources will a browser download from a given domain at a time? What are the exceptions?
-- [ ] What is a CDN and what is the benefit of using one?
-- [ ] What is domain pre-fetching and how does it help with performance?
-- [x] What is an API?
-- [x] What is REST? What does it mean for an API to ne RESTful?
-- [x] What are the four parts of a RESTful web service request?
-- [x] REST APIs are stateless. What does this mean?
-- [x] PUT vs. PATCH methods in RESTful APIs
-- [ ] REST vs. SOAP APIs
-- [ ] What is HTTP? List some of the HTTP methods that you are familiar with.
-- [ ] Is HTTP the same as REST?
-- [ ] What is the purpose of a HTTP header?
-- [ ] HTTP vs HTTPS
-- [ ] What are the HTTP status codes?
-- [ ] Web 2.0
-- [ ] URL vs. URI
-- [ ] What is a Clean URL?
-- [ ] What is TCP/IP?
-- [ ] TCP vs. UDP (Interview)
-- [ ] SaaS vs. PaaS
-- [ ] What is AJAX?
-- [ ] JSON vs. XML
-- [ ] JSONP
-- [ ] Native vs. Hybrid apps
-- [ ] What are microservices and how do they differ from monoliths?
-- [ ] What is middleware?
-- [ ] What is functional programming? How does it differ from object oriented programming?
-- [x] What are the four pillars of object oriented programming
-- [ ] What are the SOLID principles?
-- [ ] Software Development Life Cycle (SDLC)
-- [ ] What does it mean for an image to be optimized for web?
-- [ ] What are some ways to optimize an image for web?
-- [ ] JPEG vs. PNG vs. GIF
-- [ ] What is data binding?
-- [ ] What is server side rendering and why would you want to do it?
-- [ ] How does Server side rendering differ from Client side rendering?
-- [ ] What is the DOM? What is the virtual DOM?
-- [ ] What is Flash of Unstyled Content? How do you avoid FOUC?
-- [ ] What is Dependency injection?
-- [ ] As front-end developers, do we need to worry about SQL injections?
-- [ ] What is Cross Site Scripting (XSS)?
-- [ ] What does CORS stand for and what issue does it address?
-- [ ] Unit testing vs. functional/integration testing
-- [ ] BDD vs. TDD
-- [ ] What is Selenium?
-- [ ] What are some best practices for a 404 page?
-- [ ] How does a 403 differ from 404 error?
-- [ ] What are some causes of a 500 error?
-- [ ] What are some best practices when designing a form?
-- [ ] How can we make a form more accessible?
-- [ ] What is a Websocket?
-- [ ] Web workers
-- [ ] Concurrency vs. Parallelism
-- [ ] Service worker
-- [ ] What is SVG?
-- [ ] Vector vs. raster images
-- [ ] Is it better to perform animations on a webpage using CSS or JavaScript?
-- [ ] What is Minifying? Is it always a good idea to minify?
-- [ ] Bulma vs. Bootstrap
-- [ ] Materialize vs. Bootstrap
-- [ ] ORM
-- [ ] What is SSH?
-- [ ] What is SSL?
-- [ ] DNS
-- [ ] What happens behind the scenes when you enter a URL into the browser and press enter.
-- [ ] Sessions vs. Cookies
-- [ ] Cookie vs. SessionStorage vs. LocalStorage.
-- [ ] What is the lifetime of local storage?
-- [ ] What is agile?
-- [ ] Agile vs. Waterfall
-- [ ] What is scrum?
-- [ ] Scrum artifacts
-- [ ] Scrum ceremonies
-- [ ] Scrum vs. Kanban
-- [ ] What is acceptance testing?
-- [ ] What is Extreme Programming (XP)?
-- [ ] What is a wireframe? Are you familiar with any wireframing tools?
-- [ ] Low-fidelity vs. High-fidelity prototyping
-- [ ] What is UX?
-- [ ] What are personas in the context of UX?
-- [ ] What is a user journey map?
-- [ ] What is content strategy?
-- [ ] What is usability testing?
-- [ ] What is A/B testing?
-- [ ] What is visual hierarchy?
-- [ ] In the context of databases, what is a transaction? What are the ACID properties?
+ 🌱 What is Git?  
+ 🌱 How does Git differ from GitHub? Can you use Git without GitHub?  
+ 🌱 What is a Git repository? How does it differ from a branch?  
+ 🌱 Git command to create a new branch and switch to it: `git checkout -b <branchname>`  
+ 🌱 Git command to switch from one branch to another: `git checkout <branchname>`  
+ 🌱 Git command to list all branches in a repo: `git branch`  
+ 🌱 Git command to delete a feature branch: `git branch -d <branchname>`  
+ 🌱 What is the `origin`?  
+ 🌱 SSH vs. Https when cloning a repo  
+ 🌱 Cloning vs. Forking  
+ 🌱 What is gitignore?  
+ 🌱 How do you undo and edit the last commit message?  
+ 🌱 How do you undo your most recent commit before it is pushed? How about after it's been pushed?  
+ 🌱 How do you delete a feature branch?  
+ 🌱 How do you rename a feature branch?  
+ 🌱 How do you merge a feature branch into the master branch?  
+ 🌱 What is a pull request and why is it beneficial?  
+ 🌱 How do you do a pull request?  
+ 🌱 How do you see a list of most recent commits to a branch?  
+ 🌱 What is cherry-pick used for?  
+ 🌱 What is stash used for?  
+ 🌱 How do you add a new remote Git repository to your project?  
+ 🌱 How do rename an existing remote Git repository in your project?  
+ 🌱 How do you view the remote Git repository in your project?  
+ 🌱 How do you view your credentials (e.g. email and name) for a git repository?  
+ 🌱 Remote vs. Origin  
+ 🌱 Rebase vs. Fetch  
+ 🌱 Pull vs. Fetch  
+ 🌱 What does the `-u` flag in `git push -u origin master` do?  
 
-## Git
+<div align="center">
+  <img height="60" src="./images/logos/tutorials.png"> 
+  <h1>Tutorials</h1>
+</div>
 
-- [ ] What is Git?
-- [ ] How does Git differ from GitHub? Can you use Git without GitHub?
-- [ ] What is a Git repository? How does it differ from a branch?
-- [ ] Git command to create a new branch and switch to it: `git checkout -b <branchname>`
-- [ ] Git command to switch from one branch to another: `git checkout <branchname>`
-- [ ] Git command to list all branches in a repo: `git branch`
-- [ ] Git command to delete a feature branch: `git branch -d <branchname>`
-- [ ] What is the `origin`?
-- [ ] SSH vs. Https when cloning a repo
-- [ ] Cloning vs. Forking
-- [ ] What is gitignore?
-- [ ] How do you undo and edit the last commit message?
-- [ ] How do you undo your most recent commit before it is pushed? How about after it's been pushed?
-- [ ] How do you delete a feature branch?
-- [ ] How do you rename a feature branch?
-- [ ] How do you merge a feature branch into the master branch?
-- [ ] What is a pull request and why is it beneficial?
-- [ ] How do you do a pull request?
-- [ ] How do you see a list of most recent commits to a branch?
-- [ ] What is cherry-pick used for?
-- [ ] What is stash used for?
-- [ ] How do you add a new remote Git repository to your project?
-- [ ] How do rename an existing remote Git repository in your project?
-- [ ] How do you view the remote Git repository in your project?
-- [ ] How do you view your credentials (e.g. email and name) for a git repository?
-- [ ] Remote vs. Origin
-- [ ] Rebase vs. Fetch
-- [ ] Pull vs. Fetch
-- [ ] What does the `-u` flag in `git push -u origin master` do?
-  
-## Data Structures & Algorithms
-
-- [ ] What are hash tables?
-
-## Tutorials
-
-- [ ] Pagination
-- [ ] Carousel
+ 🌱 Form design  
+ 🌱 Image carousel  
+ 🌱 Infinite scrolling  
+ 🌱 Pagination  
+ 🌱 Pinterest board  
+ 🌱 Progress bar  
