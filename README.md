@@ -1,5 +1,4 @@
 <div align="center">
-  <img height="60" src="./images/logos/js.png"> 
   <h1>Javascript & DOM</h1>
 </div>
 
@@ -84,6 +83,7 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌱 Design Pattern: Singleton  
  🌱 Destructuring an object or an array (Give an example)  
  🌱 DOM (Document Object Model)  
+ 🌱 DOM: firstElementChild  
  🌱 Encapsulation: How do you implement Encapsulation in JavaScript? (interview)  
  🌱 Error Handling  
  🌱 ES2020 (ES11) new features  
@@ -190,7 +190,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌼 V8 and SpiderMonkey.  
 
 <div align="center">
-  <img height="60" src="./images/logos/css.png"> 
   <h1>CSS</h1>
 </div>
 
@@ -245,7 +244,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌱 z-index and how stacking context is formed  
 
 <div align="center">
-  <img height="60" src="./images/logos/html.png"> 
   <h1>HTML</h1>
 </div>
 
@@ -262,6 +260,20 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 🌱 datalist  
 🌼 defer vs. async when loading JavaScript scripts  
 🌼 Doctype  
+🌼 Favicons: what are two ways to implement a favicon on a webpage?
+<details><summary><b>Answer</b></summary>
+<p>
+1. By placing an image called `favicon.ico` in the root directory. All browsers will automatically check for this file.
+
+2. By creating an image and linking it to the HTML using the link tag as such:
+```html
+<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+```
+or
+```html
+<link rel="icon" type="image/gif" href="http://domain.com/image.gif" />
+```
+</p></details>
 🌱 How do you serve a page with content in multiple languages  
 🌱 How to draw rectangle using Canvas and SVG using HTML5 .  
 🌼 HTML5 new features  
@@ -271,7 +283,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 🌱 srcset attribute in an image tag. Explain the process the browser uses when evaluating the content of this attribute.  
 
 <div align="center">
-  <img height="60" src="./images/logos/cs.png"> 
   <h1>General CS</h1>
 </div>
 
@@ -434,7 +445,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌱 WordPress vs. Drupal vs. Joomla  
 
 <div align="center">
-  <img height="60" src="./images/logos/git.jpg"> 
   <h1>Git</h1>
 </div>
 
@@ -469,7 +479,6 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌱 What does the `-u` flag in `git push -u origin master` do?  
 
 <div align="center">
-  <img height="60" src="./images/logos/tutorials.png"> 
   <h1>Tutorials</h1>
 </div>
 
