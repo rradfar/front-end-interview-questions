@@ -2,35 +2,6 @@
   <h1>Javascript & DOM</h1>
 </div>
 
-### 1. What's the output?
-
-```javascript
-function sayHi() {
-  console.log(name);
-  console.log(age);
-  var name = 'Lydia';
-  let age = 21;
-}
-
-sayHi();
-```
-
-- A: `Lydia` and `undefined`
-- B: `Lydia` and `ReferenceError`
-- C: `ReferenceError` and `21`
-- D: `undefined` and `ReferenceError`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-Within the function, we first declare the `name` variable with the `var` keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of `undefined`, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the `name` variable, so it still holds the value of `undefined`.
-
-Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the "temporal dead zone". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`.
-
-</p>
-</details>
-
- 🌼 `-0` vs. `+0`  
  🌼 `fromEntries()`  
  🌼 `this` keyword  
  🌼 Arrays: concat()  
@@ -54,6 +25,15 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌼 Arrays: slice() vs. splice()  
  🌼 Arrays: splice()  
  🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
+🌼 Arrays: What are the three methods used to perform a search in an array?
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `lastIndexOf()`, available in all ECMAScript versions, and `includes()`, which was introduced in the ECMAScript 7 specification.
+
+</p></details>
+
  🌼 Arrays: why is it Not recommended to use `for...in` loops to iterate over an array.  
  🌼 Arrow functions vs. classic function expressions  
  🌼 Async & Await  
@@ -188,6 +168,7 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
  🌼 typeof vs. instanceof  
  🌼 Unary operators  
  🌼 V8 and SpiderMonkey.  
+ 🌼 `-0` vs. `+0`  
 
 <div align="center">
   <h1>CSS</h1>
@@ -263,6 +244,7 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 🌼 Favicons: what are two ways to implement a favicon on a webpage?
 <details><summary><b>Answer</b></summary>
 <p>
+
 1. By placing an image called `favicon.ico` in the root directory. All browsers will automatically check for this file.
 
 2. By creating an image and linking it to the HTML using the link tag as such:
@@ -274,8 +256,9 @@ or
 <link rel="icon" type="image/gif" href="http://domain.com/image.gif" />
 ```
 </p></details>
+
 🌱 How do you serve a page with content in multiple languages  
-🌱 How to draw rectangle using Canvas and SVG using HTML5 .  
+🌱 How to draw rectangle using Canvas and SVG using HTML5.  
 🌼 HTML5 new features  
 🌼 Integrate CSS into a Web page (three ways)  
 🌱 MIME type  
