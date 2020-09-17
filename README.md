@@ -544,9 +544,43 @@ document.querySelectorAll();
 🌼 Line spacing  
 🌱 Linear vs. Radial gradient  
 🌼 list-style: none  
+🌼 mix-blend-mode  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `mix-blend-mode` CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
+
+```css
+mix-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity;
+```
+
+An example:
+
+```html
+<style>
+  .container {
+    background-color: gold;
+    padding: 15px;
+  }
+
+  .container img {
+    mix-blend-mode: overlay;
+  }
+</style>
+
+<div class="container">
+  <img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+</div>
+```
+
+![mix-blend-mode example](../../blob/master/images/mix-blend-mode.png)
+
+</p></details>
+
 🌱 nth-of-type() vs. nth-child()  
 🌱 Overflow parameters  
-🌱 overflow-wrap  
+🌱 Overflow-wrap  
 🌱 Position: relative vs. fixed vs. absolute vs. static  
 🌼 position:sticky vs. position:fixed  
 🌼 Prefixes  
@@ -596,8 +630,8 @@ Opera: -o-
 
 </p></details>
 
-🌼 Sass definition  
-🌱 Sass features & benefits  
+🌼 Sass: definition  
+🌱 Sass: features & benefits  
 🌱 Selector specificity and how it works  
 🌱 Sprites  
 🌱 TailwindCSS  
@@ -747,10 +781,10 @@ or
 
 <details><summary><b>Answer</b></summary>
 <p>
-- The `<map>` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
-- The required name attribute of the `<map>` element is associated with the `usemap` attribute and creates a relationship between the image and the map.
-- The `<map>` element contains a number of `<area>` elements that define the clickable areas in the image map.
-- We use the `<area>` tag in conjunction with the shape of the clickable area [rect, circle, or poly] and coords [rect: left, top, right, bottom; circle: center-x, center-y, radius; poly: x1, y1, x2, y2, ...] attributes.
+- The `map` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+- The required name attribute of the `map` element is associated with the `usemap` attribute and creates a relationship between the image and the map.
+- The `map` element contains a number of `area` elements that define the clickable areas in the image map.
+- We use the `area` tag in conjunction with the shape of the clickable area [rect, circle, or poly] and coords [rect: left, top, right, bottom; circle: center-x, center-y, radius; poly: x1, y1, x2, y2, ...] attributes.
 
 ```html
 <map name="primary">
