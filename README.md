@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Javascript & DOM</h1>
+<h1>Javascript</h1>
 </div>
 
 🌼 `this` keyword  
@@ -91,62 +91,6 @@ arr5.flat(); //=> [1, 2, 4, 5]
 🌱 Design Pattern: Nullobject  
 🌱 Design Pattern: Singleton  
 🌱 Destructuring an object or an array (Give an example)  
-🌱 DOM (Document Object Model)  
-🌱 DOM: firstElementChild  
-🌼 DOM: Six JavaScript methods to access DOM elements
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-```javascript
-document.getElementById()
-document.getElementsByClassName()
-document.getElementsByTagName()
-document.getElementsByName()
-document.querySelector();
-document.querySelectorAll();
-```
-
-</p></details>
-
-🌼 DOM: An important difference between `getElement(s)By*` methods and `querySelector(All)` methods
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-- All `getElement(s)By*` methods return a live HTML collection of elements. Such collections always reflect the current state of the document and auto-update when it changes.
-- In contrast, `querySelector(All)` methods return a static NodeList object. It’s like a fixed array of elements. Because querySelectorAll() returns a list that is static from the moment it is called, its list of items cannot be updated thereafter even if changes are made to the DOM dynamically.
-
-```javascript
-<div>First div</div>
-
-<script>
-  let divs = document.getElementsByTagName('div');
-</script>
-
-<div>Second div</div>
-
-<script>
-  alert(divs.length); //=> 2
-</script>
-```
-
-```javascript
-<div>First div</div>
-
-<script>
-  let divs = document.querySelectorAll('div');
-</script>
-
-<div>Second div</div>
-
-<script>
-  alert(divs.length); //=> 1
-</script>
-```
-
-</p></details>
-
 🌱 Encapsulation: How do you implement Encapsulation in JavaScript? (interview)  
 🌱 Error Handling  
 🌱 ES2020 (ES11) new features  
@@ -162,7 +106,6 @@ document.querySelectorAll();
 🌼 false vs. falsy  
 🌼 Falsy values  
 🌱 Feature detection, feature inference, and using the UA string  
-🌱 Fetch API  
 🌼 `for.. in` vs. `for.. of`  
 
 <details><summary><b>Answer</b></summary>
@@ -199,7 +142,7 @@ for (let value of arr) {
 <details><summary><b>Answer</b></summary>
 <p>
 
-- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function). 
+- Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
   
 - It allows us to use a variable before it has been declared.
 
@@ -456,6 +399,89 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 V8 and SpiderMonkey.  
 🌼 `-0` vs. `+0`  
 
+
+
+
+
+
+<div align="center">
+<h1>Web APIs</h1>
+</div>
+
+🌱 DOM (Document Object Model)  
+🌱 DOM: firstElementChild  
+🌼 DOM: Six JavaScript methods to access DOM elements
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```javascript
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.getElementsByName()
+document.querySelector();
+document.querySelectorAll();
+```
+
+</p></details>
+
+🌼 DOM: An important difference between `getElement(s)By*` methods and `querySelector(All)` methods
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- All `getElement(s)By*` methods return a live HTML collection of elements. Such collections always reflect the current state of the document and auto-update when it changes.
+- In contrast, `querySelector(All)` methods return a static NodeList object. It’s like a fixed array of elements. Because querySelectorAll() returns a list that is static from the moment it is called, its list of items cannot be updated thereafter even if changes are made to the DOM dynamically.
+
+```javascript
+<div>First div</div>
+
+<script>
+  let divs = document.getElementsByTagName('div');
+</script>
+
+<div>Second div</div>
+
+<script>
+  alert(divs.length); //=> 2
+</script>
+```
+
+```javascript
+<div>First div</div>
+
+<script>
+  let divs = document.querySelectorAll('div');
+</script>
+
+<div>Second div</div>
+
+<script>
+  alert(divs.length); //=> 1
+</script>
+```
+
+</p></details>
+
+🌱 Fetch API  
+🌱 History API  
+🌱 HTMLCollection vs. NodeList  
+🌱 Service Workers API  
+🌱 Touch events  
+🌱 URL API  
+🌱 Web Storage API  
+🌱 Web Workers API  
+🌱 WebGL  
+🌱 WebGL  
+🌱 WebSocket API  
+🌱 Window  
+
+
+
+
+
+
 <div align="center">
 <h1>CSS</h1>
 </div>
@@ -517,7 +543,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 - CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. This may be done during a sort of testing and experimentation period where the browser manufacturer is determining exactly how these new CSS features will be implemented. These prefixes became very popular with the rise of CSS3 a few years ago.
 - The CSS browser prefixes that you can use (each of which is specific to a different browser) are:
 
-```
+```markdown
 Android: -webkit-
 Chrome: -webkit-
 iOS: -webkit-
@@ -613,9 +639,11 @@ Opera: -o-
 ```html
 <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 ```
+
 or
+
 ```html
-<link rel="icon" type="image/gif" href="http://domain.com/image.gif" />
+<link rel="icon" type="image/gif" href="img/favicon.gif" />
 ```
 
 </p></details>
@@ -786,8 +814,8 @@ or
 🌱 Web workers vs. Service worker  
 🌼 WebAssembly (WASM)  
 🌱 WebPack  
-🌱 Websockets  
-🌱 Wireframes. Are you familiar with any wireframing tools?  
+🌱 WebSockets  
+🌱 Wireframe: are you familiar with any wireframing tools?  
 🌱 WordPress  
 🌱 WordPress vs. Drupal vs. Joomla  
 
