@@ -227,7 +227,32 @@ let b = 1;
 🌱 Jasmine vs. Mocha vs. Chai  
 🌼 JavaScript vs. ECMAScript  
 🌼 JavaScript vs. TypeScript  
-🌱 JSON parse vs. stringify  
+🌼 JSON `parse()` vs. `stringify()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `JSON.parse()` takes a JSON string and transforms it into a JavaScript object.
+- `JSON.stringify()` takes a JavaScript object and transforms it into a JSON string.
+
+```javascript
+const obj = {
+  name: 'John',
+  age: 23,
+  favoriteFood: 'Pizza'
+};
+
+const objStr = JSON.stringify(obj);
+
+console.log(objStr);
+// "{"name":"John","age":23,"favoriteFood":"Pizza"}"
+
+console.log(JSON.parse(objStr));
+// Object {name:"John",age:23,favoriteFood:"Pizza"}
+```
+
+</p></details>
+
 🌼 `let` vs. `const`  
 🌼 `let` vs. `var`  
 🌱 Maps  
@@ -297,6 +322,29 @@ console.log(copy2); //=> {a: 1}
 
 🌼 Objects: `create()`  
 🌼 Objects: Creation and initialization  
+🌼 Objects: `entries()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+- The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+
+```javascript
+const obj = {
+  a: 'something',
+  b: 42,
+};
+
+console.log(Object.entries(obj));
+//=> [['a', 'something'], ['b', 42]]
+
+for (const [key, value] of Object.entries(obj)) {
+console.log(`${key}: ${value}`);
+//=> a: something, b: 42
+}
+```
+
+</p></details>
+
 🌼 Objects: `freeze()`  
 
 <details><summary><b>Answer</b></summary>
@@ -461,7 +509,32 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 🌱 Ternary operator: what does the word "Ternary" indicate?  
 🌱 toString() parameters  
 🌱 Type Coercion (interview)  
-🌼 typeof operator  
+🌼 typeof operator (8 possible types)  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The typeof operator returns a string indicating the type of the unevaluated operand.
+- The possible return values are: `object`, `boolean`, `number`, `bigint`, `string`, `symbol`, `function`, `undefined`.
+
+```javascript
+console.log(typeof 3.14); //=> number
+console.log(typeof NaN); //=> number
+console.log(typeof 42n); //=> bigint
+console.log(typeof 'hello'); //=> string
+console.log(typeof true); //=> boolean
+console.log(typeof Symbol('foo')); //=> symbol
+console.log(typeof someVariable); //=> undefined
+console.log(typeof [1, 2]); //=> object
+console.log(typeof { a: 1 }); //=> object
+console.log(typeof null); //=> object
+console.log(typeof Math.min); //=> function
+console.log(typeof function() {}); //=> function
+console.log(typeof class C {}); //=> function
+```
+
+</p></details>
+
 🌼 typeof vs. instanceof  
 🌼 Unary operators  
 🌼 V8 and SpiderMonkey.  
@@ -484,6 +557,38 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 🌱 Console API  
 🌱 DOM (Document Object Model)  
 🌱 DOM: firstElementChild  
+🌼 DOM: `getInnerText()` vs. `getHTML()` vs. `getTextContent()`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `innerText` property returns just the text, without spacing and inner element tags.
+- The `innerHTML` property returns the text, including all spacing and inner element tags.
+- The `textContent` property returns the text with spacing, but without inner element tags.
+
+```html
+<p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
+
+<script>
+  function getInnerText() {
+    console.log(document.getElementById("demo").innerText);
+    //=> "This element has extra spacing and contains a span element."
+  }
+
+  function getHTML() {
+    console.log(document.getElementById("demo").innerHTML);
+    //=> "   This element has extra spacing     and contains <span>a span element</span>."
+  }
+
+  function getTextContent() {
+    console.log(document.getElementById("demo").textContent);
+    //=> "   This element has extra spacing    and contains a span element."
+  }
+</script>
+```
+
+</p></details>
+
 🌼 DOM: Six JavaScript methods to access DOM elements
 
 <details><summary><b>Answer</b></summary>
@@ -500,7 +605,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌼 DOM: An important difference between `getElement(s)By*` methods and `querySelector(All)` methods
+🌼 DOM: Difference between `getElement(s)By*` methods and `querySelector(All)` methods
 
 <details><summary><b>Answer</b></summary>
 <p>
