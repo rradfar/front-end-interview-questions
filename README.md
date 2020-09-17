@@ -133,6 +133,7 @@ multiply(1)(2)(3); // 6
 ```
 
 </p></details>
+
 🌱 Date and Time formatting  
 🌱 Debounce vs. throttle  
 🌱 Debounce: When do we use a debounce function?  
@@ -613,6 +614,7 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 ```
 
 </p></details>
+
 🌼 Box-sizing  
 🌼 Cascading in CSS  
 🌱 Combinators (4)  
