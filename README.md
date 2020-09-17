@@ -1,3 +1,5 @@
+# Study Notes for Front-end web development
+
 <div align="center">
 <h1>Javascript</h1>
 </div>
@@ -408,6 +410,12 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 <h1>Web APIs</h1>
 </div>
 
+
+
+
+
+🌱 Canvas API  
+🌱 Console API  
 🌱 DOM (Document Object Model)  
 🌱 DOM: firstElementChild  
 🌼 DOM: Six JavaScript methods to access DOM elements
@@ -464,15 +472,16 @@ document.querySelectorAll();
 
 </p></details>
 
+🌱 Drag & Drop API  
 🌱 Fetch API  
 🌱 History API  
 🌱 HTMLCollection vs. NodeList  
+🌱 Geolocation API  
 🌱 Service Workers API  
 🌱 Touch events  
 🌱 URL API  
 🌱 Web Storage API  
 🌱 Web Workers API  
-🌱 WebGL  
 🌱 WebGL  
 🌱 WebSocket API  
 🌱 Window  
@@ -485,6 +494,11 @@ document.querySelectorAll();
 <div align="center">
 <h1>CSS</h1>
 </div>
+
+
+
+
+
 
 🌼 Animations: `animation-fill-mode`
 
@@ -595,37 +609,91 @@ Opera: -o-
 🌱 word-break vs. word-wrap  
 🌱 z-index and how stacking context is formed  
 
+
+
+
+
+
+
 <div align="center">
 <h1>HTML</h1>
 </div>
 
-🌱 `<dl>` vs. `<dt>` vs. `<dd>`  
-🌼 `<figure>`  
+
+
+
+
+
+🌼 Button tag vs. input type="button"  
+🌱 Can a web page contain multiple `<header>` elements? What about `<footer>` elements?  
+🌱 Canvas tag  
+🌼 data-* attributes  
 
 <details><summary><b>Answer</b></summary>
 <p>
 
-- The HTML `<figure>` (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption `<figcaption>` element. The figure, its caption, and its contents are referenced as a single unit.
+- The data-* attributes allow us to be able to make up our own HTML attributes and put our own information inside them.
+- They are used to store custom data private to the page or application.
+- The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience (without any Ajax calls or server-side database queries).
 
 ```html
-<figure>
-  <img src="discovery.jpg" alt="Space Shuttle">
-  <figcaption>NASA - Space Shuttle Discovery</figcaption>
-</figure>
+<article
+  id="electric-cars"
+  data-columns="3"
+  data-index-number="12314"
+  data-parent="cars">
+  <!-- additional content -->
+</article>
 ```
 
-</p>
-</details>
+- We can read the value of these attributes in JavaScript.
 
-🌼 `<input type="button" />` vs. `<button>...</button>` in a form  
-🌼 `<label>`: 2 advantages of using the `<label>` element in an HTML form.  
-🌼 `<label>`: How would you associate a label with its corresponding input element in an HTML form.  
-🌼 `<map>`  
-🌱 `<svg>` vs. `<canvas>`  
-🌱 Can a web page contain multiple `<header>` elements? What about `<footer>` elements?  
-🌱 data- attribute  
-🌱 datalist  
-🌼 defer vs. async when loading JavaScript scripts  
+```javascript
+const article = document.querySelector('#electric-cars');
+
+article.dataset.columns // "3"
+article.dataset.indexNumber // "12314"
+article.dataset.parent // "cars"
+```
+
+- They can also be accessed in CSS.
+
+```css
+article[data-columns='3'] {
+  width: 400px;
+}
+article[data-columns='4'] {
+  width: 600px;
+}
+```
+
+</p></details>
+
+🌼 Datalist tag  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `<datalist>` tag specifies a list of pre-defined options and allows user to add more to it. It provides an autocomplete feature that allows you to get the desired options with a type-ahead.
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+```
+
+![datalist example](../../blob/master/images/datalist.png)
+
+</p></details>
+
+🌼 Defer vs. Async when loading JavaScript scripts  
+🌱 Description Lists: `<dl>` vs. `<dt>` vs. `<dd>`  
 🌼 Doctype  
 🌼 Favicons: what are two ways to implement a favicon on a webpage?
 
@@ -649,17 +717,74 @@ or
 </p></details>
 
 🌱 Favicons: `icon` vs. `shortcut icon` when used in the `<link rel=" " ...>` tag.  
-🌱 How do you serve a page with content in multiple languages  
-🌱 How to draw rectangle using Canvas and SVG using HTML5.  
+🌱 Fieldset tag  
+🌼 Figure tag  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The HTML `<figure>` (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption `<figcaption>` element. The figure, its caption, and its contents are referenced as a single unit.
+
+```html
+<figure>
+  <img src="discovery.jpg" alt="Space Shuttle">
+  <figcaption>NASA - Space Shuttle Discovery</figcaption>
+</figure>
+```
+
+</p>
+</details>
+
+🌱 How to create a drop-down list?  
+🌱 How to draw rectangle using Canvas and SVG using HTML5?  
+🌱 How to serve a page with content in multiple languages?  
 🌼 HTML5 new features  
+🌱 Image tag: what is the `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.  
 🌼 Integrate CSS into a Web page (three ways)  
+🌼 Label tag: 2 advantages of using it in an HTML form.  
+🌼 Label tag: how to associate a label with its corresponding input element in an HTML form?  
+🌼 Map tag  
+
+<details><summary><b>Answer</b></summary>
+<p>
+- The `<map>` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
+- The required name attribute of the `<map>` element is associated with the `usemap` attribute and creates a relationship between the image and the map.
+- The `<map>` element contains a number of `<area>` elements that define the clickable areas in the image map.
+- We use the `<area>` tag in conjunction with the shape of the clickable area [rect, circle, or poly] and coords [rect: left, top, right, bottom; circle: center-x, center-y, radius; poly: x1, y1, x2, y2, ...] attributes.
+
+```html
+<map name="primary">
+  <area shape="circle" coords="75,75,75" href="left.html">
+  <area shape="circle" coords="275,75,75" href="right.html">
+</map>
+
+<img usemap="#primary" src="https://placehold.it/350x150" alt="350 x 150 pic">
+```
+
+</p></details>
+
+🌱 Meta tag  
 🌱 MIME type  
+🌱 Picture tag  
 🌱 Should a website always have a `H1` tag? Is it possible to have multiple `H1` tags on a page?  
-🌱 srcset attribute in an image tag. Explain the process the browser uses when evaluating the content of this attribute.  
+🌱 Svg tag and how it differs from `<canvas>`  
+🌱 Tables: `<thead>` vs. `<th>`  
+🌱 Wbr tag  
+
+
+
+
+
 
 <div align="center">
 <h1>General CS</h1>
 </div>
+
+
+
+
+
+
 
 🌱 A/B testing  
 🌱 A11y: ARIA  
