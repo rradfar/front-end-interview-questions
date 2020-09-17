@@ -11,6 +11,27 @@
 🌼 Arrays: creation with an initial length of 20.  
 🌼 Arrays: every() vs. some()  
 🌼 Arrays: fill()  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The fill() method changes all elements in an array to a static value.
+- fill() is a mutator method: it will change the original array and return it, not a copy of it.
+
+```markdown
+arr.fill(value, start(optional), end(optional))
+```
+
+```javascript
+const array1 = [1, 2, 3, 4];
+
+console.log(array1.fill(0, 2, 4)); //=> [1, 2, 0, 0]
+console.log(array1.fill(5, 1)); //=> [1, 5, 5, 5]
+console.log(array1.fill(6)); //=> [6, 6, 6, 6]
+```
+
+</p></details>
+
 🌼 Arrays: filter()  
 🌼 Arrays: flat()  
 
@@ -82,6 +103,36 @@ arr5.flat(); //=> [1, 2, 4, 5]
 🌱 Compiling vs. Transpiling  
 🌼 `console.log()` vs. `console.dir()`  
 🌼 Currying  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- Currying transforms a function with multiple arguments into a sequence of functions each taking a single argument.
+- For instance it can make function `f(a,b,c)` callable as `f(a)(b)(c)`.
+
+For example,
+
+```javascript
+function multiply(a, b, c) {
+  return a * b * c;
+}
+multiply(1,2,3); // 6
+```
+
+can be modified to its curried version as such:
+
+```javascript
+function multiply(a) {
+  return (b) => {
+    return (c) => {
+      return a * b * c;
+    }
+  }
+}
+multiply(1)(2)(3); // 6
+```
+
+</p></details>
 🌱 Date and Time formatting  
 🌱 Debounce vs. throttle  
 🌱 Debounce: When do we use a debounce function?  
@@ -385,8 +436,22 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 Strings: 3 common methods for working with characters  
 🌱 Strings: An algorithm that returns the first duplicate character in a string (interview)  
 🌱 Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"  
-🌼 Strings: padStart() and padEnd()  
-🌼 Strings: Search() vs. indexOf()  
+🌼 Strings: `padStart()` and `padEnd()`  
+🌼 Strings: `indexOf()` vs. `Search()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `indexOf()` is for searching for plain substrings. It also allows us to specify a starting index. It does not allow for regular expressions.
+- `search()` allows for substrings as well as regular expressions. It does not allow for a starting index.
+
+```javascript
+console.log('Blue Whale'.indexOf('Whale', 3)); //=> 5
+console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
+```
+
+</p></details>
+
 🌼 Strings: Search() vs. Match()  
 🌼 Strings: substring vs. substr vs. slice  
 🌱 Symbols  
@@ -519,7 +584,36 @@ document.querySelectorAll();
 🌼 Box model  
 🌱 Box shadow vs. Text shadow  
 🌼 Box-shadow  
-🌼 box-sizing: border-box  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```css
+box-shadow: (offset-x | offset-y | blur-radius(optional) | spread-radius(optional) | color(optional));
+```
+
+- `blur radius`: if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be, and the further out the shadow will extend.
+- `spread radius`: positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
+
+```css
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+
+/* Any number of shadows, separated by commas */
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
+```
+
+</p></details>
+🌼 Box-sizing  
 🌼 Cascading in CSS  
 🌱 Combinators (4)  
 🌼 Combinators: child vs. descendant  
@@ -926,6 +1020,14 @@ or
 🌱 REST vs. SOAP APIs  
 🌼 RESTful API  
 🌼 RESTful APIs are stateless. What does this mean?  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- It means that API requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully.
+
+</p></details>
+
 🌼 RESTful web service request (its four components)  
 🌱 SaaS vs. PaaS  
 🌱 Scrum  
