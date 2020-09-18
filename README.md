@@ -87,7 +87,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 </p></details>
 
 🌼 Arrays: why is it Not recommended to use `for.. in` loops to iterate over an array.  
-🌼 Arrow functions vs. classic function expressions  
+expressions  
 🌼 Async & Await  
 🌼 Atomics  
 🌼 Bitwise operators  
@@ -183,6 +183,8 @@ for (let value of arr) {
 </p></details>
 
 🌼 Functions vs. methods  
+🌼 Functions: `arguments` object  
+🌼 Functions: arrow functions vs. classic functions  
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
 🌼 Functions: Higher order functions  
 🌼 Functions: Idempotent functions  
@@ -555,9 +557,14 @@ console.log(typeof class C {}); //=> function
 
 🌱 Canvas API  
 🌱 Console API  
-🌱 DOM (Document Object Model)  
-🌱 DOM: firstElementChild  
-🌼 DOM: `getInnerText()` vs. `getHTML()` vs. `getTextContent()`
+🌱 Document Object Model (DOM)  
+🌱 DOM: `classList` and its common methods  
+🌱 DOM: `cloneNode()`  
+🌱 DOM: `closest()`  
+🌱 DOM: `childNodes` vs. `children`  
+🌱 DOM: `firstChild` vs. `firstElementChild`  
+🌱 DOM: `getAttribute()` & `setAttribute()`  
+🌼 DOM: `getInnerText()` vs. `getHTML()` vs. `getTextContent()`  
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -565,6 +572,7 @@ console.log(typeof class C {}); //=> function
 - The `innerText` property returns just the text, without spacing and inner element tags.
 - The `innerHTML` property returns the text, including all spacing and inner element tags.
 - The `textContent` property returns the text with spacing, but without inner element tags.
+
 
 ```html
 <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
@@ -589,6 +597,7 @@ console.log(typeof class C {}); //=> function
 
 </p></details>
 
+🌱 DOM: parentNode vs. parentElement  
 🌼 DOM: Six JavaScript methods to access DOM elements
 
 <details><summary><b>Answer</b></summary>
@@ -605,7 +614,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌼 DOM: Difference between `getElement(s)By*` methods and `querySelector(All)` methods
+🌼 DOM: `getElement(s)By*` vs. `querySelector(All)` methods
 
 <details><summary><b>Answer</b></summary>
 <p>
@@ -643,6 +652,7 @@ document.querySelectorAll();
 
 </p></details>
 
+🌱 DOM: `previousSibling()` vs. `previousElementSibling()`  
 🌱 Drag & Drop API  
 🌱 Fetch API  
 🌱 History API  
@@ -779,11 +789,11 @@ An example:
 
 </p></details>
 
-🌱 nth-of-type() vs. nth-child()  
+🌱 `not()` pseudo-class  
+🌱 `nth-of-type()` vs. `nth-child()`  
 🌱 Overflow parameters  
-🌱 Overflow-wrap  
-🌱 Position: relative vs. fixed vs. absolute vs. static  
-🌼 position:sticky vs. position:fixed  
+🌱 `overflow-wrap`  
+🌱 Position: relative vs. absolute vs. fixed vs. sticky  
 🌼 Prefixes  
 
 <details><summary><b>Answer</b></summary>
@@ -815,9 +825,34 @@ Opera: -o-
 </p></details>
 
 🌼 Preprocessor  
-🌱 Pseudo-classes  
 🌼 Pseudo-classes vs pseudo-elements  
-🌱 Pseudo-elements  
+
+<details><summary><b>Answer</b></summary>
+<p>
+- A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc.
+- Pseudo-classes start with a colon `:`
+- Some common pseudo-classes are `:active`, `:checked`, `:enabled`, `:first-child`, `:first-of-type`, `:focus`, `:hover`, `:last-child`, `:last-of-type`, `:nth-of-type`, `:visited`, etc. 
+
+```css
+article a:hover {
+    font-size: 120%;
+    font-weight: bold;
+}
+```
+
+- Pseudo-elements behave in a similar way, however they act as if you had added a whole new HTML element into the markup, rather than applying a class to existing elements.
+- Pseudo-elements start with a double colon `::`
+- Most common pseudo-elements are `::after`, `::before`, `::first-letter`, and `::first-line`.
+
+```css
+article p::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+```
+
+</p></details>
+
 🌼 rem vs. em  
 🌼 Reset vs. Normalize  
 🌼 RGB vs. RGBA  
