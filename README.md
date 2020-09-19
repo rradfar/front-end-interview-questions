@@ -12,7 +12,7 @@
 🌼 Arrays: every() vs. some()  
 🌼 Arrays: fill()  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The fill() method changes all elements in an array to a static value.
@@ -35,7 +35,7 @@ console.log(array1.fill(6)); //=> [6, 6, 6, 6]
 🌼 Arrays: filter()  
 🌼 Arrays: flat()  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - It is used to flatten an array.
@@ -79,7 +79,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
 🌼 Arrays: What are the three methods used to perform a search in an array?
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `lastIndexOf()`, available in all ECMAScript versions, and `includes()`, which was introduced in the ECMAScript 7 specification.
@@ -104,7 +104,7 @@ expressions
 🌼 `console.log()` vs. `console.dir()`  
 🌼 Currying  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Currying transforms a function with multiple arguments into a sequence of functions each taking a single argument.
@@ -159,7 +159,7 @@ multiply(1)(2)(3); // 6
 🌱 Event propagation. The three phases of event propagation.  
 🌼 Falsy values
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - A falsy value is a value that is considered false when encountered in a Boolean context.
@@ -170,7 +170,7 @@ multiply(1)(2)(3); // 6
 🌱 Feature detection, feature inference, and using the UA string  
 🌼 `for.. in` vs. `for.. of`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `for.. in` iterates over all enumerable property **keys** of an object
@@ -196,7 +196,7 @@ for (let value of arr) {
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
 🌼 Functions: Higher order functions  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Higher order functions take another function as an argument or return a function.
@@ -212,7 +212,7 @@ for (let value of arr) {
 🌼 Getters & Setters  
 🌼 Hoisting  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
@@ -248,7 +248,7 @@ let b = 1;
 🌼 JavaScript vs. TypeScript  
 🌼 JSON `parse()` vs. `stringify()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `JSON.parse()` takes a JSON string and transforms it into a JavaScript object.
@@ -287,7 +287,7 @@ console.log(JSON.parse(objStr));
 🌱 Nullish coalescing operator  
 🌼 Objects: `assign()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
@@ -305,7 +305,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 🌼 Objects: `assign()` - A problem when using `Object.assign()` to copy objects  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Object.assign() only does shallow copying. For deep cloning, we need to use alternatives. A common hack is to use `JSON.parse(JSON.stringify(obj))` as such:
@@ -324,7 +324,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 🌼 Objects: cloning an object (two ways)  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Both of these methods perform shallow cloning:
@@ -345,7 +345,7 @@ console.log(copy2); //=> {a: 1}
 🌼 Objects: `create()`  
 🌼 Objects: creation & initialization (two ways)  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - There are two ways to explicitly create an instance of Object.
@@ -370,7 +370,7 @@ let person = {
 
 🌼 Objects: `entries()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 - The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
 
@@ -393,7 +393,7 @@ console.log(`${key}: ${value}`);
 
 🌼 Objects: `freeze()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `Object.freeze()` makes it impossible to add, remove, or modify properties of an object (unless the property's value is another object).
@@ -413,7 +413,7 @@ console.log(obj.prop); //=> 42
 🌱 Objects: `freeze()` vs. `seal()`  
 🌼 Objects: `fromEntries()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `Object.fromEntries()` method transforms a list of key-value pairs into an object. It accepts an iterable such as Array or Map and returns a new iterable object.
@@ -432,7 +432,7 @@ console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 
 🌼 Objects: `hasOwnProperty()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `Object.hasOwnProperty()` method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
@@ -450,7 +450,7 @@ console.log(obj.hasOwnProperty('toString')); // false
 🌱 Objects: host objects vs. native objects  
 🌼 Objects: how do we determine if an object is an array?  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - By using the `Array.isArray()` method.
@@ -469,7 +469,7 @@ if (Array.isArray(obj)) {
 🌼 Objects: iterating over object properties  
 🌼 Objects: the optional chaining operator `?.`
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The optional chaining operator `?.` allows us to optionally access deeper nested properties within objects without having to expressly validate that each reference in the chain is valid.  
@@ -491,7 +491,7 @@ console.log(dogName); //=> undefined
 
 🌼 Objects: the two ways to access an object's properties and their differences  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - In JavaScript, we have two ways to access properties on an object: bracket notation, or dot notation.
@@ -530,7 +530,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 Sets: iterating over a set  
 🌼 Shallow vs. Deep copying  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - In shallow copying, both items point to the same memory location.
@@ -553,7 +553,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 Strings: `padStart()` and `padEnd()`  
 🌼 Strings: `indexOf()` vs. `Search()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `indexOf()` is for searching for plain substrings. It also allows us to specify a starting index. It does not allow for regular expressions.
@@ -568,7 +568,7 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 
 🌼 Strings: Search() vs. Match()  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `Search()` returns the index of the first match between the regular expression and the given string, or `-1` if no match was found.
@@ -593,7 +593,7 @@ console.log(str2.match(/[A-E]/gi)); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 
 🌱 Type Coercion (interview)  
 🌼 typeof operator (8 possible types)  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The typeof operator returns a string indicating the type of the unevaluated operand.
@@ -621,7 +621,7 @@ console.log(typeof class C {}); //=> function
 🌼 Unary operators  
 🌼 Unary operators: what is `~~3.9` equal to?  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Double bitwise NOT performs the same operation as the `Math.floor()` method but a lot quicker.
@@ -661,7 +661,7 @@ console.log(typeof class C {}); //=> function
 🌱 DOM: `getAttribute()` & `setAttribute()`  
 🌼 DOM: `getInnerText()` vs. `getHTML()` vs. `getTextContent()`  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `innerText` property returns just the text, without spacing and inner element tags.
@@ -695,7 +695,7 @@ console.log(typeof class C {}); //=> function
 🌱 DOM: parentNode vs. parentElement  
 🌼 DOM: Six JavaScript methods to access DOM elements
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 ```javascript
@@ -711,7 +711,7 @@ document.querySelectorAll();
 
 🌼 DOM: `getElement(s)By*` vs. `querySelector(All)` methods
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - All `getElement(s)By*` methods return a live HTML collection of elements. Such collections always reflect the current state of the document and auto-update when it changes.
@@ -778,7 +778,7 @@ document.querySelectorAll();
 
 🌼 Animations: `animation-fill-mode`
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - This CSS property sets which values are applied before/after the animation. For example, you can set the last state of the animation to remain on screen (forwards), or you can set it to switch back to before when the animation began (backwards).
@@ -796,7 +796,7 @@ document.querySelectorAll();
 🌱 Box shadow vs. Text shadow  
 🌼 Box-shadow  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 ```css
@@ -828,7 +828,7 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 🌼 Box-sizing  
 🌼 Cascading in CSS  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - Cascading is the process of combining several style sheets and resolving conflicts between them.
@@ -851,7 +851,7 @@ For instance,
 🌼 Grid vs. Flexbox  
 🌼 Grids: create a grid with three equal columns (2 ways)  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 ```css
@@ -868,7 +868,7 @@ grid-template-columns: repeat(3, 1fr);
 🌼 HSL color model  
 🌼 Importing a CSS file into another  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 `@import url('navigation.css');` or `@import 'navigation.css';`
@@ -877,7 +877,7 @@ grid-template-columns: repeat(3, 1fr);
 
 🌼 Line spacing: e.g. how to adjust the space between lines in a paragraph.  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `line-height` CSS property is commonly used to set the distance between lines of text.
@@ -895,7 +895,7 @@ p { font: 10pt/1.2  Georgia,serif; }
 🌼 list-style: none  
 🌼 mix-blend-mode  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `mix-blend-mode` CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
@@ -934,7 +934,7 @@ An example:
 🌱 Position: relative vs. absolute vs. fixed vs. sticky  
 🌼 Prefixes  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. This may be done during a sort of testing and experimentation period where the browser manufacturer is determining exactly how these new CSS features will be implemented. These prefixes became very popular with the rise of CSS3 a few years ago.
@@ -965,7 +965,7 @@ Opera: -o-
 🌼 Preprocessor  
 🌼 Pseudo-classes vs pseudo-elements  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 - A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc.
 - Pseudo-classes start with a colon `:`
@@ -995,7 +995,7 @@ article p::first-line {
 🌼 Reset vs. Normalize  
 🌼 RGB vs. RGBA  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - RGB is a 3-channel format containing data for Red, Green, and Blue.
@@ -1014,7 +1014,7 @@ article p::first-line {
 🌱 Transition vs. Transformation vs. Animation  
 🌼 Tweening  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - It is short for in-betweening.
@@ -1049,7 +1049,7 @@ article p::first-line {
 🌱 Canvas tag  
 🌼 data-* attributes  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The data-* attributes allow us to be able to make up our own HTML attributes and put our own information inside them.
@@ -1091,7 +1091,7 @@ article[data-columns='4'] {
 
 🌼 Datalist tag  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The `<datalist>` tag specifies a list of pre-defined options and allows user to add more to it. It provides an autocomplete feature that allows you to get the desired options with a type-ahead.
@@ -1116,7 +1116,7 @@ article[data-columns='4'] {
 🌱 Description Lists: `<dl>` vs. `<dt>` vs. `<dd>`  
 🌼 Doctype  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - `DOCTYPE` or Document Type Declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
@@ -1128,7 +1128,7 @@ article[data-columns='4'] {
 
 🌼 Favicons: what are two ways to implement a favicon on a webpage?
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 1. By placing an image called `favicon.ico` in the root directory. All browsers will automatically check for this file.
@@ -1151,7 +1151,7 @@ or
 🌱 Fieldset tag  
 🌼 Figure tag  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - The HTML `<figure>` (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption `<figcaption>` element. The figure, its caption, and its contents are referenced as a single unit.
@@ -1176,7 +1176,7 @@ or
 🌼 Label tag: how to associate a label with its corresponding input element in an HTML form?  
 🌼 Map tag  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 - The `map` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
 - The required name attribute of the `map` element is associated with the `usemap` attribute and creates a relationship between the image and the map.
@@ -1231,7 +1231,7 @@ or
 🌱 Ansible  
 🌼 API  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - An application programming interface (API) is a set of clearly defined methods of communication among various components.
@@ -1334,7 +1334,7 @@ Image credit: https://learn.g2.com/api
 🌱 REPL  
 🌼 REST  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - REST is acronym for REpresentational State Transfer.
@@ -1345,7 +1345,7 @@ Image credit: https://learn.g2.com/api
 🌱 REST vs. SOAP APIs  
 🌼 RESTful API (6 constraints)  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
@@ -1367,7 +1367,7 @@ Most of the time, a server will send back static representations of resources in
 
 🌼 RESTful APIs are stateless. What does this mean?  
 
-<details><summary><b>Answer</b></summary>
+<details><summary>Answer</summary>
 <p>
 
 - It means that API requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully.
