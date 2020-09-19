@@ -4,7 +4,6 @@
 <h1>Javascript</h1>
 </div>
 
-🌼 `this` keyword  
 🌼 Arrays: concat()  
 🌼 Arrays: copying & the problem with using Array 1 = Array 2  
 🌼 Arrays: creation & initialization  
@@ -589,6 +588,7 @@ console.log(str2.match(/[A-E]/gi)); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 
 🌱 Tagged template literal  
 🌱 Temporal dead zone  
 🌱 Ternary operator: what does the word "Ternary" indicate?  
+🌼 `this` keyword  
 🌱 toString() parameters  
 🌱 Type Coercion  
 🌼 typeof operator (8 possible types)  
@@ -969,7 +969,7 @@ Opera: -o-
 <p>
 - A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc.
 - Pseudo-classes start with a colon `:`
-- Some common pseudo-classes are `:active`, `:checked`, `:enabled`, `:first-child`, `:first-of-type`, `:focus`, `:hover`, `:last-child`, `:last-of-type`, `:nth-of-type`, `:visited`, etc. 
+- Some common pseudo-classes are `:active`, `:checked`, `:enabled`, `:first-child`, `:first-of-type`, `:focus`, `:hover`, `:last-child`, `:last-of-type`, `:nth-of-type`, `:visited`, etc.
 
 ```css
 article a:hover {
@@ -1238,7 +1238,7 @@ or
 - An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
 
 ![API visual](../../blob/master/images/api.png)  
-Image credit: https://learn.g2.com/api
+Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 
 </p></details>
 
