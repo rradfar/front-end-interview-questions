@@ -90,7 +90,17 @@ expressions
 🌼 Async & Await  
 🌼 Atomics  
 🌼 Bitwise operators  
-🌱 BOM (Browser Object Model)  
+🌼 BOM (Browser Object Model)  
+
+<details><summary>Answer</summary>
+<p>
+
+- The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser.
+- Unlike the DOM, there is no standard for implementation and no strict definition, so browser vendors are free to implement the BOM in any way they wish.
+- The top level of the hierarchy is the window object which represents the browser window.
+
+</p></details>
+
 🌼 Call vs. Apply  
 🌼 Call vs. Apply vs. Bind  
 🌱 Callback  
@@ -191,7 +201,17 @@ for (let value of arr) {
 
 🌼 Functions vs. methods  
 🌼 Functions: `arguments` object  
-🌼 Functions: arrow functions vs. classic functions  
+🌼 Functions: arrow functions vs. classic functions (4 differences)  
+
+<details><summary>Answer</summary>
+<p>
+1. An arrow function does not have its own this. In regular functions the this keyword represented the object that called the function, which could be the window, the document, a button or whatever. With arrow functions the this keyword always represents the object that defined the arrow function (lexical).
+2. Arrow functions cannot be used as constructors and will throw an error when used with new.
+3. Unlike regular functions, the `arguments` object is not defined for arrow functions.
+4. Arrow functions do not have a prototype property.
+
+</p></details>
+
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
 🌼 Functions: higher order functions  
 
@@ -409,7 +429,16 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
-🌱 Objects: freeze() vs. seal()  
+🌼 Objects: freeze() vs. seal()  
+
+<details><summary>Answer</summary>
+<p>
+
+- `Object.freeze()` makes it impossible to add, remove, or modify properties of an object.
+- `Object.seal()` is similar, however it does allow exiting properties to be modified.
+
+</p></details>
+
 🌼 Objects: fromEntries()  
 
 <details><summary>Answer</summary>
@@ -619,6 +648,15 @@ console.log(typeof class C {}); //=> function
 
 🌼 typeof vs. instanceof  
 🌼 Unary operators  
+🌼 Unary operators: what is `~3` equal to?  
+
+<details><summary>Answer</summary>
+<p>
+
+- The bitwise Not operator `~` converts the integer `N` to `-(N+1)` value. Therefore `~3 = -4`.
+
+</p></details>
+
 🌼 Unary operators: what is `~~3.9` equal to?  
 
 <details><summary>Answer</summary>
