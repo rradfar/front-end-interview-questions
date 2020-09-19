@@ -74,8 +74,8 @@ arr5.flat(); //=> [1, 2, 4, 5]
 🌼 Arrays: reduce()  
 🌼 Arrays: reduce() vs. reduceRight()  
 🌼 Arrays: slice()  
-🌼 Arrays: slice() vs. splice()  
 🌼 Arrays: splice()  
+🌼 Arrays: splice() vs. slice()  
 🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
 🌼 Arrays: What are the three methods used to perform a search in an array?
 
@@ -157,8 +157,16 @@ multiply(1)(2)(3); // 6
 🌱 Event loop  
 🌱 Event loop: Call stack vs. Task queue  
 🌱 Event propagation. The three phases of event propagation.  
-🌼 false vs. falsy  
-🌼 Falsy values  
+🌼 Falsy values
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- A falsy value is a value that is considered false when encountered in a Boolean context.
+- There are 8 falsy values: `false`, `0`, `-0`, `0n` (BigInt), `' '` (Empty string), `null`, `undefined`, `NaN`.
+
+</p></details>
+
 🌱 Feature detection, feature inference, and using the UA string  
 🌼 `for.. in` vs. `for.. of`  
 
@@ -187,6 +195,15 @@ for (let value of arr) {
 🌼 Functions: arrow functions vs. classic functions  
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
 🌼 Functions: Higher order functions  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- Higher order functions take another function as an argument or return a function.
+- Taking another function as an argument is often referred to as a callback function
+
+</p></details>
+
 🌼 Functions: Idempotent functions  
 🌼 Functions: Pure functions  
 🌼 Functions: why do we say that in JavaScript, functions are first class citizens.  
@@ -305,10 +322,13 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 </p></details>
 
-🌼 Objects: shallow cloning an object (two ways)  
+🌼 Objects: cloning an object (two ways)  
 
 <details><summary><b>Answer</b></summary>
 <p>
+
+- Both of these methods perform shallow cloning:
+
 
 ```javascript
 const obj = {a: 1};
@@ -323,7 +343,31 @@ console.log(copy2); //=> {a: 1}
 </p></details>
 
 🌼 Objects: `create()`  
-🌼 Objects: Creation and initialization  
+🌼 Objects: creation & initialization (two ways)  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- There are two ways to explicitly create an instance of Object.
+- The first is to use the new operator with the Object constructor like this:
+
+```javascript
+let person = new Object();
+person.name = "Nicholas";
+person.age = 29;
+```
+
+- The other way is to use object literal notation:
+
+```javascript
+let person = {
+  name: "Nicholas",
+  age: 29
+};
+```
+
+</p></details>
+
 🌼 Objects: `entries()`  
 
 <details><summary><b>Answer</b></summary>
@@ -366,7 +410,26 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
+🌱 Objects: `freeze()` vs. `seal()`  
 🌼 Objects: `fromEntries()`  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `Object.fromEntries()` method transforms a list of key-value pairs into an object. It accepts an iterable such as Array or Map and returns a new iterable object.
+
+```javascript
+const map = new Map([ ['foo', 'bar'], ['baz', 42] ]);
+const obj = Object.fromEntries(map);
+console.log(obj); //=> { foo: "bar", baz: 42 }
+
+const arr = [ ['0', 'a'], ['1', 'b'], ['2', 'c'] ];
+const obj = Object.fromEntries(arr);
+console.log(obj); // { 0: "a", 1: "b", 2: "c" }
+```
+
+</p></details>
+
 🌼 Objects: `hasOwnProperty()`  
 
 <details><summary><b>Answer</b></summary>
@@ -504,6 +567,23 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 </p></details>
 
 🌼 Strings: Search() vs. Match()  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `Search()` returns the index of the first match between the regular expression and the given string, or `-1` if no match was found.
+- `Match()` returns an array or `null` if no matches are found.
+
+```javascript
+const str1 = 'hey JudE';
+console.log(str1.search(/[A-Z]/g)); // 4
+
+const str2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+console.log(str2.match(/[A-E]/gi)); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e']
+```
+
+</p></details>
+
 🌼 Strings: substring vs. substr vs. slice  
 🌱 Symbols  
 🌱 Tagged template literal  
@@ -539,6 +619,21 @@ console.log(typeof class C {}); //=> function
 
 🌼 typeof vs. instanceof  
 🌼 Unary operators  
+🌼 Unary operators: what is `~~3.9` equal to?  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- Double bitwise NOT performs the same operation as the `Math.floor()` method but a lot quicker.
+
+```javascript
+~~3.9 === Math.floor(3.9); //true, 3
+~~2.4 === Math.floor(2.4); //true, 2
+~~2 === Math.floor(2); //true, 2
+```
+
+</p></details>
+
 🌼 V8 and SpiderMonkey.  
 🌼 `-0` vs. `+0`  
 
@@ -732,6 +827,21 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 
 🌼 Box-sizing  
 🌼 Cascading in CSS  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- Cascading is the process of combining several style sheets and resolving conflicts between them.
+- The rule used is chosen by cascading down from the more general rules to the specific rule required.
+- Concepts such as **inheritance** and **specificity** are used to decide which styles get applied.  
+
+For instance,  
+
+- a more specific rule will override a less specific rule.
+- a rule defined in an external stylesheet is overruled by a style defined in the `<head>` of the document, which, in turn, is overruled by an inline style within the element itself.
+
+</p></details>
+
 🌱 Combinators (4)  
 🌼 Combinators: child vs. descendant  
 🌼 contain vs. cover when using background-size  
@@ -739,6 +849,19 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 🌼 CSS3 new features  
 🌼 display: none vs. visibility: hidden  
 🌼 Grid vs. Flexbox  
+🌼 Grids: create a grid with three equal columns (2 ways)  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+```css
+grid-template-columns: 1fr 1fr 1fr;
+
+grid-template-columns: repeat(3, 1fr);
+```
+
+</p></details>
+
 🌼 Grids: how do you make a div start at column 2 and end before column 4? (two ways)  
 🌱 GSAP vs. CSS animations  
 🌼 Hex vs. RGB vs. HSL  
@@ -752,7 +875,22 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 
 </p></details>
 
-🌼 Line spacing  
+🌼 Line spacing: e.g. how to adjust the space between lines in a paragraph.  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- The `line-height` CSS property is commonly used to set the distance between lines of text.
+
+```css
+p { line-height: 1.2;   font-size: 10pt; }
+p { line-height: 1.2em; font-size: 10pt; }
+p { line-height: 120%;  font-size: 10pt; }
+p { font: 10pt/1.2  Georgia,serif; }
+```
+
+</p></details>
+
 🌱 Linear vs. Radial gradient  
 🌼 list-style: none  
 🌼 mix-blend-mode  
@@ -875,6 +1013,18 @@ article p::first-line {
 🌼 Transition shorthand property  
 🌱 Transition vs. Transformation vs. Animation  
 🌼 Tweening  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- It is short for in-betweening.
+- It is the process of generating intermediate frames between two images.
+- It gives the impression that the first image has smoothly evolved into the second one.
+- It is an important method used in all types of animations.
+- In CSS3, Transforms (matrix,translate,rotate,scale etc) module can be used to achieve tweening.
+
+</p></details>
+
 🌱 Webfonts: Pros and cons of using them  
 🌱 word-break vs. word-wrap  
 🌱 z-index and how stacking context is formed  
@@ -965,6 +1115,17 @@ article[data-columns='4'] {
 🌼 Defer vs. Async when loading JavaScript scripts  
 🌱 Description Lists: `<dl>` vs. `<dt>` vs. `<dd>`  
 🌼 Doctype  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- `DOCTYPE` or Document Type Declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+- Using it ensures that the user agent correctly parses the HTML as you intended it.
+- HTML5: `<!DOCTYPE html>`
+- HTML4: `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">`
+
+</p></details>
+
 🌼 Favicons: what are two ways to implement a favicon on a webpage?
 
 <details><summary><b>Answer</b></summary>
@@ -1069,6 +1230,18 @@ or
 🌱 AJAX  
 🌱 Ansible  
 🌼 API  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- An application programming interface (API) is a set of clearly defined methods of communication among various components.
+- An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
+
+![API visual](../../blob/master/images/api.png)
+Image credit: https://learn.g2.com/api
+
+</p></details>
+
 🌱 Apollo  
 🌱 AWS  
 🌱 AWS Lambda  
@@ -1111,6 +1284,7 @@ or
 🌱 HTTP: some causes of a 500 error  
 🌱 HTTP: Status codes  
 🌱 HTTP: What happens behind the scenes when you enter a URL into the browser and press enter? (interview)  
+🌱 Imperative vs. Declarative Programming  
 🌱 JIRA  
 🌱 JPEG vs. PNG vs. GIF  
 🌱 jQuery  
@@ -1159,8 +1333,38 @@ or
 🌱 Redux  
 🌱 REPL  
 🌼 REST  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- REST is acronym for REpresentational State Transfer.
+- It is an architectural style that developers follow when they create their RESTful APIs.
+
+</p></details>
+
 🌱 REST vs. SOAP APIs  
-🌼 RESTful API  
+🌼 RESTful API (6 constraints)  
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+- In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
+  
+1. **Client-Server based**
+The client and the server should be separate from each other and allowed to evolve individually and independently.
+2. **Use of a uniform interface (UI)**
+The key to the decoupling client from server is having a uniform interface that allows independent evolution of the application without having the application’s services, models, or actions tightly coupled to the API layer itself. The uniform interface lets the client talk to the server in a single language, independent of the architectural backend of either.
+3. **Stateless operations**
+Meaning that requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully. A REST API should not rely on data being stored on the server or sessions to determine what to do with a request, but rather solely rely on the data that is provided in that request itself. Identifying information is not being stored on the server when making requests. Instead, each request has the necessary data in itself, such as the API key, access token, user ID, etc.
+4. **Caching**
+A REST API should be designed to encourage the storage of cacheable data on the client side in order to reduce the number of interactions with the API. This means that when data is cacheable, the response should indicate that the data can be stored up to a certain time (expires-at), or in cases where data needs to be real-time, that the response should not be cached by the client.
+5. **Layered system**
+REST allows for an architecture composed of multiple layers of servers. The requesting client need not know whether it’s communicating with the actual server, a proxy, or any other intermediary.
+6. **Code on demand (optional)**
+Most of the time, a server will send back static representations of resources in the form of XML or JSON. However, when necessary, servers can send executable code to the client.
+
+</p></details>
+
 🌼 RESTful APIs are stateless. What does this mean?  
 
 <details><summary><b>Answer</b></summary>
