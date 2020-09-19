@@ -7,8 +7,8 @@
 🌼 `this` keyword  
 🌼 Arrays: concat()  
 🌼 Arrays: copying & the problem with using Array 1 = Array 2  
-🌼 Arrays: Creation and initialization  
-🌼 Arrays: creation with an initial length of 20.  
+🌼 Arrays: creation & initialization  
+🌼 Arrays: create an array with an initial length of 20  
 🌼 Arrays: every() vs. some()  
 🌼 Arrays: fill()  
 
@@ -77,7 +77,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 🌼 Arrays: splice()  
 🌼 Arrays: splice() vs. slice()  
 🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
-🌼 Arrays: What are the three methods used to perform a search in an array?
+🌼 Arrays: the three methods used to perform a search in an array?
 
 <details><summary>Answer</summary>
 <p>
@@ -95,13 +95,13 @@ expressions
 🌼 Call vs. Apply  
 🌼 Call vs. Apply vs. Bind  
 🌱 Callback  
-🌼 Classes: Static method being called from the class constructor or from other non-static methods within the same class  
-🌼 Classes: Static method calling another static method within the same class  
-🌼 Classes: Static methods  
+🌼 Classes: static methods  
+🌼 Classes: static method being called from the class constructor or from other non-static methods within the same class  
+🌼 Classes: static method calling another static method within the same class  
 🌼 Closure  
 🌼 CommonJS  
 🌱 Compiling vs. Transpiling  
-🌼 `console.log()` vs. `console.dir()`  
+🌼 console.log() vs. console.dir()  
 🌼 Currying  
 
 <details><summary>Answer</summary>
@@ -136,7 +136,7 @@ multiply(1)(2)(3); // 6
 
 🌱 Date and Time formatting  
 🌱 Debounce vs. throttle  
-🌱 Debounce: When do we use a debounce function?  
+🌱 Debounce: when do we use a debounce function?  
 🌱 Decimal points handling (since there is no Float data type)  
 🌱 Decorators  
 🌱 Design Pattern: Builder  
@@ -145,10 +145,10 @@ multiply(1)(2)(3); // 6
 🌱 Design Pattern: Nullobject  
 🌱 Design Pattern: Singleton  
 🌱 Destructuring an object or an array (Give an example)  
-🌱 Encapsulation: How do you implement Encapsulation in JavaScript? (interview)  
+🌱 Encapsulation: how do you implement Encapsulation in JavaScript? (interview)  
 🌱 Error Handling  
 🌱 ES2020 (ES11) new features  
-🌱 `eval()`  
+🌱 Eval()  
 🌱 Event bubbling vs. Event capturing  
 🌱 Event bubbling vs. Event propagation  
 🌱 Event delegation  
@@ -168,7 +168,7 @@ multiply(1)(2)(3); // 6
 </p></details>
 
 🌱 Feature detection, feature inference, and using the UA string  
-🌼 `for.. in` vs. `for.. of`  
+🌼 for.. in vs. for.. of  
 
 <details><summary>Answer</summary>
 <p>
@@ -194,7 +194,7 @@ for (let value of arr) {
 🌼 Functions: `arguments` object  
 🌼 Functions: arrow functions vs. classic functions  
 🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
-🌼 Functions: Higher order functions  
+🌼 Functions: higher order functions  
 
 <details><summary>Answer</summary>
 <p>
@@ -204,8 +204,8 @@ for (let value of arr) {
 
 </p></details>
 
-🌼 Functions: Idempotent functions  
-🌼 Functions: Pure functions  
+🌼 Functions: idempotent functions  
+🌼 Functions: pure functions  
 🌼 Functions: why do we say that in JavaScript, functions are first class citizens.  
 🌼 Generator functions & yield keyword  
 🌼 Generators  
@@ -246,7 +246,7 @@ let b = 1;
 🌱 Jasmine vs. Mocha vs. Chai  
 🌼 JavaScript vs. ECMAScript  
 🌼 JavaScript vs. TypeScript  
-🌼 JSON `parse()` vs. `stringify()`  
+🌼 JSON parse() vs. stringify()  
 
 <details><summary>Answer</summary>
 <p>
@@ -272,20 +272,20 @@ console.log(JSON.parse(objStr));
 
 </p></details>
 
-🌼 `let` vs. `const`  
-🌼 `let` vs. `var`  
+🌼 let vs. const  
+🌼 let vs. var  
 🌱 Maps  
 🌱 Maps vs. WeakMaps  
 🌱 Modules  
 🌱 Modules: Tree shaking  
 🌱 Multi-threaded: is JavaScript multi-threaded?  
 🌱 NaN: where would be a situation in which you would see `NaN`. How to check for NaN?  
-🌼 `null == undefined` ? How about `null === undefined`?  
-🌼 `null` vs. `undefined`  
+🌼 null vs. undefined  
+🌼 null == undefined? How about null === undefined?  
 🌼 Null: how to check if something is null? How about undefined?  
 🌼 Null: what does `typeof null` return?  
 🌱 Nullish coalescing operator  
-🌼 Objects: `assign()`  
+🌼 Objects: assign()  
 
 <details><summary>Answer</summary>
 <p>
@@ -303,7 +303,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 </p></details>
 
-🌼 Objects: `assign()` - A problem when using `Object.assign()` to copy objects  
+🌼 Objects: assign() - A problem with using it to copy objects  
 
 <details><summary>Answer</summary>
 <p>
@@ -342,7 +342,7 @@ console.log(copy2); //=> {a: 1}
 
 </p></details>
 
-🌼 Objects: `create()`  
+🌼 Objects: create()  
 🌼 Objects: creation & initialization (two ways)  
 
 <details><summary>Answer</summary>
@@ -368,7 +368,7 @@ let person = {
 
 </p></details>
 
-🌼 Objects: `entries()`  
+🌼 Objects: entries()  
 
 <details><summary>Answer</summary>
 <p>
@@ -391,7 +391,7 @@ console.log(`${key}: ${value}`);
 
 </p></details>
 
-🌼 Objects: `freeze()`  
+🌼 Objects: freeze()  
 
 <details><summary>Answer</summary>
 <p>
@@ -410,8 +410,8 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
-🌱 Objects: `freeze()` vs. `seal()`  
-🌼 Objects: `fromEntries()`  
+🌱 Objects: freeze() vs. seal()  
+🌼 Objects: fromEntries()  
 
 <details><summary>Answer</summary>
 <p>
@@ -430,7 +430,7 @@ console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 
 </p></details>
 
-🌼 Objects: `hasOwnProperty()`  
+🌼 Objects: hasOwnProperty()  
 
 <details><summary>Answer</summary>
 <p>
@@ -465,7 +465,7 @@ if (Array.isArray(obj)) {
 
 🌱 Objects: immutable objects  
 🌱 Objects: is everything in JavaScript considered an object?  
-🌱 Objects: `is()`  
+🌱 Objects: is()  
 🌼 Objects: iterating over object properties  
 🌼 Objects: the optional chaining operator `?.`
 
@@ -543,15 +543,15 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 
 🌱 Shimming  
 🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
-🌱 stopPropagation vs. preventDefault (interview)  
+🌱 stopPropagation() vs. preventDefault()  
 🌼 Strict mode  
 🌼 Strict mode: Can strict mode be used within functions or block statements?  
-🌼 Strings: `trim()`  
+🌼 Strings: trim()  
 🌼 Strings: 3 common methods for working with characters  
 🌱 Strings: An algorithm that returns the first duplicate character in a string (interview)  
 🌱 Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"  
-🌼 Strings: `padStart()` and `padEnd()`  
-🌼 Strings: `indexOf()` vs. `Search()`  
+🌼 Strings: padStart() and padEnd()  
+🌼 Strings: indexOf() vs. search()  
 
 <details><summary>Answer</summary>
 <p>
@@ -566,7 +566,7 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 
 </p></details>
 
-🌼 Strings: Search() vs. Match()  
+🌼 Strings: search() vs. match()  
 
 <details><summary>Answer</summary>
 <p>
@@ -590,7 +590,7 @@ console.log(str2.match(/[A-E]/gi)); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 
 🌱 Temporal dead zone  
 🌱 Ternary operator: what does the word "Ternary" indicate?  
 🌱 toString() parameters  
-🌱 Type Coercion (interview)  
+🌱 Type Coercion  
 🌼 typeof operator (8 possible types)  
 
 <details><summary>Answer</summary>
@@ -653,13 +653,13 @@ console.log(typeof class C {}); //=> function
 🌱 Canvas API  
 🌱 Console API  
 🌱 Document Object Model (DOM)  
-🌱 DOM: `classList` and its common methods  
-🌱 DOM: `cloneNode()`  
-🌱 DOM: `closest()`  
-🌱 DOM: `childNodes` vs. `children`  
-🌱 DOM: `firstChild` vs. `firstElementChild`  
-🌱 DOM: `getAttribute()` & `setAttribute()`  
-🌼 DOM: `getInnerText()` vs. `getHTML()` vs. `getTextContent()`  
+🌱 DOM: classList and its common methods  
+🌱 DOM: cloneNode()  
+🌱 DOM: closest()  
+🌱 DOM: childNodes vs. children  
+🌱 DOM: firstChild vs. firstElementChild  
+🌱 DOM: getAttribute() & setAttribute()  
+🌼 DOM: getInnerText() vs. getHTML() vs. getTextContent()  
 
 <details><summary>Answer</summary>
 <p>
@@ -709,7 +709,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌼 DOM: `getElement(s)By*` vs. `querySelector(All)` methods
+🌼 DOM: getElement(s)By* vs. querySelector(All) methods
 
 <details><summary>Answer</summary>
 <p>
@@ -747,7 +747,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌱 DOM: `previousSibling()` vs. `previousElementSibling()`  
+🌱 DOM: previousSibling vs. previousElementSibling  
 🌱 Drag & Drop API  
 🌱 Fetch API  
 🌱 History API  
@@ -776,7 +776,7 @@ document.querySelectorAll();
 
 
 
-🌼 Animations: `animation-fill-mode`
+🌼 Animations: animation-fill-mode  
 
 <details><summary>Answer</summary>
 <p>
@@ -927,10 +927,10 @@ An example:
 
 </p></details>
 
-🌱 `not()` pseudo-class  
-🌱 `nth-of-type()` vs. `nth-child()`  
+🌱 not() pseudo-class  
+🌱 nth-of-type() vs. nth-child()  
 🌱 Overflow parameters  
-🌱 `overflow-wrap`  
+🌱 overflow-wrap  
 🌱 Position: relative vs. absolute vs. fixed vs. sticky  
 🌼 Prefixes  
 
@@ -1237,7 +1237,7 @@ or
 - An application programming interface (API) is a set of clearly defined methods of communication among various components.
 - An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
 
-![API visual](../../blob/master/images/api.png)
+![API visual](../../blob/master/images/api.png)  
 Image credit: https://learn.g2.com/api
 
 </p></details>
@@ -1350,17 +1350,17 @@ Image credit: https://learn.g2.com/api
 
 - In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
   
-1. **Client-Server based**
+1. **Client-Server based**:  
 The client and the server should be separate from each other and allowed to evolve individually and independently.
-2. **Use of a uniform interface (UI)**
+2. **Use of a uniform interface (UI)**:  
 The key to the decoupling client from server is having a uniform interface that allows independent evolution of the application without having the application’s services, models, or actions tightly coupled to the API layer itself. The uniform interface lets the client talk to the server in a single language, independent of the architectural backend of either.
-3. **Stateless operations**
+3. **Stateless operations**:  
 Meaning that requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully. A REST API should not rely on data being stored on the server or sessions to determine what to do with a request, but rather solely rely on the data that is provided in that request itself. Identifying information is not being stored on the server when making requests. Instead, each request has the necessary data in itself, such as the API key, access token, user ID, etc.
-4. **Caching**
+4. **Caching**:  
 A REST API should be designed to encourage the storage of cacheable data on the client side in order to reduce the number of interactions with the API. This means that when data is cacheable, the response should indicate that the data can be stored up to a certain time (expires-at), or in cases where data needs to be real-time, that the response should not be cached by the client.
-5. **Layered system**
+5. **Layered system**:  
 REST allows for an architecture composed of multiple layers of servers. The requesting client need not know whether it’s communicating with the actual server, a proxy, or any other intermediary.
-6. **Code on demand (optional)**
+6. **Code on demand (optional)**:  
 Most of the time, a server will send back static representations of resources in the form of XML or JSON. However, when necessary, servers can send executable code to the client.
 
 </p></details>
@@ -1464,7 +1464,7 @@ Most of the time, a server will send back static representations of resources in
 <h1>Tutorials</h1>
 </div>
 
-🌱 Form design  
+🌱 Form design & validation  
 🌱 Image carousel  
 🌱 Infinite scrolling  
 🌱 Pagination  
