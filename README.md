@@ -886,6 +886,7 @@ For instance,
 🌱 CSS animations vs. JavaScript animations: pros & cons of each  
 🌼 CSS3 new features  
 🌼 display: none vs. visibility: hidden  
+🌼 Flex: `flex: auto` vs. `flex: none`  
 🌼 Grid vs. Flexbox  
 🌼 Grids: create a grid with three equal columns (2 ways)  
 
