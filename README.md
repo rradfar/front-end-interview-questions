@@ -439,6 +439,7 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
+🌱 Objects: freeze() vs. preventExtensions()  
 🌼 Objects: fromEntries()  
 
 <details><summary>Answer</summary>
@@ -1241,6 +1242,19 @@ or
 🌱 Svg tag and how it differs from `<canvas>`  
 🌱 Tables: `<thead>` vs. `<th>`  
 🌱 Wbr tag  
+
+
+
+
+
+
+
+<div align="center">
+<h1>React</h1>
+</div>
+
+🌱 Components: How to prevent from re-rendering
+🌱 Lifecycle methods and their purpose  
 
 
 
