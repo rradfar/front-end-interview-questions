@@ -291,18 +291,78 @@ console.log(JSON.parse(objStr));
 
 </p></details>
 
-🌼 let vs. const  
-🌼 let vs. var  
+🌼 let vs. const (2 differences)  
+
+<details><summary>Answer</summary>
+<p>
+
+1. Unlike `let`, variables declared with `const` defines a constant reference to a value and cannot be reassigned a new value.
+2. Unlike `let`, variables declared with `const` must be assigned a value as soon as they are declared.  
+
+</p></details>
+
+🌼 let vs. var (3 differences)  
+
+<details><summary>Answer</summary>
+<p>
+1. `let` is block-scoped whereas `var` is function-scoped.
+2. Variables declared with `let` are not hoisted whereas variables declared with `var` are hoisted.
+3. Variables declared with `let` cannot be re-declared whereas variables declared with `var` can.
+
+</p></details>
+
 🌱 Maps  
 🌱 Maps vs. WeakMaps  
 🌱 Modules  
 🌱 Modules: Tree shaking  
 🌱 Multi-threaded: is JavaScript multi-threaded?  
 🌱 NaN: where would be a situation in which you would see `NaN`. How to check for NaN?  
-🌼 null vs. undefined  
+🌼 null vs. undefined (3 differences)  
+
+<details><summary>Answer</summary>
+<p>
+
+1. `undefined` means a variable has been declared but has not yet been assigned a value. `null` on the other hand can be assigned to a variable as an intentional representation of no value or empty value.
+2. In arithmetic, `undefined` is treated as `NaN` whereas `null` is treated as zero.
+3. `undefined` is not valid in JSON whereas `null` is.
+
+</p></details>
+
 🌼 null == undefined? How about null === undefined?  
+
+<details><summary>Answer</summary>
+<p>
+
+```javascript
+null == undefined // true
+null === undefined // false
+```
+
+- `undefined` and `null` are two distinct types: `undefined` is a type itself while `null` is an object.
+
+</p></details>
+
 🌼 Null: how to check if something is null? How about undefined?  
+
+<details><summary>Answer</summary>
+<p>
+
+- Since `null == undefined` we could simply check if `variable == null` or `variable == null`.
+- We can also use `typeof variable === 'undefined'` to check if a variable is `undefined`. The same cannot be done for `null` since `typeof null` is object.
+
+</p></details>
+
 🌼 Null: what does `typeof null` return?  
+
+<details><summary>Answer</summary>
+<p>
+
+```javascript
+typeof null === 'object'; // true
+```
+
+</p></details>
+
 🌱 Nullish coalescing operator  
 🌼 Objects: assign()  
 
