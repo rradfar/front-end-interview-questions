@@ -1524,3 +1524,77 @@ Most of the time, a server will send back static representations of resources in
 🌱 Pagination  
 🌱 Pinterest board  
 🌱 Progress bar  
+
+
+
+
+<div align="center">
+<h1>Coding Challenges</h1>
+</div>
+
+
+
+
+🌼 Given an input string and an integer array indices of the same length. The input string will be shuffled such that the character at the `i`th position moves to `indices[i]` in the shuffled string. Return the shuffled string.  
+
+```javascript
+const shuffleString = (input, indices) => {
+  // ...
+};
+
+input = "abc";
+indices = [0,1,2];
+console.log(shuffleString(input, indices)); // "abc"
+
+input = "aiohn";
+indices = [3,1,4,2,0];
+console.log(shuffleString(input, indices)); // "nihao"
+
+input = "aaiougrt";
+indices = [4,0,2,6,7,3,1,5];
+console.log(shuffleString(input, indices)); // "arigatou"
+
+input = "art";
+indices = [1,0,2];
+console.log(shuffleString(input, indices)); // "rat"
+```
+
+<details><summary>Answer</summary>
+<p>
+
+```javascript
+const shuffleString = (input, indices) => {
+  const shuffledString = Array(input.length);
+  indices.forEach((i, ele) => (shuffledString[i] = input.charAt(ele)));
+  return shuffledString.join('');
+};
+```
+
+</p></details>
+
+🌼 A function that determines if a string has all unique characters.  
+
+```javascript
+const isUnique = str => {
+  // ...
+}
+
+console.log(isUnique('abcd')); // true
+console.log(isUnique('aabcd')); // false
+```
+
+<details><summary>Answer</summary>
+<p>
+
+```javascript
+const isUnique = str => {
+  let obj = {};
+  for (char of str) {
+    if (obj[char]) return false;
+    obj[char] = true;
+  }
+  return true;
+}
+```
+
+</p></details>
