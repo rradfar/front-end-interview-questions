@@ -296,7 +296,7 @@ console.log(JSON.parse(objStr));
 <details><summary>Answer</summary>
 <p>
 
-1. Unlike `let`, variables declared with `const` defines a constant reference to a value and cannot be reassigned a new value.
+1. Unlike `let`, variables declared with `const`  cannot be reassigned a new value since `const` defines a constant reference to a value.
 2. Unlike `let`, variables declared with `const` must be assigned a value as soon as they are declared.  
 
 </p></details>
@@ -608,6 +608,14 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 Primitive data types  
 🌱 Promises  
 🌼 Prototypal inheritance  
+
+<details><summary>Answer</summary><p>
+
+- Each object in JavaScript has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+- Prototypical inheritance allows us to reuse the properties or methods from one JavaScript object to another through a reference pointer function.
+
+</P></details>
+
 🌱 Prototype vs. __proto__  
 🌱 Proxies  
 🌱 Pub/Sub architecture  
@@ -1658,3 +1666,43 @@ const isUnique = str => {
 ```
 
 </p></details>
+
+🌼 A function that returns the number of identical pairs in a given array of positive integers. A pair `(i,j)` is identical if `nums[i] = nums[j]` and `i < j`. Do *not* use nested loops!
+
+```javascript
+const numIdenticalPairs = nums => {
+  return nums;
+};
+
+let nums = [1,2,3,1,1,3];
+console.log(numIdenticalPairs(nums)); // 4
+// The indices of the identical pairs: (0,3), (0,4), (3,4), (2,5)
+
+nums = [1,1,1,1];
+console.log(numIdenticalPairs(nums)); // 6
+
+nums = [1,2,3];
+console.log(numIdenticalPairs(nums)); // 0
+```
+
+<details><summary>Answer</summary><p>
+
+```javascript
+const numIdenticalPairs = nums => {
+  nums.sort();
+  let curCount = 1;
+  let totalCount = 0;
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] === nums[i - 1]) {
+      totalCount += curCount;
+      curCount++;
+    } else {
+      curCount = 1;
+    }
+  }
+  return totalCount;
+};
+```
+
+</p></details>
+
