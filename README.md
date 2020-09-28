@@ -158,14 +158,40 @@ multiply(1)(2)(3); // 6
 🌱 Error Handling  
 🌱 ES2020 (ES11) new features  
 🌱 Eval()  
-🌱 Event bubbling vs. Event capturing  
-🌱 Event bubbling vs. Event propagation  
-🌱 Event delegation  
+🌼 Event handling: delegation  
+
+<details><summary>Answer</summary><p>
+
+- DOM event delegation is a mechanism of responding to UI events via a single common parent rather than each child.
+- It is a technique for listening to events where we can delegate a parent element as the listener for all of the events that happen inside it.
+
+</p></details>
+
+🌼 Event handling: bubbling vs. capturing  
+
+<details><summary>Answer</summary><p>
+
+- In bubbling mode, which is the default mode, the event will be triggered at the deepest element. Then it will be bubbled up to the its parents. In other words, if an event occurs on a given element, it will be triggered on its parent as well and on its parent’s parent and all the way up, until the html element.
+- In capturing mode, the order is opposite. The handler will be invoked from the parent element first, then down to the its children. We can force the event to be fired in the capturing mode by passing the third parameter of addEventListener(event, handler, useCapture) to true.
+
+</p></details>
+
+🌱 Event handling: propagation  
+🌼 Event handling: propagation: the three phases of event propagation.  
+
+<details><summary>Answer</summary><p>
+
+1. Capture phase — Starting from window, document and the root element, the event dives down through ancestors of the target element
+2. Target phase — The event gets triggered on the element on which the user has clicked
+3. Bubble phase — Finally, the event bubbles up through ancestors of the target element until the root element, document, and window.
+
+</p></details>
+
+🌱 Event handling: stopPropagation() vs. preventDefault()  
 🌱 Event listeners: target vs. currentTarget  
 🌱 Event listeners. Name 5 events JS could be listening to.  
 🌱 Event loop  
 🌱 Event loop: Call stack vs. Task queue  
-🌱 Event propagation. The three phases of event propagation.  
 🌼 Falsy values
 
 <details><summary>Answer</summary>
@@ -639,8 +665,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 </p></details>
 
 🌱 Shimming  
-🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
-🌱 stopPropagation() vs. preventDefault()  
+🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed   
 🌼 Strict mode  
 🌼 Strict mode: Can strict mode be used within functions or block statements?  
 🌼 Strings: trim()  
