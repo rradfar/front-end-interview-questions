@@ -4,15 +4,98 @@
 <h1>Javascript</h1>
 </div>
 
-🌼 Arrays: concat()  
-🌼 Arrays: copying & the problem with using Array 1 = Array 2  
-🌼 Arrays: creation & initialization  
+🌼 Arrays: concat(): 2 special notes  
+
+<details><summary>Answer</summary><p>
+
+1. It returns a newly constructed array. The original array remains **unchanged**.
+2. The `concat()` method **flattens** the result.
+
+```javascript
+let colors = ["red", "green", "blue"];
+let colors2 = colors.concat("yellow", ["black", "brown"]);
+console.log(colors); // ["red", "green","blue"]
+console.log(colors2); // ["red", "green", "blue", "yellow", "black", "brown"]
+```
+
+</p></details>
+
+🌼 Arrays: 2 ways to create a new array  
+
+<details><summary>Answer</summary><p>
+
+- By using the Array constructor
+
+```javascript
+let colors = new Array();
+let colors = new Array(20);
+let colors = new Array("red", "blue", "green");
+```
+
+- By using array literal notation
+
+```javascript
+let names = [];
+let values = [1,2,];
+let colors = ["red", "blue", "green"];
+```
+
+</p></details>
+
+🌼 Arrays: 3 ways to clone an array & why we don't use array1 = array2  
+
+<details><summary>Answer</summary><p>
+
+```javascript
+const newArray = originalArray.slice();
+const newArray = [...originalArray];
+const newArray = Array.from(originalArray);
+```
+
+- If we use the equal sign, the second array will point to the same memory location as the original array (shallow copying), so any changes to the second array will be reflected in the original array as well and vice versa.
+
+```javascript
+let a = [1, 2];
+let b = a;
+
+a.push(3);
+console.log(b); // [1, 2, 3]
+
+b.push(4);
+console.log(a); // [1, 2, 3, 4]
+```
+
+</p></details>
+
 🌼 Arrays: create an array with an initial length of 20  
+
+<details><summary>Answer</summary><p>
+
+```javascript
+let arr = new Array(20);
+```
+
+</p></details>
+
 🌼 Arrays: every() vs. some()  
+
+<details><summary>Answer</summary><p>
+
+- The `every()` method tests whether all elements in the array pass the test implemented by the provided function.
+- The `some()` method tests whether at least one element in the array passes the test implemented by the provided function.
+
+```javascript
+[12, 5, 8, 130, 44].every(x => x >= 10); // false
+[12, 54, 18, 130, 44].every(x => x >= 10); // true​
+[2, 5, 8, 1, 4].some(x => x > 10); // false
+[12, 5, 8, 1, 4].some(x => x > 10); // true
+```
+
+</p></details>
+
 🌼 Arrays: fill()  
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The fill() method changes all elements in an array to a static value.
 - fill() is a mutator method: it will change the original array and return it, not a copy of it.
@@ -31,11 +114,9 @@ console.log(array1.fill(6)); //=> [6, 6, 6, 6]
 
 </p></details>
 
-🌼 Arrays: filter()  
 🌼 Arrays: flat()  
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - It is used to flatten an array.
 - It can receive an optional depth level parameter specifying how deep a nested array structure should be flattened. Defaults to 1.
@@ -63,10 +144,47 @@ arr5.flat(); //=> [1, 2, 4, 5]
 
 </p></details>
 
-🌼 Arrays: flatmap()  
-🌼 Arrays: forEach()  
+🌼 Arrays: flat() vs. flatmap()  
+
+<details><summary>Answer</summary><p>
+
+- `flat()` is simply used to flatten an array.
+- `flatmap()` is the combination of the `map()` method followed by the `flat()` method to a  depth of 1.
+
+```javascript
+let sentences = ["JavaScript Array flatMap()", " ", "is", " ", "Awesome"];
+let words = sentences.flatMap(s => s.split(' '));
+console.log(words);
+// [ 'JavaScript', 'Array', 'flatMap()', '', '', 'is', '', '', 'Awesome' ]
+```
+
+</p></details>
+
 🌼 Arrays: forEach() vs. map()  
+
+<details><summary>Answer</summary><p>
+
+- The `forEach()` method doesn't return anything (`undefined`). It simply calls a provided function on each element in the array. This callback is allowed to mutate the calling array.
+- The `map()` method also calls a provided function on every element in the array. The difference is that `map()` utilizes return values and actually returns a new Array of the same size.
+
+</p></details>
+
 🌼 Arrays: from()  
+
+<details><summary>Answer</summary><p>
+
+- `Array.from()` creates a new array instance from an array-like or iterable object.
+- It has an optional map parameter, which allows us to execute a `map()` function on each element of the array being created.
+
+```javascript
+function f() {
+  return Array.from(arguments);
+}
+console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
+```
+
+</p></details>
+
 🌼 Arrays: how to check for equality?  
 🌼 Arrays: indexOf() vs. lastIndexOf() vs. includes()  
 🌼 Arrays: join()  
