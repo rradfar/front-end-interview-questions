@@ -783,7 +783,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 </p></details>
 
 🌱 Shimming  
-🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed   
+🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
 🌼 Strict mode  
 🌼 Strict mode: Can strict mode be used within functions or block statements?  
 🌼 Strings: trim()  
@@ -1097,6 +1097,9 @@ For instance,
 🌼 contain vs. cover when using background-size  
 🌱 CSS animations vs. JavaScript animations: pros & cons of each  
 🌼 CSS3 new features  
+🌱 Custom fonts: how to use them  
+🌱 display: block vs. inline vs. inline-block  
+🌱 display: float vs. inline-block  
 🌼 display: none vs. visibility: hidden  
 🌼 Flex: `flex: auto` vs. `flex: none`  
 🌼 Grid vs. Flexbox  
@@ -1116,6 +1119,8 @@ grid-template-columns: repeat(3, 1fr);
 🌼 Grids: how do you make a div start at column 2 and end before column 4? (two ways)  
 🌱 GSAP vs. CSS animations  
 🌼 Hex vs. RGB vs. HSL  
+🌱 How to hide content visually but make it available to screen readers  
+🌱 How to make a triangle with pure CSS  
 🌼 HSL color model  
 🌼 Importing a CSS file into another  
 
@@ -1214,6 +1219,7 @@ Opera: -o-
 </p></details>
 
 🌼 Preprocessor  
+🌱 Pros and cons of translate() vs. position: absolute  
 🌼 Pseudo-classes vs pseudo-elements  
 
 <details><summary>Answer</summary>
@@ -1244,6 +1250,7 @@ article p::first-line {
 
 🌼 rem vs. em  
 🌼 Reset vs. Normalize  
+🌼 Responsive vs. Adaptive design  
 🌼 RGB vs. RGBA  
 
 <details><summary>Answer</summary>
@@ -1296,8 +1303,9 @@ article p::first-line {
 
 
 
-🌼 Button tag vs. input type="button"  
-🌱 Can a web page contain multiple `<header>` elements? What about `<footer>` elements?  
+🌼 `<Button>` vs. `input type="button"`  
+🌱 Can a webpage contain multiple `<header>` or `<footer>` elements?  
+🌱 Can a webpage contain multiple `h1` tags?  
 🌱 Canvas tag  
 🌼 data-* attributes  
 
@@ -1428,8 +1436,8 @@ or
 🌼 Label tag: how to associate a label with its corresponding input element in an HTML form?  
 🌼 Map tag  
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
+
 - The `map` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
 - The required name attribute of the `map` element is associated with the `usemap` attribute and creates a relationship between the image and the map.
 - The `map` element contains a number of `area` elements that define the clickable areas in the image map.
@@ -1449,7 +1457,6 @@ or
 🌱 Meta tag  
 🌱 MIME type  
 🌱 Picture tag  
-🌱 Should a website always have a `H1` tag? Is it possible to have multiple `H1` tags on a page?  
 🌱 Svg tag and how it differs from `<canvas>`  
 🌱 Tables: `<thead>` vs. `<th>`  
 🌱 Wbr tag  
@@ -1482,9 +1489,52 @@ or
 
 
 
-🌱 A/B testing  
-🌱 A11y: ARIA  
-🌱 A11y: best practices  
+🌼 A/B testing  
+
+<details><summary>Answer</summary><p>
+
+- A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of website visitors at the same time and comparing which variant drives more conversions.
+
+</p></details>
+
+🌼 A11y: ARIA  
+
+<details><summary>Answer</summary><p>
+
+- Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways to make web content and web applications more accessible to people with disabilities.
+
+The following gives no indication to assistive technologies that it is a custom checkbox:
+
+```html
+<li tabindex="0" class="checkbox" checked>
+  Receive promotional offers
+</li>
+```
+
+We can improve it by using the `role` and `aria-checked` attributes:
+
+```html
+<li tabindex="0" class="checkbox" role="checkbox" checked aria-checked="true">
+  Receive promotional offers
+</li>
+```
+
+</p></details>
+
+🌼 A11y: examples of best practices  
+
+<details><summary>Answer</summary><p>
+
+- Providing alternative text for images and icon fonts
+- Making all functionality of the site available using a keyboard
+- Avoiding blinking or flashing elements
+- Ensuring all ARIA roles and properties are valid
+- Ensuring sufficient contrast between elements
+- Avoiding the use of color as the sole means of communication information
+- Avoiding the use of CSS pseudo-elements for non-decorative content
+
+</p></details>
+
 🌱 A11y: How can we make a form more accessible? (interview)  
 🌱 A11y: skip links What benefit(s) do they provide some of their limitations  
 🌱 A11y: some of the tools available to test the accessibility of a website or web application  
@@ -1650,6 +1700,7 @@ Most of the time, a server will send back static representations of resources in
 🌱 Server side rendering and why would you want to do it  
 🌱 Server side rendering vs. Client side rendering  
 🌱 Serverless architecture  
+🌱 Shadow DOM  
 🌱 Software Development Life Cycle (SDLC)  
 🌱 SOLID principles  
 🌱 SPA  
@@ -1735,117 +1786,3 @@ Most of the time, a server will send back static representations of resources in
 🌱 Pagination  
 🌱 Pinterest board  
 🌱 Progress bar  
-
-
-
-
-<div align="center">
-<h1>Coding Challenges</h1>
-</div>
-
-
-
-
-🌼 Given an input string and an integer array indices of the same length. The input string will be shuffled such that the character at the `i`th position moves to `indices[i]` in the shuffled string. Return the shuffled string.  
-
-```javascript
-const shuffleString = (input, indices) => {
-  // ...
-};
-
-input = "abc";
-indices = [0,1,2];
-console.log(shuffleString(input, indices)); // "abc"
-
-input = "aiohn";
-indices = [3,1,4,2,0];
-console.log(shuffleString(input, indices)); // "nihao"
-
-input = "aaiougrt";
-indices = [4,0,2,6,7,3,1,5];
-console.log(shuffleString(input, indices)); // "arigatou"
-
-input = "art";
-indices = [1,0,2];
-console.log(shuffleString(input, indices)); // "rat"
-```
-
-<details><summary>Answer</summary>
-<p>
-
-```javascript
-const shuffleString = (input, indices) => {
-  const shuffledString = Array(input.length);
-  indices.forEach((i, ele) => (shuffledString[i] = input.charAt(ele)));
-  return shuffledString.join('');
-};
-```
-
-</p></details>
-
-🌼 A function that determines if a string has all unique characters.  
-
-```javascript
-const isUnique = str => {
-  // ...
-}
-
-console.log(isUnique('abcd')); // true
-console.log(isUnique('aabcd')); // false
-```
-
-<details><summary>Answer</summary>
-<p>
-
-```javascript
-const isUnique = str => {
-  let obj = {};
-  for (char of str) {
-    if (obj[char]) return false;
-    obj[char] = true;
-  }
-  return true;
-}
-```
-
-</p></details>
-
-🌼 A function that returns the number of identical pairs in a given array of positive integers. A pair `(i,j)` is identical if `nums[i] = nums[j]` and `i < j`. Do *not* use nested loops!
-
-```javascript
-const numIdenticalPairs = nums => {
-  return nums;
-};
-
-let nums = [1,2,3,1,1,3];
-console.log(numIdenticalPairs(nums)); // 4
-// The indices of the identical pairs: (0,3), (0,4), (3,4), (2,5)
-
-nums = [1,1,1,1];
-console.log(numIdenticalPairs(nums)); // 6
-
-nums = [1,2,3];
-console.log(numIdenticalPairs(nums)); // 0
-```
-
-<details><summary>Answer</summary><p>
-
-```javascript
-const numIdenticalPairs = nums => {
-  nums.sort();
-  let curCount = 1;
-  let totalCount = 0;
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] === nums[i - 1]) {
-      totalCount += curCount;
-      curCount++;
-    } else {
-      curCount = 1;
-    }
-  }
-  return totalCount;
-};
-```
-
-</p></details>
-
