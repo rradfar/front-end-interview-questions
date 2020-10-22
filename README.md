@@ -193,11 +193,24 @@ console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
 🌼 Arrays: slice()  
 🌼 Arrays: splice()  
 🌼 Arrays: splice() vs. slice()  
+
+<details><summary>Answer</summary><p>
+
+- The `splice()` method changes the original array, `slice()` does not.
+- The `splice()` method returns the removed items in an array. The `slice()` method returns the selected element(s) in an array, as a new array object.
+- The `splice()` method can take `n` number of arguments: index, optional number of items to be removed, and optional item(s) to be added to the array. The `slice()` method can take `2` arguments: the starting index and an optional end index.
+
+```javascript
+[2,4,8].splice(1, 2) // returns [4, 8], original array is [2]
+[2,4,8].slice(1, 2) // returns 4, original array is [2,4,8]
+```
+
+</p></details>
+
 🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
 🌼 Arrays: the three methods used to perform a search in an array?
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - ECMAScript’s three strict equivalence lookup methods are `indexOf()` and `lastIndexOf()`, available in all ECMAScript versions, and `includes()`, which was introduced in the ECMAScript 7 specification.
 
@@ -528,8 +541,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 🌼 Objects: assign() - A problem with using it to copy objects  
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - Object.assign() only does shallow copying. For deep cloning, we need to use alternatives. A common hack is to use `JSON.parse(JSON.stringify(obj))` as such:
 
@@ -771,8 +783,7 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 🌼 Sets: iterating over a set  
 🌼 Shallow vs. Deep copying  
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - In shallow copying, both items point to the same memory location.
 - In deep copying, the second item is assigned a separate memory location than the original item.
@@ -1251,6 +1262,7 @@ article p::first-line {
 </p></details>
 
 🌼 rem vs. em  
+🌱 Pros & cons of using rem vs. em
 🌼 Reset vs. Normalize  
 🌼 Responsive vs. Adaptive design  
 🌼 RGB vs. RGBA  
