@@ -1100,7 +1100,9 @@ For instance,
 🌱 Custom fonts: how to use them  
 🌱 display: block vs. inline vs. inline-block  
 🌱 display: float vs. inline-block  
+🌱 display: flex vs. inline-flex  
 🌼 display: none vs. visibility: hidden  
+🌱 Flex: align-items vs. align-self
 🌼 Flex: `flex: auto` vs. `flex: none`  
 🌼 Grid vs. Flexbox  
 🌼 Grids: create a grid with three equal columns (2 ways)  
