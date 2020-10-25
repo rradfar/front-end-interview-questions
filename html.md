@@ -6,8 +6,8 @@
 
 <li>&lt;button&gt; vs. &lt;input type="button"&gt;</li>
 <li>Can a webpage contain multiple &lt;header&gt; or &lt;footer&gt; elements?</li>
-<li>Can a webpage contain multiple &lt;h1&gt; tags?</li>
-<li>Canvas tag</li>
+<li>Can a webpage contain multiple &lt;h1&gt; elements?</li>
+<li>&lt;canvas&gt;</li>
 <li>data-* attributes</li>
 
 <details><summary>Answer</summary><p>
@@ -49,7 +49,7 @@ article[data-columns='4'] {
 
 </p></details>
 
-<li>Datalist tag</li>
+<li>&lt;datalist&gt;</li>
 
 <details><summary>Answer</summary><p>
 
@@ -105,8 +105,8 @@ or
 </p></details>
 
 <li>Favicons: icon vs. shortcut icon when used in the &lt;link rel=" " ...&gt;.</li>
-<li>Fieldset tag</li>
-<li>Figure tag</li>
+<li>&lt;fieldset&gt;</li>
+<li>&lt;Figure&gt;</li>
 
 <details><summary>Answer</summary><p>
 
@@ -124,13 +124,13 @@ or
 
 <li>How to create a drop-down list?</li>
 <li>How to draw rectangle using Canvas and SVG using HTML5?</li>
+<li>How to integrate CSS into a Web page (three ways)</li>
 <li>How to serve a page with content in multiple languages?</li>
 <li>HTML5 new features</li>
-<li>Image tag: what is the `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.</li>
-<li>Integrate CSS into a Web page (three ways)</li>
-<li>Label tag: 2 advantages of using it in an HTML form.</li>
-<li>Label tag: how to associate a label with its corresponding input element in an HTML form?</li>
-<li>Map tag</li>
+<li>&lt;Image&gt;: what is the `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.</li>
+<li>&lt;Label&gt;: 2 advantages of using it in an HTML form.</li>
+<li>&lt;Label&gt;: how to associate a label with its corresponding input element in an HTML form?</li>
+<li>&lt;Map&gt;</li>
 
 <details><summary>Answer</summary><p>
 - The `map` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
@@ -149,11 +149,11 @@ or
 
 </p></details>
 
-<li>Meta tag</li>
+<li>&lt;Meta&gt;</li>
 <li>MIME type</li>
-<li>Picture tag</li>
-<li>Svg tag and how it differs from &lt;canvas&gt;</li>
+<li>&lt;Picture&gt;</li>
+<li>&lt;svg&gt; and how it differs from &lt;canvas&gt;</li>
 <li>Tables: &lt;thead&gt; vs. &lt;th&gt;</li>
-<li>Wbr tag</li>
+<li>&lt;wbr&gt;</li>
 
 </ol>
