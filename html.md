@@ -2,11 +2,13 @@
 <h1>HTML</h1>
 </div>
 
-🌼 `<Button>` vs. `input type="button"`  
-🌱 Can a webpage contain multiple `<header>` or `<footer>` elements?  
-🌱 Can a webpage contain multiple `h1` tags?  
-🌱 Canvas tag  
-🌼 data-* attributes  
+<ol>
+
+<li>`<Button>` vs. `input type="button"`</li>
+<li>Can a webpage contain multiple `<header>` or `<footer>` elements?</li>
+<li>Can a webpage contain multiple `h1` tags?</li>
+<li>Canvas tag</li>
+<li>data-* attributes</li>
 
 <details><summary>Answer</summary><p>
 
@@ -47,7 +49,7 @@ article[data-columns='4'] {
 
 </p></details>
 
-🌼 Datalist tag  
+<li>Datalist tag</li>
 
 <details><summary>Answer</summary><p>
 
@@ -153,3 +155,5 @@ or
 🌱 Svg tag and how it differs from `<canvas>`  
 🌱 Tables: `<thead>` vs. `<th>`  
 🌱 Wbr tag  
+
+</ol>
