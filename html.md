@@ -4,9 +4,9 @@
 
 <ol>
 
-<li>`<Button>` vs. `input type="button"`</li>
-<li>Can a webpage contain multiple `<header>` or `<footer>` elements?</li>
-<li>Can a webpage contain multiple `h1` tags?</li>
+<li>&lt;button&gt; vs. &lt;input type="button"&gt;</li>
+<li>Can a webpage contain multiple &lt;header&gt; or &lt;footer&gt; elements?</li>
+<li>Can a webpage contain multiple &lt;h1&gt; tags?</li>
 <li>Canvas tag</li>
 <li>data-* attributes</li>
 
@@ -71,9 +71,9 @@ article[data-columns='4'] {
 
 </p></details>
 
-🌼 Defer vs. Async when loading JavaScript scripts  
-🌱 Description Lists: `<dl>` vs. `<dt>` vs. `<dd>`  
-🌼 Doctype  
+<li>Defer vs. Async when loading JavaScript scripts</li>
+<li>Description Lists: &lt;dl&gt; vs. &lt;dt&gt; vs. &lt;dd&gt;</li>
+<li>Doctype</li>
 
 <details><summary>Answer</summary><p>
 
@@ -84,7 +84,7 @@ article[data-columns='4'] {
 
 </p></details>
 
-🌼 Favicons: what are two ways to implement a favicon on a webpage?
+<li>Favicons: what are two ways to implement a favicon on a webpage?</li>
 
 <details><summary>Answer</summary><p>
 
@@ -104,9 +104,9 @@ or
 
 </p></details>
 
-🌱 Favicons: `icon` vs. `shortcut icon` when used in the `<link rel=" " ...>` tag.  
-🌱 Fieldset tag  
-🌼 Figure tag  
+<li>Favicons: icon vs. shortcut icon when used in the &lt;link rel=" " ...&gt;.</li>
+<li>Fieldset tag</li>
+<li>Figure tag</li>
 
 <details><summary>Answer</summary><p>
 
@@ -122,15 +122,15 @@ or
 </p>
 </details>
 
-🌱 How to create a drop-down list?  
-🌱 How to draw rectangle using Canvas and SVG using HTML5?  
-🌱 How to serve a page with content in multiple languages?  
-🌼 HTML5 new features  
-🌱 Image tag: what is the `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.  
-🌼 Integrate CSS into a Web page (three ways)  
-🌼 Label tag: 2 advantages of using it in an HTML form.  
-🌼 Label tag: how to associate a label with its corresponding input element in an HTML form?  
-🌼 Map tag  
+<li>How to create a drop-down list?</li>
+<li>How to draw rectangle using Canvas and SVG using HTML5?</li>
+<li>How to serve a page with content in multiple languages?</li>
+<li>HTML5 new features</li>
+<li>Image tag: what is the `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.</li>
+<li>Integrate CSS into a Web page (three ways)</li>
+<li>Label tag: 2 advantages of using it in an HTML form.</li>
+<li>Label tag: how to associate a label with its corresponding input element in an HTML form?</li>
+<li>Map tag</li>
 
 <details><summary>Answer</summary><p>
 - The `map` tag is used to define a client-side image-map. An image-map is an image with clickable areas.
@@ -149,11 +149,11 @@ or
 
 </p></details>
 
-🌱 Meta tag  
-🌱 MIME type  
-🌱 Picture tag  
-🌱 Svg tag and how it differs from `<canvas>`  
-🌱 Tables: `<thead>` vs. `<th>`  
-🌱 Wbr tag  
+<li>Meta tag</li>
+<li>MIME type</li>
+<li>Picture tag</li>
+<li>Svg tag and how it differs from &lt;canvas&gt;</li>
+<li>Tables: &lt;thead&gt; vs. &lt;th&gt;</li>
+<li>Wbr tag</li>
 
 </ol>
