@@ -1,8 +1,8 @@
 <div align="center">
 <h1>Javascript</h1>
 </div>
-
-🌼 Arrays: concat(): 2 special notes  
+<ol>
+<li>Arrays: concat(): 2 special notes</li>
 
 <details><summary>Answer</summary><p>
 
@@ -18,7 +18,7 @@ console.log(colors2); // ["red", "green", "blue", "yellow", "black", "brown"]
 
 </p></details>
 
-🌼 Arrays: 2 ways to create a new array  
+<li>Arrays: 2 ways to create a new array</li>
 
 <details><summary>Answer</summary><p>
 
@@ -40,7 +40,7 @@ let colors = ["red", "blue", "green"];
 
 </p></details>
 
-🌼 Arrays: 3 ways to clone an array & why we don't use array1 = array2  
+<li>Arrays: 3 ways to clone an array & why we don't use array1 = array2</li>
 
 <details><summary>Answer</summary><p>
 
@@ -65,7 +65,7 @@ console.log(a); // [1, 2, 3, 4]
 
 </p></details>
 
-🌼 Arrays: create an array with an initial length of 20  
+<li>Arrays: create an array with an initial length of 20</li>
 
 <details><summary>Answer</summary><p>
 
@@ -75,7 +75,7 @@ let arr = new Array(20);
 
 </p></details>
 
-🌼 Arrays: every() vs. some()  
+<li>Arrays: every() vs. some()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -91,7 +91,7 @@ let arr = new Array(20);
 
 </p></details>
 
-🌼 Arrays: fill()  
+<li>Arrays: fill()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -112,7 +112,7 @@ console.log(array1.fill(6)); //=> [6, 6, 6, 6]
 
 </p></details>
 
-🌼 Arrays: flat()  
+<li>Arrays: flat()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -142,7 +142,7 @@ arr5.flat(); //=> [1, 2, 4, 5]
 
 </p></details>
 
-🌼 Arrays: flat() vs. flatmap()  
+<li>Arrays: flat() vs. flatmap()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -158,7 +158,7 @@ console.log(words);
 
 </p></details>
 
-🌼 Arrays: forEach() vs. map()  
+<li>Arrays: forEach() vs. map()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -167,7 +167,7 @@ console.log(words);
 
 </p></details>
 
-🌼 Arrays: from()  
+<li>Arrays: from()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -183,14 +183,14 @@ console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
 
 </p></details>
 
-🌼 Arrays: how to check for equality?  
-🌼 Arrays: indexOf() vs. lastIndexOf() vs. includes()  
-🌼 Arrays: join()  
-🌼 Arrays: reduce()  
-🌼 Arrays: reduce() vs. reduceRight()  
-🌼 Arrays: slice()  
-🌼 Arrays: splice()  
-🌼 Arrays: splice() vs. slice()  
+<li>Arrays: how to check for equality?</li>
+<li>Arrays: indexOf() vs. lastIndexOf() vs. includes()</li>
+<li>Arrays: join()</li>
+<li>Arrays: reduce()</li>
+<li>Arrays: reduce() vs. reduceRight()</li>
+<li>Arrays: slice()</li>
+<li>Arrays: splice()</li>
+<li>Arrays: splice() vs. slice()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -205,8 +205,8 @@ console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
 
 </p></details>
 
-🌼 Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.  
-🌼 Arrays: the three methods used to perform a search in an array?
+<li>Arrays: the three methods introduced in ES6 that allow us to inspect all elements of an array.</li>
+<li>Arrays: the three methods used to perform a search in an array.</li>
 
 <details><summary>Answer</summary><p>
 
@@ -214,12 +214,11 @@ console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
 
 </p></details>
 
-🌼 Arrays: why is it Not recommended to use `for.. in` loops to iterate over an array.  
-expressions  
-🌼 Async & Await  
-🌼 Atomics  
-🌼 Bitwise operators  
-🌼 BOM (Browser Object Model)  
+<li>Arrays: why is it Not recommended to use `for.. in` loops to iterate over an array.</li>
+<li>Async & Await</li>
+<li>Atomics</li>
+<li>Bitwise operators</li>
+<li>BOM (Browser Object Model)</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -230,17 +229,17 @@ expressions
 
 </p></details>
 
-🌼 Call vs. Apply  
-🌼 Call vs. Apply vs. Bind  
-🌱 Callback  
-🌼 Classes: static methods  
-🌼 Classes: static method being called from the class constructor or from other non-static methods within the same class  
-🌼 Classes: static method calling another static method within the same class  
-🌼 Closure  
-🌼 CommonJS  
-🌱 Compiling vs. Transpiling  
-🌼 console.log() vs. console.dir()  
-🌼 Currying  
+<li>Call vs. Apply</li>
+<li>Call vs. Apply vs. Bind</li>
+<li>Callback</li>
+<li>Classes: static methods</li>
+<li>Classes: static method being called from the class constructor or from other non-static methods within the same class</li>
+<li>Classes: static method calling another static method within the same class</li>
+<li>Closure</li>
+<li>CommonJS</li>
+<li>Compiling vs. Transpiling</li>
+<li>console.log() vs. console.dir()</li>
+<li>Currying</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -272,25 +271,25 @@ multiply(1)(2)(3); // 6
 
 </p></details>
 
-🌱 Date and Time formatting  
-🌱 Debounce vs. throttle  
-🌱 Debounce: when do we use a debounce function?  
-🌱 Decimal points handling (since there is no Float data type)  
-🌱 Decorators  
-🌱 Design Pattern: Builder  
-🌱 Design Pattern: Factory  
-🌱 Design Pattern: Module  
-🌱 Design Pattern: Nullobject  
-🌱 Design Pattern: Singleton  
-🌱 Destructuring an object or an array (Give an example)  
-🌱 Document Object Model (DOM)  
-🌱 DOM: classList and its common methods  
-🌱 DOM: cloneNode()  
-🌱 DOM: closest()  
-🌱 DOM: childNodes vs. children  
-🌱 DOM: firstChild vs. firstElementChild  
-🌱 DOM: getAttribute() & setAttribute()  
-🌼 DOM: getInnerText() vs. getHTML() vs. getTextContent()  
+<li>Date and Time formatting</li>
+<li>Debounce vs. throttle</li>
+<li>Debounce: when do we use a debounce function?</li>
+<li>Decimal points handling (since there is no Float data type)</li>
+<li>Decorators</li>
+<li>Design Pattern: Builder</li>
+<li>Design Pattern: Factory</li>
+<li>Design Pattern: Module</li>
+<li>Design Pattern: Nullobject</li>
+<li>Design Pattern: Singleton</li>
+<li>Destructuring an object or an array (Give an example)</li>
+<li>Document Object Model (DOM)</li>
+<li>DOM: classList and its common methods</li>
+<li>DOM: cloneNode()</li>
+<li>DOM: closest()</li>
+<li>DOM: childNodes vs. children</li>
+<li>DOM: firstChild vs. firstElementChild</li>
+<li>DOM: getAttribute() & setAttribute()</li>
+<li>DOM: getInnerText() vs. getHTML() vs. getTextContent()</li>
 
 <details><summary>Answer</summary><p>
 
@@ -322,11 +321,10 @@ multiply(1)(2)(3); // 6
 
 </p></details>
 
-🌱 DOM: parentNode vs. parentElement  
-🌼 DOM: Six JavaScript methods to access DOM elements
+<li>DOM: parentNode vs. parentElement</li>
+<li>DOM: Six JavaScript methods to access DOM elements</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 ```javascript
 document.getElementById()
@@ -339,7 +337,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌼 DOM: getElement(s)By* vs. querySelector(All) methods
+<li>DOM: getElement(s)By* vs. querySelector(All) methods</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -377,12 +375,12 @@ document.querySelectorAll();
 
 </p></details>
 
-🌱 DOM: previousSibling vs. previousElementSibling  
-🌱 Encapsulation: how do you implement Encapsulation in JavaScript? (interview)  
-🌱 Error Handling  
-🌱 ES2020 (ES11) new features  
-🌱 Eval()  
-🌼 Event handling: delegation  
+<li>DOM: previousSibling vs. previousElementSibling</li>
+<li>Encapsulation: how do you implement Encapsulation in JavaScript? (interview)</li>
+<li>Error Handling</li>
+<li>ES2020 (ES11) new features</li>
+<li>Eval()</li>
+<li>Event handling: delegation</li>
 
 <details><summary>Answer</summary><p>
 
@@ -391,7 +389,7 @@ document.querySelectorAll();
 
 </p></details>
 
-🌼 Event handling: bubbling vs. capturing  
+<li>Event handling: bubbling vs. capturing</li>
 
 <details><summary>Answer</summary><p>
 
@@ -400,8 +398,8 @@ document.querySelectorAll();
 
 </p></details>
 
-🌱 Event handling: propagation  
-🌼 Event handling: propagation: the three phases of event propagation.  
+<li>Event handling: propagation</li>
+<li>Event handling: propagation: the three phases of event propagation.</li>
 
 <details><summary>Answer</summary><p>
 
@@ -411,23 +409,22 @@ document.querySelectorAll();
 
 </p></details>
 
-🌱 Event handling: stopPropagation() vs. preventDefault()  
-🌱 Event listeners: target vs. currentTarget  
-🌱 Event listeners. Name 5 events JS could be listening to.  
-🌱 Event loop  
-🌱 Event loop: Call stack vs. Task queue  
-🌼 Falsy values
+<li>Event handling: stopPropagation() vs. preventDefault()</li>
+<li>Event listeners: target vs. currentTarget</li>
+<li>Event listeners. Name 5 events JS could be listening to.</li>
+<li>Event loop</li>
+<li>Event loop: Call stack vs. Task queue</li>
+<li>Falsy values</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - A falsy value is a value that is considered false when encountered in a Boolean context.
 - There are 8 falsy values: `false`, `0`, `-0`, `0n` (BigInt), `' '` (Empty string), `null`, `undefined`, `NaN`.
 
 </p></details>
 
-🌱 Feature detection, feature inference, and using the UA string  
-🌼 for.. in vs. for.. of  
+<li>Feature detection, feature inference, and using the UA string</li>
+<li>for.. in vs. for.. of</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -449,9 +446,9 @@ for (let value of arr) {
 
 </p></details>
 
-🌼 Functions vs. methods  
-🌼 Functions: `arguments` object  
-🌼 Functions: arrow functions vs. classic functions (4 differences)  
+<li>Functions vs. methods</li>
+<li>Functions: `arguments` object</li>
+<li>Functions: arrow functions vs. classic functions (4 differences)</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -462,8 +459,8 @@ for (let value of arr) {
 
 </p></details>
 
-🌱 Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`  
-🌼 Functions: higher order functions  
+<li>Functions: `function Person(){}` vs. `var person = Person()` vs. `var person = new Person()`</li>
+<li>Functions: higher order functions</li>
 
 <details><summary>Answer</summary>
 <p>
@@ -473,16 +470,15 @@ for (let value of arr) {
 
 </p></details>
 
-🌼 Functions: idempotent functions  
-🌼 Functions: pure functions  
-🌼 Functions: why do we say that in JavaScript, functions are first class citizens.  
-🌼 Generator functions & yield keyword  
-🌼 Generators  
-🌼 Getters & Setters  
-🌼 Hoisting  
+<li>Functions: idempotent functions</li>
+<li>Functions: pure functions</li>
+<li>Functions: why do we say that in JavaScript, functions are first class citizens.</li>
+<li>Generator functions & yield keyword</li>
+<li>Generators</li>
+<li>Getters & Setters</li>
+<li>Hoisting</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
   
@@ -505,20 +501,19 @@ let b = 1;
 
 </p></details>
 
-🌼 IIFE  
-🌱 Immutability  
-🌼 Importing a JavaScript file into HTML  
-🌼 Interpreter vs. Compiler  
-🌱 Iterable vs. Enumerable  
-🌱 Iterators  
-🌱 Iterators used with Generators  
-🌱 Jasmine vs. Mocha vs. Chai  
-🌼 JavaScript vs. ECMAScript  
-🌼 JavaScript vs. TypeScript  
-🌼 JSON parse() vs. stringify()  
+<li>IIFE</li>
+<li>Immutability</li>
+<li>Importing a JavaScript file into HTML</li>
+<li>Interpreter vs. Compiler</li>
+<li>Iterable vs. Enumerable</li>
+<li>Iterators</li>
+<li>Iterators used with Generators</li>
+<li>Jasmine vs. Mocha vs. Chai</li>
+<li>JavaScript vs. ECMAScript</li>
+<li>JavaScript vs. TypeScript</li>
+<li>JSON parse() vs. stringify()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - `JSON.parse()` takes a JSON string and transforms it into a JavaScript object.
 - `JSON.stringify()` takes a JavaScript object and transforms it into a JSON string.
@@ -541,36 +536,34 @@ console.log(JSON.parse(objStr));
 
 </p></details>
 
-🌼 let vs. const (2 differences)  
+<li>let vs. const (2 differences)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 1. Unlike `let`, variables declared with `const`  cannot be reassigned a new value since `const` defines a constant reference to a value.
 2. Unlike `let`, variables declared with `const` must be assigned a value as soon as they are declared.  
 
 </p></details>
 
-🌼 let vs. var (3 differences)  
+<li>let vs. var (3 differences)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
+
 1. `let` is block-scoped whereas `var` is function-scoped.
 2. Variables declared with `let` are not hoisted whereas variables declared with `var` are hoisted.
 3. Variables declared with `let` cannot be re-declared whereas variables declared with `var` can.
 
 </p></details>
 
-🌱 Maps  
-🌱 Maps vs. WeakMaps  
-🌱 Modules  
-🌱 Modules: Tree shaking  
-🌱 Multi-threaded: is JavaScript multi-threaded?  
-🌱 NaN: where would be a situation in which you would see `NaN`. How to check for NaN?  
-🌼 null vs. undefined (3 differences)  
+<li>Maps</li>
+<li>Maps vs. WeakMaps</li>
+<li>Modules</li>
+<li>Modules: Tree shaking</li>
+<li>Multi-threaded: is JavaScript multi-threaded?</li>
+<li>NaN: where would be a situation in which you would see `NaN`. How to check for NaN?</li>
+<li>null vs. undefined (3 differences)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 1. `undefined` means a variable has been declared but has not yet been assigned a value. `null` on the other hand can be assigned to a variable as an intentional representation of no value or empty value.
 2. In arithmetic, `undefined` is treated as `NaN` whereas `null` is treated as zero.
@@ -578,10 +571,9 @@ console.log(JSON.parse(objStr));
 
 </p></details>
 
-🌼 null == undefined? How about null === undefined?  
+<li>null == undefined? How about null === undefined?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 ```javascript
 null == undefined // true
@@ -592,20 +584,18 @@ null === undefined // false
 
 </p></details>
 
-🌼 Null: how to check if something is null? How about undefined?  
+<li>Null: how to check if something is null? How about undefined?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - Since `null == undefined` we could simply check if `variable == null` or `variable == null`.
 - We can also use `typeof variable === 'undefined'` to check if a variable is `undefined`. The same cannot be done for `null` since `typeof null` is object.
 
 </p></details>
 
-🌼 Null: what does `typeof null` return?  
+<li>Null: what does `typeof null` return?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 ```javascript
 typeof null === 'object'; // true
@@ -613,11 +603,10 @@ typeof null === 'object'; // true
 
 </p></details>
 
-🌱 Nullish coalescing operator  
-🌼 Objects: assign()  
+<li>Nullish coalescing operator</li>
+<li>Objects: assign()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
 
@@ -632,7 +621,7 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 </p></details>
 
-🌼 Objects: assign() - A problem with using it to copy objects  
+<li>Objects: assign() - A problem with using it to copy objects</li>
 
 <details><summary>Answer</summary><p>
 
@@ -650,10 +639,9 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 
 </p></details>
 
-🌼 Objects: cloning an object (two ways)  
+<li>Objects: cloning an object (two ways)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - Both of these methods perform shallow cloning:
 
@@ -670,11 +658,10 @@ console.log(copy2); //=> {a: 1}
 
 </p></details>
 
-🌼 Objects: create()  
-🌼 Objects: creation & initialization (two ways)  
+<li>Objects: create()</li>
+<li>Objects: creation & initialization (two ways)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - There are two ways to explicitly create an instance of Object.
 - The first is to use the new operator with the Object constructor like this:
@@ -696,10 +683,10 @@ let person = {
 
 </p></details>
 
-🌼 Objects: entries()  
+<li>Objects: entries()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
+
 - The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
 
 ```javascript
@@ -719,10 +706,9 @@ console.log(`${key}: ${value}`);
 
 </p></details>
 
-🌼 Objects: freeze()  
+<li>Objects: freeze()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - `Object.freeze()` makes it impossible to add, remove, or modify properties of an object (unless the property's value is another object).
 
@@ -738,21 +724,19 @@ console.log(obj.prop); //=> 42
 
 </p></details>
 
-🌼 Objects: freeze() vs. seal()  
+<li>Objects: freeze() vs. seal()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - `Object.freeze()` makes it impossible to add, remove, or modify properties of an object.
 - `Object.seal()` is similar, however it does allow exiting properties to be modified.
 
 </p></details>
 
-🌱 Objects: freeze() vs. preventExtensions()  
-🌼 Objects: fromEntries()  
+<li>Objects: freeze() vs. preventExtensions()</li>
+<li>Objects: fromEntries()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The `Object.fromEntries()` method transforms a list of key-value pairs into an object. It accepts an iterable such as Array or Map and returns a new iterable object.
 
@@ -768,10 +752,9 @@ console.log(obj); // { 0: "a", 1: "b", 2: "c" }
 
 </p></details>
 
-🌼 Objects: hasOwnProperty()  
+<li>Objects: hasOwnProperty()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The `Object.hasOwnProperty()` method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
 
@@ -785,11 +768,10 @@ console.log(obj.hasOwnProperty('toString')); // false
 
 </p></details>
 
-🌱 Objects: host objects vs. native objects  
-🌼 Objects: how do we determine if an object is an array?  
+<li>Objects: host objects vs. native objects</li>
+<li>Objects: how do we determine if an object is an array?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - By using the `Array.isArray()` method.
 
@@ -801,14 +783,13 @@ if (Array.isArray(obj)) {
 
 </p></details>
 
-🌱 Objects: immutable objects  
-🌱 Objects: is everything in JavaScript considered an object?  
-🌱 Objects: is()  
-🌼 Objects: iterating over object properties  
-🌼 Objects: the optional chaining operator `?.`
+<li>Objects: immutable objects</li>
+<li>Objects: is everything in JavaScript considered an object?</li>
+<li>Objects: is()</li>
+<li>Objects: iterating over object properties</li>
+<li>Objects: the optional chaining operator `?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The optional chaining operator `?.` allows us to optionally access deeper nested properties within objects without having to expressly validate that each reference in the chain is valid.  
 - The `?.` operator functions similarly to the `.` chaining operator, except that instead of causing an error if a reference is nullish (`null` or `undefined`), the expression short-circuits with a return value of `undefined`. When used with function calls, it returns `undefined` if the given function does not exist.
@@ -827,10 +808,9 @@ console.log(dogName); //=> undefined
 
 </p></details>
 
-🌼 Objects: the two ways to access an object's properties and their differences  
+<li>Objects: the two ways to access an object's properties and their differences</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - In JavaScript, we have two ways to access properties on an object: bracket notation, or dot notation.
 - With dot notation, JavaScript tries to find the property on the object with that exact name.
@@ -851,12 +831,12 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 
 </p></details>
 
-🌼 Parameters vs. Arguments  
-🌱 ParseInt vs. ParseFloat  
-🌱 Passing by value vs. Passing by reference  
-🌼 Primitive data types  
-🌱 Promises  
-🌼 Prototypal inheritance  
+<li>Parameters vs. Arguments</li>
+<li>ParseInt vs. ParseFloat</li>
+<li>Passing by value vs. Passing by reference</li>
+<li>Primitive data types</li>
+<li>Promises</li>
+<li>Prototypal inheritance</li>
 
 <details><summary>Answer</summary><p>
 
@@ -865,16 +845,16 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 
 </P></details>
 
-🌱 Prototype vs. __proto__  
-🌱 Proxies  
-🌱 Pub/Sub architecture  
-🌼 Rest vs. Spread operator  
-🌱 Same-origin policy with regards to JavaScript.  
-🌱 Scope: Global vs. Lexical  
-🌼 Scope: lexical scope  
-🌼 Sets & methods associated with them  
-🌼 Sets: iterating over a set  
-🌼 Shallow vs. Deep copying  
+<li>Prototype vs. __proto__</li>
+<li>Proxies</li>
+<li>Pub/Sub architecture</li>
+<li>Rest vs. Spread operator</li>
+<li>Same-origin policy with regards to JavaScript.</li>
+<li>Scope: Global vs. Lexical</li>
+<li>Scope: lexical scope</li>
+<li>Sets & methods associated with them</li>
+<li>Sets: iterating over a set</li>
+<li>Shallow vs. Deep copying</li>
 
 <details><summary>Answer</summary><p>
 
@@ -886,19 +866,18 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 
 </p></details>
 
-🌱 Shimming  
-🌼 Statically Typed vs. Dynamically Typed vs. Weakly Typed  
-🌼 Strict mode  
-🌼 Strict mode: Can strict mode be used within functions or block statements?  
-🌼 Strings: trim()  
-🌼 Strings: 3 common methods for working with characters  
-🌱 Strings: An algorithm that returns the first duplicate character in a string (interview)  
-🌱 Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"  
-🌼 Strings: padStart() and padEnd()  
-🌼 Strings: indexOf() vs. search()  
+<li>Shimming</li>
+<li>Statically Typed vs. Dynamically Typed vs. Weakly Typed</li>
+<li>Strict mode</li>
+<li>Strict mode: Can strict mode be used within functions or block statements?</li>
+<li>Strings: trim()</li>
+<li>Strings: 3 common methods for working with characters</li>
+<li>Strings: An algorithm that returns the first duplicate character in a string (interview)</li>
+<li>Strings: Given a string (understood to be a sentence), reverse the order of the words. "Hello world" becomes "world Hello"  
+<li>Strings: padStart() and padEnd()</li>
+<li>Strings: indexOf() vs. search()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - `indexOf()` is for searching for plain substrings. It also allows us to specify a starting index. It does not allow for regular expressions.
 - `search()` allows for substrings as well as regular expressions. It does not allow for a starting index.
@@ -910,10 +889,9 @@ console.log('hey JudE'.search(/[A-Z]/g)); //=> 4
 
 </p></details>
 
-🌼 Strings: search() vs. match()  
+<li>Strings: search() vs. match()</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - `Search()` returns the index of the first match between the regular expression and the given string, or `-1` if no match was found.
 - `Match()` returns an array or `null` if no matches are found.
@@ -928,18 +906,17 @@ console.log(str2.match(/[A-E]/gi)); // ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 
 
 </p></details>
 
-🌼 Strings: substring vs. substr vs. slice  
-🌱 Symbols  
-🌱 Tagged template literal  
-🌱 Temporal dead zone  
-🌱 Ternary operator: what does the word "Ternary" indicate?  
-🌼 `this` keyword  
-🌱 toString() parameters  
-🌱 Type Coercion  
-🌼 typeof operator (8 possible types)  
+<li>Strings: substring vs. substr vs. slice</li>
+<li>Symbols</li>
+<li>Tagged template literal</li>
+<li>Temporal dead zone</li>
+<li>Ternary operator: what does the word "Ternary" indicate?</li>
+<li>`this` keyword</li>
+<li>toString() parameters</li>
+<li>Type Coercion</li>
+<li>typeof operator (8 possible types)</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The typeof operator returns a string indicating the type of the unevaluated operand.
 - The possible return values are: `object`, `boolean`, `number`, `bigint`, `string`, `symbol`, `function`, `undefined`.
@@ -962,21 +939,19 @@ console.log(typeof class C {}); //=> function
 
 </p></details>
 
-🌼 typeof vs. instanceof  
-🌼 Unary operators  
-🌼 Unary operators: what is `~3` equal to?  
+<li>typeof vs. instanceof</li>
+<li>Unary operators</li>
+<li>Unary operators: what is `~3` equal to?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - The bitwise Not operator `~` converts the integer `N` to `-(N+1)` value. Therefore `~3 = -4`.
 
 </p></details>
 
-🌼 Unary operators: what is `~~3.9` equal to?  
+<li>Unary operators: what is `~~3.9` equal to?</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
 - Double bitwise NOT performs the same operation as the `Math.floor()` method but a lot quicker.
 
@@ -988,31 +963,32 @@ console.log(typeof class C {}); //=> function
 
 </p></details>
 
-🌼 V8 and SpiderMonkey.  
-🌼 `-0` vs. `+0`  
-🌱 Web APIs: Canvas API  
-🌱 Web APIs: Console API  
-🌱 Web APIs: Drag & Drop API  
-🌱 Web APIs: Fetch API  
-🌱 Web APIs: History API  
-🌱 Web APIs: HTMLCollection vs. NodeList  
-🌱 Web APIs: Geolocation API  
-🌱 Web APIs: Service Workers API  
-🌱 Web APIs: Touch events  
-🌱 Web APIs: URL API  
-🌱 Web APIs: Web Storage API  
-🌱 Web APIs: Web Workers API  
-🌱 Web APIs: WebGL  
-🌱 Web APIs: WebSocket API  
-🌱 Web APIs: Window  
+<li>V8 and SpiderMonkey.</li>
+<li>`-0` vs. `+0`</li>
+<li>Web APIs: Canvas API</li>
+<li>Web APIs: Console API</li>
+<li>Web APIs: Drag & Drop API</li>
+<li>Web APIs: Fetch API</li>
+<li>Web APIs: History API</li>
+<li>Web APIs: HTMLCollection vs. NodeList</li>
+<li>Web APIs: Geolocation API</li>
+<li>Web APIs: Service Workers API</li>
+<li>Web APIs: Touch events</li>
+<li>Web APIs: URL API</li>
+<li>Web APIs: Web Storage API</li>
+<li>Web APIs: Web Workers API</li>
+<li>Web APIs: WebGL</li>
+<li>Web APIs: WebSocket API</li>
+<li>Web APIs: Window</li>
 
 <div align="center">
 <h1>Know-how</h1>
 </div>
 
-🌱 Form design & validation  
-🌱 Image carousel  
-🌱 Infinite scrolling  
-🌱 Pagination  
-🌱 Pinterest board  
-🌱 Progress bar  
+<li>Form design & validation</li>
+<li>Image carousel</li>
+<li>Infinite scrolling</li>
+<li>Pagination</li>
+<li>Pinterest board</li>
+<li>Progress bar</li>
+</ol>

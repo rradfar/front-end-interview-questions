@@ -1,8 +1,9 @@
 <div align="center">
 <h1>React</h1>
 </div>
-
-🌱 Components: How to prevent from re-rendering  
-🌱 Lifecycle methods and their purpose  
+<ol>
+<li>Components: How to prevent from re-rendering</li>
+<li>Lifecycle methods and their purpose</li>
+</ol>
 
 
