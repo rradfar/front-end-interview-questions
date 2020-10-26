@@ -1,8 +1,8 @@
 <div align="center">
 <h1>CSS</h1>
 </div>
-
-🌼 Animations: animation-fill-mode  
+<ol>
+<li>Animations: animation-fill-mode</li>
 
 <details><summary>Answer</summary><p>
 
@@ -12,14 +12,14 @@
 
 </p></details>
 
-🌱 Attribute selectors  
-🌼 Background images  
-🌱 BEM vs. SMACSS  
-🌱 BFC (Block Formatting Context) and how it works  
-🌱 Border images  
-🌼 Box model  
-🌱 Box shadow vs. Text shadow  
-🌼 Box-shadow  
+<li>Attribute selectors</li>
+<li>Background images</li>
+<li>BEM vs. SMACSS</li>
+<li>BFC (Block Formatting Context) and how it works</li>
+<li>Border images</li>
+<li>Box model</li>
+<li>Box shadow vs. Text shadow</li>
+<li>Box-shadow</li>
 
 <details><summary>Answer</summary><p>
 
@@ -49,8 +49,8 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 
 </p></details>
 
-🌼 Box-sizing  
-🌼 Cascading in CSS  
+<li>Box-sizing</li>
+<li>Cascading in CSS</li>
 
 <details><summary>Answer</summary><p>
 
@@ -65,20 +65,20 @@ For instance,
 
 </p></details>
 
-🌱 Combinators (4)  
-🌼 Combinators: child vs. descendant  
-🌼 contain vs. cover when using background-size  
-🌱 CSS animations vs. JavaScript animations: pros & cons of each  
-🌼 CSS3 new features  
-🌱 Custom fonts: how to use them  
-🌱 display: block vs. inline vs. inline-block  
-🌱 display: float vs. inline-block  
-🌱 display: flex vs. inline-flex  
-🌼 display: none vs. visibility: hidden  
-🌱 Flex: align-items vs. align-self
-🌼 Flex: `flex: auto` vs. `flex: none`  
-🌼 Grid vs. Flexbox  
-🌼 Grids: create a grid with three equal columns (2 ways)  
+<li>Combinators (4)</li>
+<li>Combinators: child vs. descendant</li>
+<li>contain vs. cover when using background-size</li>
+<li>CSS animations vs. JavaScript animations: pros & cons of each</li>
+<li>CSS3 new features</li>
+<li>Custom fonts: how to use them</li>
+<li>display: block vs. inline vs. inline-block</li>
+<li>display: float vs. inline-block</li>
+<li>display: flex vs. inline-flex</li>
+<li>display: none vs. visibility: hidden</li>
+<li>Flex: align-items vs. align-se</li>
+<li>Flex: `flex: auto` vs. `flex: none`</li>
+<li>Grid vs. Flexbox</li>
+<li>Grids: create a grid with three equal columns (2 ways)</li>
 
 <details><summary>Answer</summary><p>
 
@@ -90,13 +90,13 @@ grid-template-columns: repeat(3, 1fr);
 
 </p></details>
 
-🌼 Grids: how do you make a div start at column 2 and end before column 4? (two ways)  
-🌱 GSAP vs. CSS animations  
-🌼 Hex vs. RGB vs. HSL  
-🌱 How to hide content visually but make it available to screen readers  
-🌱 How to make a triangle with pure CSS  
-🌼 HSL color model  
-🌼 Importing a CSS file into another  
+<li>Grids: how do you make a div start at column 2 and end before column 4? (two ways)</li>
+<li>GSAP vs. CSS animations</li>
+<li>Hex vs. RGB vs. HSL</li>
+<li>How to hide content visually but make it available to screen readers</li>
+<li>How to make a triangle with pure CSS</li>
+<li>HSL color model</li>
+<li>Importing a CSS file into another</li>
 
 <details><summary>Answer</summary><p>
 
@@ -104,7 +104,7 @@ grid-template-columns: repeat(3, 1fr);
 
 </p></details>
 
-🌼 Line spacing: e.g. how to adjust the space between lines in a paragraph.  
+<li>Line spacing: e.g. how to adjust the space between lines in a paragraph.</li>
 
 <details><summary>Answer</summary><p>
 
@@ -119,9 +119,9 @@ p { font: 10pt/1.2  Georgia,serif; }
 
 </p></details>
 
-🌱 Linear vs. Radial gradient  
-🌼 list-style: none  
-🌼 mix-blend-mode  
+<li>Linear vs. Radial gradient</li>
+<li>list-style: none</li>
+<li>mix-blend-mode</li>
 
 <details><summary>Answer</summary><p>
 
@@ -154,12 +154,12 @@ An example:
 
 </p></details>
 
-🌱 not() pseudo-class  
-🌱 nth-of-type() vs. nth-child()  
-🌱 Overflow parameters  
-🌱 overflow-wrap  
-🌱 Position: relative vs. absolute vs. fixed vs. sticky  
-🌼 Prefixes  
+<li>not() pseudo-class</li>
+<li>nth-of-type() vs. nth-child()</li>
+<li>Overflow parameters</li>
+<li>overflow-wrap</li>
+<li>Position: relative vs. absolute vs. fixed vs. sticky</li>
+<li>Prefixes</li>
 
 <details><summary>Answer</summary><p>
 
@@ -188,9 +188,9 @@ Opera: -o-
 
 </p></details>
 
-🌼 Preprocessor  
-🌱 Pros and cons of translate() vs. position: absolute  
-🌼 Pseudo-classes vs pseudo-elements  
+<li>Preprocessor</li>
+<li>Pros and cons of translate() vs. position: absolute</li>
+<li>Pseudo-classes vs pseudo-elements</li>
 
 <details><summary>Answer</summary><p>
 - A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc.
@@ -217,11 +217,11 @@ article p::first-line {
 
 </p></details>
 
-🌼 rem vs. em  
-🌱 Pros & cons of using rem vs. em
-🌼 Reset vs. Normalize  
-🌼 Responsive vs. Adaptive design  
-🌼 RGB vs. RGBA  
+<li>rem vs. em</li>
+<li>Pros & cons of using rem vs. </li>
+<li>Reset vs. Normalize</li>
+<li>Responsive vs. Adaptive design</li>
+<li>RGB vs. RGBA</li>
 
 <details><summary>Answer</summary><p>
 
@@ -231,15 +231,15 @@ article p::first-line {
 
 </p></details>
 
-🌼 Sass: definition  
-🌱 Sass: features & benefits  
-🌱 Selector specificity and how it works  
-🌱 Sprites  
-🌱 TailwindCSS  
-🌱 transform-origin  
-🌼 Transition shorthand property  
-🌱 Transition vs. Transformation vs. Animation  
-🌼 Tweening  
+<li>Sass: definition</li>
+<li>Sass: features & benefits</li>
+<li>Selector specificity and how it works</li>
+<li>Sprites</li>
+<li>TailwindCSS</li>
+<li>transform-origin</li>
+<li>Transition shorthand property</li>
+<li>Transition vs. Transformation vs. Animation</li>
+<li>Tweening</li>
 
 <details><summary>Answer</summary><p>
 
@@ -251,7 +251,8 @@ article p::first-line {
 
 </p></details>
 
-🌱 Webfonts: Pros and cons of using them  
-🌱 word-break vs. word-wrap  
-🌱 Universal selector  
-🌱 z-index and how stacking context is formed  
+<li>Webfonts: Pros and cons of using them</li>
+<li>word-break vs. word-wrap</li>
+<li>Universal selector</li>
+<li>z-index and how stacking context is formed</li>
+</ol>
