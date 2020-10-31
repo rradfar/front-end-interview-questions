@@ -34,6 +34,7 @@
 <li>What is stash used for?</li>
 <li>Pull vs. Fetch</li>
 <li>Rebase vs. Fetch</li>
+<li>Rebase vs. Merge</li>
 <li>Remote vs. Origin</li>
 <li>Reset vs. Revert</li>
 <li>Reset soft vs. hard vs. mixed</li>
