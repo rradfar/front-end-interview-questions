@@ -185,7 +185,7 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <details><summary>Answer</summary>
 <p>
 
-- In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
+In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
   
 1. **Client-Server based**:  
 The client and the server should be separate from each other and allowed to evolve individually and independently.
