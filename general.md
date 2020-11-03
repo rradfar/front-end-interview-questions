@@ -78,7 +78,16 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <li>Bootstrap vs. Bulma</li>
 <li>Bootstrap vs. Materialize</li>
 <li>Caching</li>
-<li>CI/CD</li>
+<li>Continuous Integration (CI) vs. Continuous Delivery (CD)</li>
+
+<details><summary>Answer</summary><p>
+
+- **Continuous Integration** is merging all code from all developers to one central branch of the repo many times a day trying to avoid conflicts in the code in the future.
+- **Continuous Deployment** ensures that every change that is made is ready to be deployed to production.
+- CI helps development teams avoid "integration hell" where the software works on individual developers' machines, but it fails when all developers combine (or "integrate") their code. Continuous Delivery goes one step further to automate a software release, which typically involves packaging the software for deployment in a production-like environment. The goal of Continuous Delivery is to make sure the software is always ready to go to production, even if the team decides not to do it for business reasons.
+
+</p></details>
+
 <li>CLI</li>
 <li>CMS</li>
 <li>Concurrency vs. Parallelism</li>
