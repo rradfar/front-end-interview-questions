@@ -6,7 +6,7 @@
 
 <details><summary>Answer</summary><p>
 
-- A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of website visitors at the same time and comparing which variant drives more conversions.
+A/B testing (also known as split testing) is a process of showing two variants of the same web page to different segments of website visitors at the same time and comparing which variant drives more conversions.
 
 </p></details>
 
@@ -14,7 +14,7 @@
 
 <details><summary>Answer</summary><p>
 
-- Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways to make web content and web applications more accessible to people with disabilities.
+Accessible Rich Internet Applications (ARIA) is a set of attributes that define ways to make web content and web applications more accessible to people with disabilities.
 
 The following gives no indication to assistive technologies that it is a custom checkbox:
 
@@ -62,8 +62,9 @@ We can improve it by using the `role` and `aria-checked` attributes:
 <details><summary>Answer</summary>
 <p>
 
-- An application programming interface (API) is a set of clearly defined methods of communication among various components.
-- An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
+An application programming interface (API) is a set of clearly defined methods of communication among various components.
+
+An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
 
 ![API visual](../../blob/master/images/api.png)  
 Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
@@ -82,9 +83,11 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 
 <details><summary>Answer</summary><p>
 
-- **Continuous Integration** is merging all code from all developers to one central branch of the repo many times a day trying to avoid conflicts in the code in the future.
-- **Continuous Deployment** ensures that every change that is made is ready to be deployed to production.
-- CI helps development teams avoid "integration hell" where the software works on individual developers' machines, but it fails when all developers combine (or "integrate") their code. Continuous Delivery goes one step further to automate a software release, which typically involves packaging the software for deployment in a production-like environment. The goal of Continuous Delivery is to make sure the software is always ready to go to production, even if the team decides not to do it for business reasons.
+**Continuous Integration** is merging all code from all developers to one central branch of the repo many times a day trying to avoid conflicts in the code in the future.
+
+**Continuous Deployment** ensures that every change that is made is ready to be deployed to production.
+
+CI helps development teams avoid "integration hell" where the software works on individual developers' machines, but it fails when all developers combine (or "integrate") their code. Continuous Delivery goes one step further to automate a software release, which typically involves packaging the software for deployment in a production-like environment. The goal of Continuous Delivery is to make sure the software is always ready to go to production, even if the team decides not to do it for business reasons.
 
 </p></details>
 
@@ -92,7 +95,16 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <li>CMS</li>
 <li>Concurrency vs. Parallelism</li>
 <li>Content strategy</li>
-<li>CORS. What issue does it address?</li>
+<li>CORS</li>
+
+<details><summary>Answer</summary><p>
+
+CORS (Cross-Origin Resource Sharing) is a security mechanism that prevents a malicious site from reading or modifying another site's data.
+
+A request for a resource (like an image or a font) outside of the origin is known as a cross-origin request. CORS manages cross-origin requests. With CORS, a server can specify who can access its assets and which HTTP request methods are allowed from external resources.
+
+</p></details>
+
 <li>Cross Site Scripting (XSS)</li>
 <li>CRUD</li>
 <li>Data binding</li>
@@ -120,7 +132,7 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <li>HTTP: some best practices for a 404 page</li>
 <li>HTTP: some causes of a 500 error</li>
 <li>HTTP: Status codes</li>
-<li>HTTP: What happens behind the scenes when you enter a URL into the browser and press enter</li>(interview)  
+<li>HTTP: What happens behind the scenes when you enter a URL into the browser and press enter</li>
 <li>Imperative vs. Declarative Programming</li>
 <li>JIRA</li>
 <li>JPEG vs. PNG vs. GIF</li>
@@ -171,11 +183,9 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <li>REPL</li>
 <li>REST</li>
 
-<details><summary>Answer</summary>
-<p>
+<details><summary>Answer</summary><p>
 
-- REST is acronym for REpresentational State Transfer.
-- It is an architectural style that developers follow when they create their RESTful APIs.
+REST is acronym for REpresentational State Transfer. It is an architectural style that developers follow when they create their RESTful APIs.
 
 </p></details>
 
@@ -186,17 +196,22 @@ Image credit: [https://learn.g2.com/api](https://learn.g2.com/api)
 <p>
 
 In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
-  
+
 1. **Client-Server based**:  
 The client and the server should be separate from each other and allowed to evolve individually and independently.
+
 2. **Use of a uniform interface (UI)**:  
 The key to the decoupling client from server is having a uniform interface that allows independent evolution of the application without having the application’s services, models, or actions tightly coupled to the API layer itself. The uniform interface lets the client talk to the server in a single language, independent of the architectural backend of either.
+
 3. **Stateless operations**:  
 Meaning that requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully. A REST API should not rely on data being stored on the server or sessions to determine what to do with a request, but rather solely rely on the data that is provided in that request itself. Identifying information is not being stored on the server when making requests. Instead, each request has the necessary data in itself, such as the API key, access token, user ID, etc.
+
 4. **Caching**:  
 A REST API should be designed to encourage the storage of cacheable data on the client side in order to reduce the number of interactions with the API. This means that when data is cacheable, the response should indicate that the data can be stored up to a certain time (expires-at), or in cases where data needs to be real-time, that the response should not be cached by the client.
+
 5. **Layered system**:  
 REST allows for an architecture composed of multiple layers of servers. The requesting client need not know whether it’s communicating with the actual server, a proxy, or any other intermediary.
+
 6. **Code on demand (optional)**:  
 Most of the time, a server will send back static representations of resources in the form of XML or JSON. However, when necessary, servers can send executable code to the client.
 
@@ -207,7 +222,7 @@ Most of the time, a server will send back static representations of resources in
 <details><summary>Answer</summary>
 <p>
 
-- It means that API requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully.
+It means that API requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully.
 
 </p></details>
 
