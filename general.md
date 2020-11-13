@@ -240,6 +240,29 @@ It means that API requests can be made independently of one another, and each re
 <li>Shadow DOM</li>
 <li>Software Development Life Cycle (SDLC)</li>
 <li>SOLID principles</li>
+
+<details><summary>Answer</summary><p>
+
+In object-oriented computer programming, SOLID is a mnemonic acronym for five design principles intended to make software designs more understandable, flexible, and maintainable.
+
+**Single-responsibility principle**  
+Every module, class or function should only have a single responsibility.
+
+**Open–closed principle**  
+Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification; that is, we should be able to add new functionality without touching the existing code for the class. This is because whenever we modify the existing code, we are taking the risk of creating potential bugs. So we should avoid touching the tested and reliable (mostly) production code if possible.
+
+**Liskov substitution principle**  
+Given that class `B` is a subclass of class `A`, we should be able to pass an object of class `B` to any method that expects an object of class `A` and the method should not give any weird output in that case.  
+This is the expected behavior, because when we use inheritance we assume that the child class inherits everything that the superclass has. The child class extends the behavior but never narrows it down.
+
+**Interface segregation principle**  
+The principle states that many client-specific interfaces are better than one general-purpose interface. Clients should not be forced to implement a function they do no need. For example an interface for an ATM which handles all requests such as a deposit request or a withdrawal request, needs to be segregated into individual and more specific interfaces.
+
+**Dependency inversion principle**  
+It states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.
+
+</p></details>
+
 <li>SPA</li>
 <li>SPA: When would you not want to use a Single Page Application</li>
 <li>SQL injection: As front-end developers, do we need to worry about SQL injections? (interview)</li>
