@@ -378,7 +378,72 @@ document.querySelectorAll();
 <li>DOM: previousSibling vs. previousElementSibling</li>
 <li>Encapsulation: how do you implement Encapsulation in JavaScript? (interview)</li>
 <li>Error Handling</li>
-<li>ES2020 (ES11) new features</li>
+<li>ES2020 (ES11) new features (8)</li>
+
+<details><summary>Answer</summary><p>
+
+**BigInt**  
+A new numeric primitive that allows us to safely store and operate on large integers, even beyond the safe integer limit for Numbers.
+
+**Dynamic importing**  
+As the name implies, you can now import modules dynamically.
+
+**Nullish Coalescing (`??`)**  
+This operator will return a Right Hand Side operand when the Left Hand Side operand is either undefined or null.
+
+```javascript
+let student = {}
+let name = student.name ?? ‘John’
+```
+
+**Promise.allSettled**  
+This method returns a promise when all promises are settled regardless of the result (fulfilled or rejected).
+
+```javascript
+Promise.allSettled([
+  fetch("https://api.github.com/users/abc").then(data => data.json()),
+  fetch("https://api.github.com/users/def").then(data => data.json())
+])
+  .then(result => console.log(`All profile settled`));
+```
+
+**String#matchAll**  
+The `matchAll()` method returns an iterator of all results matching a string against a regular expression, including capturing groups.
+
+```javascript
+const text = "From 2019.01.29 to 2019.01.30";
+const regexp = /(?<year>\d{4}).(?<month>\d{2}).(?<day>\d{2})/gu;
+const results = Array.from(text.matchAll(regexp));
+
+// results:
+// [
+//   [
+//     '2019.01.29',
+//     '2019',
+//     '01',
+//     '29',
+//     index: 5,
+//     input: 'From 2019.01.29 to 2019.01.30',
+//     groups: { year: '2019', month: '01', day: '29' }
+//   ],
+//   [ (...) ]
+// ]
+```
+
+**globalThis**  
+The `globalThis` property always refers to the global object, no matter where you are executing your code.
+
+**Module Namespace Exports**  
+Before we could do this: `import * as utils from './utils.mjs';`  
+
+Now, we can also so the same with exports: `export * as utils from './utils.mjs';`
+
+**Optional chaining**  
+Optional Chaining syntax allows you to access deeply nested objects without worrying about whether the property exists or not.  
+![Optional Chaining](../../blob/master/images/optional-chaining.png)  
+
+</p></details>
+
 <li>Eval()</li>
 <li>Event handling: delegation</li>
 
@@ -836,6 +901,15 @@ console.log(colorConfig.colors[1]); //=> TypeError (colorConfig does not have a 
 <li>Passing by value vs. Passing by reference</li>
 <li>Primitive data types</li>
 <li>Promises</li>
+<li>Promises: Promise.all() vs. Promise.allSettled()</li>
+
+<details><summary>Answer</summary><p>
+
+- With `Promise.all()`, a rejection of the first promise would reject the whole promise, and the second promise might not be able to be fulfilled.
+- `Promise.allSettled` handles the case when all promises are settled regardless of the result (fulfilled or rejected). It helps cover such cases where partial results are valuable (one promise rejecting, the other fulfilling).
+
+</p></details>
+
 <li>Prototypal inheritance</li>
 
 <details><summary>Answer</summary><p>
