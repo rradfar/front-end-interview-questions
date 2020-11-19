@@ -183,9 +183,40 @@ console.log(f(1, 2, 3));  // [ 1, 2, 3 ]
 
 </p></details>
 
-<li>Arrays: how to check for equality?</li>
 <li>Arrays: indexOf() vs. lastIndexOf() vs. includes()</li>
+
+<details><summary>Answer</summary><p>
+
+- `indexOf()` searches the array for the specified item, and returns its position or `-1` if the item is not found. The search will start at the specified position or at the beginning if no start position is specified and end at the end of the array.
+- `lastIndexOf()` searches the array for the specified item, and returns its position or `-1` if the item is not found. The search will start at the specified position or at the end if no start position is specified and end at the beginning of the array.
+- `includes()` checks to see whether an array contains a specified element. If it does, it returns true, and false otherwise.
+
+```javascript
+const fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Banana', 'Orange', 'Apple'];
+let a = fruits.indexOf('Apple', 4); // 6
+let b = fruits.lastIndexOf('Apple', 4); // 2
+let c = fruits.includes('Apple'); // true
+```
+
+</p></details>
+
 <li>Arrays: join()</li>
+
+<details><summary>Answer</summary><p>
+
+- The `join()` method returns the array as a string.
+- The elements will be separated by a specified separator. The default separator is comma `,`.
+- This method will not change the original array.
+
+```javascript
+const elements = ['Fire', 'Air', 'Water'];
+console.log(elements.join()); // "Fire,Air,Water"
+console.log(elements.join('')); // "FireAirWater"
+console.log(elements.join('-')); // "Fire-Air-Water"
+```
+
+</p></details>
+
 <li>Arrays: reduce()</li>
 <li>Arrays: reduce() vs. reduceRight()</li>
 <li>Arrays: slice()</li>
