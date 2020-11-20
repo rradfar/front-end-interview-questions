@@ -239,6 +239,15 @@ It means that API requests can be made independently of one another, and each re
 <li>Serverless architecture</li>
 <li>Shadow DOM</li>
 <li>Software Development Life Cycle (SDLC)</li>
+
+<details><summary>Answer</summary><p>
+
+In software engineering, the SDLC is a process for planning, creating, testing, and deploying an information system.  
+
+![SDLC](../../blob/master/images/sdlc.png)  
+
+</p></details>
+
 <li>SOLID principles</li>
 
 <details><summary>Answer</summary><p>
