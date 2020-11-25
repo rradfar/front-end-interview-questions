@@ -149,6 +149,15 @@ A request for a resource (like an image or a font) outside of the origin is know
 <li>Microservices and how do they differ from monoliths</li>
 <li>Middleware</li>
 <li>MVC</li>
+
+<details><summary>Answer</summary><p>
+
+Model-View-Controller or MVC is a design pattern used to separate user-interface (view), data (model), and application logic (controller). Controller acts as a liaison between the Model and the View, receiving user input and deciding what to do with it.
+
+![MVC](../../blob/master/images/mvc.png)
+
+</p></details>
+
 <li>MVC: Are MVCs and frameworks the same</li>
 <li>MVC: some pros and cons of using an MVC</li>
 <li>MVVC</li>
