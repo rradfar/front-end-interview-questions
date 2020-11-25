@@ -49,7 +49,20 @@ box-shadow: 3px 3px red, -1em 0 0.4em olive;
 
 </p></details>
 
-<li>Box-sizing</li>
+<li>Box-sizing property</li>
+
+<details><summary>Answer</summary><p>
+
+The CSS box-sizing property defines whether the width and height of an element should include padding and borders.
+
+**content-box**  
+This is the initial and default value as specified by the CSS standard. The width and height properties include the content, but does not include the padding, border, or margin. For example, `.box {width: 350px; border: 10px solid black;}` renders a box that is `370px` wide.
+
+**border-box**  
+The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. For example, `.box {width: 350px; border: 10px solid black;}` renders a box that is `350px` wide.
+
+</p></details>
+
 <li>Cascading in CSS</li>
 
 <details><summary>Answer</summary><p>
