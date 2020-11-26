@@ -141,7 +141,14 @@ A request for a resource (like an image or a font) outside of the origin is know
 <li>JSON vs. XML</li>
 <li>JSONP</li>
 <li>Kubernetes</li>
-<li>Lazyloading</li>
+<li>Lazy loading</li>
+
+<details><summary>Answer</summary><p>
+
+Lazy loading is an optimization technique used in web applications. Its goal is to improve the time it takes for a web page or application to load by loading only the required sections and delaying the remaining non-blocking resources (such as images the user has not scrolled to yet) until they are needed by the user.
+
+</p></details>
+
 <li>Library vs. framework</li>
 <li>Linters</li>
 <li>Load Balancer and its advantages</li>
