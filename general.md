@@ -302,7 +302,25 @@ It states that our classes should depend upon interfaces or abstract classes ins
 <li>Svelte</li>
 <li>SVG</li>
 <li>TC39</li>
-<li>TCP vs. UDP (Interview)</li>
+<li>TCP vs. UDP</li>
+
+<details><summary>Answer</summary><p>
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both network protocols that transfer data over the internet from a device to a web server. Both UDP and TCP divide data into smaller units called data packets.
+
+- TCP is a connection-oriented protocol, whereas UDP is a connectionless protocol.
+- The speed for TCP is slower while the speed of UDP is faster.
+- TCP does error checking and also makes error recovery. UDP performs error checking, but it discards erroneous packets.
+- TCP messages make their way across the internet from one computer to another. UDP is not connection-based, so one program can send lots of packets to another.
+- TCP rearranges data packets in the specific order. UDP protocol has no fixed order because all packets are independent of each other.
+- TCP is reliable as it guarantees delivery of data to the destination router.The delivery of data to the destination can't be guaranteed in UDP.
+- UDP is a great option if you are gaming, streaming or using VoIP services. It may lose a packet or two but it won’t have a huge impact on your overall connection.
+
+![TCP](../../blob/master/images/tcp.gif)  
+![UDP](../../blob/master/images/udp.gif)
+
+</p></details>
+
 <li>TCP/IP</li>
 <li>Templating languages</li>
 <li>Unit testing vs. functional/integration testing</li>
