@@ -16,6 +16,14 @@ Git is a distributed version control system. This means that every developer / c
 </p></details>
 
 <li>How does Git differ from GitHub? Can you use Git without GitHub?</li>
+
+<details><summary>Answer</summary><p>
+
+- Git is installed locally, whereas GitHub is a web-based hosting service for git repositories.
+- GitHub also offers additional features such as issue tracking, user management, and hosting web pages.
+
+</p></details>
+
 <li>What is a Git repository? How does it differ from a branch?</li>
 <li>Cloning vs. Forking</li>
 <li>SSH vs. Https when cloning a repo</li>
