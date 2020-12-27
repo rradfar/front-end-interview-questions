@@ -140,6 +140,23 @@ A request for a resource (like an image or a font) outside of the origin is know
 <li>jQuery: Why has jQuery become less popular in recent years?</li>
 <li>JSON vs. XML</li>
 <li>JSONP</li>
+
+<details><summary>Answer</summary><p>
+
+JSONP (JSON with Padding) is a simple way to overcome browser restrictions when sending JSON responses from different domains from the client.
+
+JSONP wraps up a JSON response into a JavaScript function and sends that back as a Script to the browser. A script is not subject to the Same Origin Policy and when loaded into the client, the function acts just like the JSON object that it contains.
+
+```js
+// an example of JSON
+ {"weapon":"nunchucks","headband":"yellow"}
+
+ // an example of JSONP
+ myCallback({"weapon":"nunchucks","headband":"yellow"});
+ ```
+
+</p></details>
+
 <li>Kubernetes</li>
 <li>Lazy loading</li>
 
