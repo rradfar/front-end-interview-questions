@@ -1076,6 +1076,15 @@ console.log(typeof class C {}); //=> function
 <li>Web APIs: Fetch API</li>
 <li>Web APIs: History API</li>
 <li>Web APIs: HTMLCollection vs. NodeList</li>
+
+<details><summary>Answer</summary><p>
+
+An **HTMLCollection** is an array-like list (collection) of of HTML elements. HTMLCollection items can be accessed by their name, id, or index number. The element methods `getElementsByClassName()` and `getElementsByTagName()` return a live HTMLCollection.
+
+A **NodeList** is a collection of document nodes. NodeList items can only be accessed by their index number. Only the NodeList object can contain attribute nodes and text nodes. The element method `querySelectorAll()` returns a static NodeList.
+
+</p></details>
+
 <li>Web APIs: Geolocation API</li>
 <li>Web APIs: Service Workers API</li>
 <li>Web APIs: Touch events</li>
