@@ -5,5 +5,5 @@
 - [JavaScript](https://github.com/rradfar/study-notes/blob/master/javascript.md)
 - [React](https://github.com/rradfar/study-notes/blob/master/react.md)
 - [Git](https://github.com/rradfar/study-notes/blob/master/git.md)
+- [Agile Methodologies](https://github.com/rradfar/study-notes/blob/master/agile.md)
 - [General Web Development](https://github.com/rradfar/study-notes/blob/master/webdev.md)
-- [General Computer Science & IT](https://github.com/rradfar/study-notes/blob/master/cs.md)

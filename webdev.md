@@ -53,8 +53,6 @@ We can improve it by using the `role` and `aria-checked` attributes:
 <li>A11y: some of the tools available to test the accessibility of a website or web application</li>
 <li>A11y: WCAG the differences between A, AA, and AAA compliance</li>
 <li>Acceptance testing</li>
-<li>Agile</li>
-<li>Agile vs. Waterfall</li>
 <li>AJAX</li>
 <li>Ansible</li>
 <li>API</li>
@@ -361,4 +359,3 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both ne
 <li>Wireframe: are you familiar with any wireframing tools?</li>
 <li>WordPress</li>
 <li>WordPress vs. Drupal vs. Joomla</li>
-</ol>
