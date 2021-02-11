@@ -328,7 +328,6 @@ multiply(1)(2)(3); // 6
 - The `innerHTML` property returns the text, including all spacing and inner element tags.
 - The `textContent` property returns the text with spacing, but without inner element tags.
 
-
 ```html
 <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
 
@@ -709,10 +708,11 @@ typeof null === 'object'; // true
 ```javascript
 const target = { a: 1, b: 2 };
 const source = { b: 4, c: 5 };
+
 const returnedTarget = Object.assign(target, source);
 
-console.log(target); //=> Object { a: 1, b: 4, c: 5 }
-console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
+console.log(target); // Object { a: 1, b: 4, c: 5 }
+console.log(returnedTarget); // Object { a: 1, b: 4, c: 5 }
 ```
 
 </p></details>
@@ -740,7 +740,6 @@ console.log(returnedTarget); //=> Object { a: 1, b: 4, c: 5 }
 <details><summary>Answer</summary><p>
 
 - Both of these methods perform shallow cloning:
-
 
 ```javascript
 const obj = {a: 1};

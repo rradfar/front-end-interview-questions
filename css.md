@@ -212,8 +212,8 @@ Opera: -o-
 
 ```css
 article a:hover {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
 ```
 
@@ -223,8 +223,8 @@ article a:hover {
 
 ```css
 article p::first-line {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
 ```
 

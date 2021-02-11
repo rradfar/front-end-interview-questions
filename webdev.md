@@ -119,6 +119,13 @@ A request for a resource (like an image or a font) outside of the origin is know
 <li>Flutter</li>
 <li>Forms: some best practices when designing a form</li>
 <li>Four pillars of OOP</li>
+<details><summary>Answer</summary><p>
+1. **Abstraction**: hiding the inner workings of a class and just allowing the necessary portions be visible.  
+2. **Encapsulation**: a process of binding data members (variables, properties) and member functions (methods) together. In object oriented programming language we achieve encapsulation through Class.  
+3. **Inheritance**: the process of creating the new class by extending the the existing class.  
+4. **Polymorphism**: functions with same name but different arguments, which will perform differently. That is function with same name, functioning in different way. Or, it also allows us to redefine a function to provide its new definition.
+</p></details>
+
 <li>Functional programming. How does it differ from object oriented programming?</li>
 <li>GraphQL</li>
 <li>How would you go about accepting payments via Credit cards or PayPal for a shopping car</li>feature you are developing for a client  
