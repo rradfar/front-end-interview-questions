@@ -1,4 +1,4 @@
-# Study Notes for Front-end web development
+# Front-end Web Development Interview Questions
 
 - [HTML](https://github.com/rradfar/study-notes/blob/master/html.md)
 - [CSS](https://github.com/rradfar/study-notes/blob/master/css.md)
