@@ -114,7 +114,6 @@ A request for a resource (like an image or a font) outside of the origin is know
 <li>DNS</li>
 <li>Docker</li>
 <li>Elasticsearch</li>
-<li>Extreme Programming (XP)</li>
 <li>Flash of Unstyled Content (FOUC). How do you avoid FOUC?</li>
 <li>Flutter</li>
 <li>Forms: some best practices when designing a form</li>
@@ -274,16 +273,13 @@ It means that API requests can be made independently of one another, and each re
 
 <li>RESTful web service request (its four components)</li>
 <li>SaaS vs. PaaS</li>
-<li>Scrum</li>
-<li>Scrum artifacts</li>
-<li>Scrum ceremonies</li>
-<li>Scrum vs. Kanban</li>
 <li>Selenium</li>
 <li>SEO: best practices</li>
 <li>Server side rendering and why would you want to do it</li>
 <li>Server side rendering vs. Client side rendering</li>
 <li>Serverless architecture</li>
 <li>Shadow DOM</li>
+<li>Shadow DOM vs. Virtual DOM</li>
 <li>Software Development Life Cycle (SDLC)</li>
 
 <details><summary>Answer</summary><p>
@@ -361,7 +357,6 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both ne
 <li>UX personas</li>
 <li>UX user journey maps</li>
 <li>Vector vs. raster images</li>
-<li>Virtual DOM</li>
 <li>Visual hierarchy</li>
 <li>VMs vs. Containers</li>
 <li>Web 2.0</li>
