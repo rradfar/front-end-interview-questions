@@ -2,56 +2,137 @@
 <h1>CSS</h1>
 </div>
 <ol>
-<li>Animations: animation-fill-mode</li>
 
-<details><summary>Answer</summary><p>
+<li>What are attribute selectors in CSS?</li>
 
-- This CSS property sets which values are applied before/after the animation. For example, you can set the last state of the animation to remain on screen (forwards), or you can set it to switch back to before when the animation began (backwards).
+<details><summary>Answer</summary>
 
-- `animation-fill-mode: none|forwards|backwards|both;`
+Attribute selectors can be used to style HTML elements that have specific attributes.
 
-</p></details>
+```css
+a[target="_blank"] {
+  /* style rules here */
+}
 
-<li>Attribute selectors</li>
-<li>Background images</li>
-<li>BEM vs. SMACSS</li>
-<li>BFC (Block Formatting Context) and how it works</li>
-<li>Border images</li>
-<li>Box model</li>
-<li>Box shadow vs. Text shadow</li>
-<li>Box-shadow</li>
+input[type="text"] {
+  /* style rules here */
+}
 
-<details><summary>Answer</summary><p>
+[class^="top"] {
+  /* style rules here */
+}
+```
+</details>
+
+<li>Are you familiar with any CSS methodologies for writing modular and reusable code?</li>
+
+<details><summary>Answer</summary>
+
+The three most popular CSS methodologies are BEM, SMACSS, and OOCSS. See below for summary of each.
+
+</details>
+
+<li>Are you familiar with BEM?</li>
+
+<details><summary>Answer</summary>
+
+The Block, Element, Modifier methodology (BEM) is a popular naming convention for classes in HTML and CSS. Its goal is to help developers better understand the relationship between the HTML and CSS in a given project. E.g.
+
+```html
+<a class="btn btn--big btn--shadow" href="https://www.google.com/">
+  <span class="btn__price">$8.99</span>
+  <span class="btn__text">Subscribe</span>
+</a>
+```
+
+```css
+/* Block component */
+.btn {}
+
+/* Element that depends upon the block */ 
+.btn__price {}
+.btn__text {}
+
+/* Modifier that changes the style of the block */
+.btn--big {}
+.btn--shadow {}
+```
+
+</details>
+
+<li>Are you familiar with SMACSS?</li>
+
+<details><summary>Answer</summary>
+
+Scalable and Modular Architecture for CSS (SMACSS) is a style guide that focuses on separating CSS rules into five categories of Base, Layout, Module, State, and Theme. SMACSS is less opinionated about naming conventions than BEM.
+
+</details>
+
+<li>Are you familiar with OOCSS?</li>
+
+<details><summary>Answer</summary>
+
+‎Object Oriented CSS (OOCSS) is based on two major principles: Separation of structure (height, width, margins, etc.) and skin (colors, fonts, etc.), and Separation of container and content (elements such as images, paragraphs and div tags that are nestled within other elements, which serve as containers).
+
+</details>
+
+<li>What is BFC?</li>
+
+<details><summary>Answer</summary>
+
+A new Block Formatting Context (BFC) is created whenever we use floats, absolutely positioned elements, inline-blocks, table-cells, elements with 'overflow' other than 'visible', etc. Once an element creates a BFC, everything is contained inside it. BFC is used to prevent margins collapsing, text wrapping, or to contain floats.
+
+</details>
+
+<li>Is it possible to use an image as a border for an element?</li>
+
+<details><summary>Answer</summary>
+
+Yes, we can use the `border-image` CSS property to achieve that. The `border-image` property is a shorthand for five other CSS properties related to border images.
+
+```css
+border-image: url(border.png) 30 round;
+```
+
+</details>
+
+<li>Describe the CSS Box model.</li>
+
+<details><summary>Answer</summary>
+
+All HTML elements can be considered as boxes. The CSS box model is essentially a box that wraps around every HTML element and consists of margins, borders, padding, and the actual content.
+
+![box-model](./images/box-model.png)
+
+</details>
+
+<li>When setting a box shadow in CSS, what is the difference between blur radius and spread radius?</li>
+
+<details><summary>Answer</summary>
 
 ```css
 box-shadow: (offset-x | offset-y | blur-radius(optional) | spread-radius(optional) | color(optional));
 ```
 
-- `blur radius`: if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be, and the further out the shadow will extend.
-- `spread radius`: positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
+`blur radius`: if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be, and the further out the shadow will extend.
 
-```css
-/* offset-x | offset-y | color */
-box-shadow: 60px -16px teal;
+`spread radius`: positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
 
-/* offset-x | offset-y | blur-radius | color */
-box-shadow: 10px 5px 5px black;
+</details>
 
-/* offset-x | offset-y | blur-radius | spread-radius | color */
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+<li>What does adding the `inset` keyword to the CSS box-shadow property do?
 
-/* inset | offset-x | offset-y | color */
-box-shadow: inset 5em 1em gold;
+<details><summary>Answer</summary>
 
-/* Any number of shadows, separated by commas */
-box-shadow: 3px 3px red, -1em 0 0.4em olive;
-```
+The `inset` keyword changes the shadow from an outer shadow (outset) to an inner shadow.
 
-</p></details>
+![inset](images/inset.png)
 
-<li>Box-sizing property</li>
+</details>
 
-<details><summary>Answer</summary><p>
+<li>Describe the CSS Box-sizing property</li>
+
+<details><summary>Answer</summary>
 
 The CSS box-sizing property defines whether the width and height of an element should include padding and borders.
 
@@ -61,211 +142,82 @@ This is the initial and default value as specified by the CSS standard. The widt
 **border-box**  
 The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. For example, `.box {width: 350px; border: 10px solid black;}` renders a box that is `350px` wide.
 
-</p></details>
+</details>
 
-<li>Cascading in CSS</li>
+<li>CSS stands for Cascading Style Sheets. What is Cascading?</li>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary>
 
-- Cascading is the process of combining several style sheets and resolving conflicts between them.
-- The rule used is chosen by cascading down from the more general rules to the specific rule required.
-- Concepts such as **inheritance** and **specificity** are used to decide which styles get applied.  
+Cascading is the process of combining several style sheets and resolving conflicts between them.
+
+The rule used is chosen by cascading down from the more general rules to the specific rule required.
+
+Concepts such as **inheritance** and **specificity** are used to decide which styles get applied.  
 
 For instance,  
-
 - a more specific rule will override a less specific rule.
 - a rule defined in an external stylesheet is overruled by a style defined in the `<head>` of the document, which, in turn, is overruled by an inline style within the element itself.
 
-</p></details>
+</details>
 
-<li>Combinators (4)</li>
-<li>Combinators: child vs. descendant</li>
-<li>contain vs. cover when using background-size</li>
-<li>CSS animations vs. JavaScript animations: pros & cons of each</li>
-<li>CSS3 new features</li>
-<li>Custom fonts: how to use them</li>
-<li>display: block vs. inline vs. inline-block</li>
-<li>display: float vs. inline-block</li>
-<li>display: flex vs. inline-flex</li>
-<li>display: none vs. visibility: hidden</li>
-<li>Flex: align-items vs. align-se</li>
-<li>Flex: `flex: auto` vs. `flex: none`</li>
-<li>Grid vs. Flexbox</li>
-<li>Grids: create a grid with three equal columns (2 ways)</li>
+<li>Are you familiar with CSS Combinators?</li>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary>
+
+A CSS combinator explains the relationship between the selectors.
+
+There are four different combinators in CSS:
+- The **descendant** selector (`space`) matches all elements that are descendants of a specified element.
+- The **child** selector (`>`) matches only those elements matched by the second selector that are the direct children of elements matched by the first.
+- The **adjacent sibling** selector (`+`) is used to select something if it is right next to another element at the same level of the hierarchy.
+- The **general sibling** selector (`~`) selects siblings of an element even if they are not directly adjacent.
 
 ```css
-grid-template-columns: 1fr 1fr 1fr;
+div p {
+  background-color: yellow;
+}
 
-grid-template-columns: repeat(3, 1fr);
-```
+div > p {
+  background-color: yellow;
+}
 
-</p></details>
+div + p {
+  background-color: yellow;
+}
 
-<li>Grids: how do you make a div start at column 2 and end before column 4? (two ways)</li>
-<li>GSAP vs. CSS animations</li>
-<li>Hex vs. RGB vs. HSL</li>
-<li>How to hide content visually but make it available to screen readers</li>
-<li>How to make a triangle with pure CSS</li>
-<li>HSL color model</li>
-<li>Importing a CSS file into another</li>
-
-<details><summary>Answer</summary><p>
-
-`@import url('navigation.css');` or `@import 'navigation.css';`
-
-</p></details>
-
-<li>Line spacing: e.g. how to adjust the space between lines in a paragraph.</li>
-
-<details><summary>Answer</summary><p>
-
-- The `line-height` CSS property is commonly used to set the distance between lines of text.
-
-```css
-p { line-height: 1.2;   font-size: 10pt; }
-p { line-height: 1.2em; font-size: 10pt; }
-p { line-height: 120%;  font-size: 10pt; }
-p { font: 10pt/1.2  Georgia,serif; }
-```
-
-</p></details>
-
-<li>Linear vs. Radial gradient</li>
-<li>list-style: none</li>
-<li>mix-blend-mode</li>
-
-<details><summary>Answer</summary><p>
-
-- The `mix-blend-mode` CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
-
-```css
-mix-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity;
-```
-
-An example:
-
-```html
-<style>
-  .container {
-    background-color: gold;
-    padding: 15px;
-  }
-
-  .container img {
-    mix-blend-mode: overlay;
-  }
-</style>
-
-<div class="container">
-  <img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
-</div>
-```
-
-![mix-blend-mode example](../../blob/master/images/mix-blend-mode.png)
-
-</p></details>
-
-<li>not() pseudo-class</li>
-<li>nth-of-type() vs. nth-child()</li>
-<li>Overflow parameters</li>
-<li>overflow-wrap</li>
-<li>Position: relative vs. absolute vs. fixed vs. sticky</li>
-<li>Prefixes</li>
-
-<details><summary>Answer</summary><p>
-
-- CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers. This may be done during a sort of testing and experimentation period where the browser manufacturer is determining exactly how these new CSS features will be implemented. These prefixes became very popular with the rise of CSS3 a few years ago.
-- The CSS browser prefixes that you can use (each of which is specific to a different browser) are:
-
-```markdown
-Android: -webkit-
-Chrome: -webkit-
-iOS: -webkit-
-Safari: -webkit-
-Firefox: -moz-
-Internet Explorer: -ms-
-Opera: -o-
-```
-
-```css
-.container {
-  -webkit-transition: all 4s ease;
-  -moz-transition: all 4s ease;
-  -ms-transition: all 4s ease;
-  -o-transition: all 4s ease;
-  transition: all 4s ease;
+div ~ p {
+  background-color: yellow;
 }
 ```
 
-</p></details>
+</details>
 
-<li>Preprocessor</li>
-<li>Pros and cons of translate() vs. position: absolute</li>
-<li>Pseudo-classes vs pseudo-elements</li>
+<li>What are some of the pros and cons of using CSS animations instead of doing them with JavaScript?</li>
 
-<details><summary>Answer</summary><p>
-- A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc.
-- Pseudo-classes start with a colon `:`
-- Some common pseudo-classes are `:active`, `:checked`, `:enabled`, `:first-child`, `:first-of-type`, `:focus`, `:hover`, `:last-child`, `:last-of-type`, `:nth-of-type`, `:visited`, etc.
+<details><summary>Answer</summary>
 
-```css
-article a:hover {
-  font-size: 120%;
-  font-weight: bold;
-}
-```
+CSS animations are preferred when we want to create small, self-contained states for UI elements. JavaScript is usually more appropriate when we want to have a greater control over the animations.
 
-- Pseudo-elements behave in a similar way, however they act as if you had added a whole new HTML element into the markup, rather than applying a class to existing elements.
-- Pseudo-elements start with a double colon `::`
-- Most common pseudo-elements are `::after`, `::before`, `::first-letter`, and `::first-line`.
+While CSS animations tend to be faster than animation performance of jQuery, newer libraries such as GSAP tend to narrow that gap substantially.
 
-```css
-article p::first-line {
-  font-size: 120%;
-  font-weight: bold;
-}
-```
+CSS keyframe animations are great for sequencing transitions however they only allow for percentages and not time.
 
-</p></details>
+</details>
 
-<li>rem vs. em</li>
-<li>Pros & cons of using rem vs. </li>
-<li>Reset vs. Normalize</li>
-<li>Responsive vs. Adaptive design</li>
-<li>RGB vs. RGBA</li>
+<li>What were some new features that were introduced with CSS3? Which ones are your favorite?</li>
 
-<details><summary>Answer</summary><p>
+<details><summary>Answer</summary>
 
-- RGB is a 3-channel format containing data for Red, Green, and Blue.
-- RGBA is a 4-channel format containing data for Red, Green, Blue, and Alpha. `background-color:rgba(255,0,0,0.3);`
-- The value for A (alpha) is from `0` completely transparent, to `1` completely opaque.
+- Border radius and border images
+- Drop shadows, text shadows, linear and radial gradients
+- Animations, Transitions, and 3D Transformations
+- Flexbox and Grids
+- Web fonts
+- Media Queries
+- New pseudo-classes (e.g. `:nth-child(n)`, `:nth-of-type(n)`, `:last-child`)
 
-</p></details>
+Pick your favorite(s) and be able to explain why.
 
-<li>Sass: definition</li>
-<li>Sass: features & benefits</li>
-<li>Selector specificity and how it works</li>
-<li>Sprites</li>
-<li>TailwindCSS</li>
-<li>transform-origin</li>
-<li>Transition shorthand property</li>
-<li>Transition vs. Transformation vs. Animation</li>
-<li>Tweening</li>
+</details>
 
-<details><summary>Answer</summary><p>
-
-- It is short for in-betweening.
-- It is the process of generating intermediate frames between two images.
-- It gives the impression that the first image has smoothly evolved into the second one.
-- It is an important method used in all types of animations.
-- In CSS3, Transforms (matrix,translate,rotate,scale etc) module can be used to achieve tweening.
-
-</p></details>
-
-<li>Webfonts: Pros and cons of using them</li>
-<li>word-break vs. word-wrap</li>
-<li>Universal selector</li>
-<li>z-index and how stacking context is formed</li>
 </ol>

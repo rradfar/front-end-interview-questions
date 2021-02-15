@@ -2,14 +2,15 @@
 <h1>React</h1>
 </div>
 <ol>
-<li>Functional vs Class components</li>
-<li>How can we prevent a component from re-rendering?</li>
-<li>Lifecycle methods and their purpose</li>
-<li>useEffect()</li>
-<details><summary>Answer</summary><p>
-- Data fetching, DOM manipulation, subscriptions, timers, logging, and other side effects are not allowed inside the main body of a function component.  Instead, we can use useEffect.
-- By default, effects run after every completed render, but you can choose to fire them only when certain values have changed.
-</p></details>
-<li>Virtual DOM</li>
-<li>What do we mean by lifting the state up in React?</li>
+
+<li>When do we use useEffect()?</li>
+
+<details><summary>Answer</summary>
+
+Data fetching, DOM manipulation, subscriptions, timers, logging, and other side effects are not allowed inside the main body of a function component. Instead, we can use useEffect.
+
+By default, effects run after every completed render, but you can choose to fire them only when certain values have changed.
+
+</details>
+
 </ol>
