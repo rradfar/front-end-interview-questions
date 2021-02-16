@@ -1,9 +1,6 @@
-<div align="center">
-<h1>Javascript</h1>
-</div>
-<ol>
+## JavaScript Interview Questions
 
-<li>What are some ways to create a new array in JavaScript?</li>
+Q. What are some ways to create a new array in JavaScript?
 
 <details><summary>Answer</summary>
 
@@ -23,9 +20,11 @@ const values = [1, 2];
 const colors = ['red', 'blue', 'green'];
 ```
 
-</p></details>
+</details>
 
-<li>What are some ways to clone an array? Why don't we typically use array1 = array2?</li>
+---
+
+Q. What are some ways to clone an array? Why don't we typically use `array1 = array2`?
 
 <details><summary>Answer</summary>
 
@@ -52,4 +51,4 @@ console.log(originalArray); // [1, 2, 3, 4]
 
 </details>
 
-</ol>
+---

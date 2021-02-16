@@ -1,9 +1,6 @@
-<div align="center">
-<h1>HTML</h1>
-</div>
-<ol>
+## HTML Interview Questions
 
-<li>Can a webpage contain multiple &lt;header&gt; or &lt;footer&gt; elements?</li>
+Q. Can a webpage contain multiple `<header>` or `<footer>` elements?
 
 <details><summary>Answer</summary>
 
@@ -11,7 +8,9 @@ Yes, it can.
 
 </details>
 
-<li>Can a webpage contain multiple &lt;h1&gt; elements?</li>
+---
+
+Q. Can a webpage contain multiple `<h1>` elements?
 
 <details><summary>Answer</summary>
 
@@ -19,7 +18,9 @@ Yes, it can. However some SEO experts suggest having only one. Some HTML validat
 
 </details>
 
-<li>Why do we add a `Doctype` at the beginning of a HTML document?</li>
+---
+
+Q. Why do we add a `Doctype` at the beginning of a HTML document?
 
 <details><summary>Answer</summary>
 
@@ -31,4 +32,4 @@ HTML4: `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://w
 
 </details>
 
-</ol>
+---

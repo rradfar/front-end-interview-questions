@@ -1,8 +1,6 @@
-<div align="center">
-<h1>Coding Challenges</h1>
-</div>
+## Front-End Coding Challenges
 
-**Q1.** Write a function that accepts an array and counts the number of its unique values. Can you solve this in one line of code?
+Q. Write a function that accepts an array of integers and counts the number of its unique values. Can you solve this in one line of code?
 
 ```js
 const countUniqueValues = arr => {
@@ -26,7 +24,10 @@ const countUniqueValues = arr => {
 
 </details>
 
-**Q2.**
+---
+
+Q. What is the output?
+
 ```js
 let a = 5;
 let b = 1;
@@ -58,7 +59,10 @@ console.log(a >>> b); // 2
 
 </details>
 
-**Q3.**
+---
+
+Q. What is the output?
+
 ```js
 const config = {
   languages: [],
@@ -82,19 +86,15 @@ const config = {
 
 console.log(config.language); // undefined
 
-// The language method is a setter. Setters don't hold an actual value, their purpose is to modify properties. When calling a setter method, undefined gets returned.
+// The language method is a setter. Setters don't hold an actual value, their purpose is to modify properties. 
+// When calling a setter method, undefined gets returned.
 ```
 
 </details>
 
-**Q4.** Our football team finished the championship. The result of each match look like 'x:y'. Results of all matches are recorded in the collection. For example: ['3:1', '2:2', '0:1', ...]
+---
 
-Write a function that takes such collection and counts the points of our team in the championship.  
-Rules for counting points for each match:  
-if x > y : 3 points  
-if x < y : 0 point  
-if x = y : 1 point  
-Can you solve this in one line of code?
+Q. Our football team finished the championship. The result of each match look like `x:y`. Results of all matches are recorded in the collection. For example: `['3:1', '2:2', '0:1', ...]`. Write a function that takes such collection and counts the points of our team in the championship. Rules for counting points for each match: if `x > y` add 3 points and if `x = y` add 1 point. Can you solve this in one line of code?
 
 ```js
 const countPoints = games => {
@@ -117,11 +117,12 @@ console.log(countPoints(points)); // 11
 
 </details>
 
-**Q5.** Write a function that takes two strings and checks to see if they are anagrams. Inputs consist of lower case alphanumeric letters or spaces.
+---
 
+Q. Write a function that takes two strings and checks to see if they are anagrams. Inputs consist of lower case alphanumeric letters or spaces.
 Further considerations:
 - You may **NOT** use the built-in `sort()` method.
-- If you need create a new object, do **NOT** create more than one.
+- If you need to create a new object, do **NOT** create more than one.
 - Expected performance: `O(n)` or better.
 
 ```js
@@ -170,7 +171,9 @@ console.log(validAnagram('rat', 'cart')); // false
 
 </details>
 
-**Q6.** Write a function that counts the number of duplicates (case-insensitive) in the input string. The input string can contain alphabets (both uppercase and lowercase) or numbers. Expected performance: `O(n)` or better.
+---
+
+Q. Write a function that counts the number of duplicates (case-insensitive) in the input string. The input string can contain alphabets (both uppercase and lowercase) or numbers. Expected performance: `O(n)` or better.
 
 ```js
 const duplicateCount = text => {
@@ -212,7 +215,9 @@ console.log(duplicateCount('Indivisibilities')); //  2
 
 </details>
 
-**Q7.**
+---
+
+Q. What is the output?
 
 ```js
 const colors = ["red", "green", "blue"];
@@ -238,7 +243,9 @@ console.log(colors2); // ["red", "green", "blue", "yellow", "black", "brown"]
 
 </details>
 
-**Q8.** Write a function that takes a string as input and returns true if the parentheses in the input string are 'balanced' and false otherwise. For the parentheses to be balanced, each open parenthesis must have a corresponding closing parenthesis, in the correct order. For example:
+---
+
+Q. Write a function that takes a string as input and returns true if the parentheses in the input string are 'balanced' and false otherwise. For the parentheses to be balanced, each open parenthesis must have a corresponding closing parenthesis, in the correct order. For example:
 - `((()))` is balanced
 - `(()(()()))` is balanced
 - `)(` is not balanced
@@ -291,4 +298,4 @@ console.log(
 
 </details>
 
-**Q9.**
+---

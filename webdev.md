@@ -1,9 +1,6 @@
-<div align="center">
-<h1>General Questions</h1>
-</div>
-<ol>
+## General Web Development Interview Questions
 
-<li>What is A/B testing?</li>
+Q. What is A/B testing?
 
 <details><summary>Answer</summary>
 
@@ -11,7 +8,9 @@ A/B testing (also known as split testing) is a process of showing two variants o
 
 </details>
 
-<li>What is an API?</li>
+---
+
+Q. What is an API?
 
 <details><summary>Answer</summary>
 
@@ -19,11 +18,13 @@ An application programming interface (API) is a set of clearly defined methods o
 
 An API simplifies programming by abstracting the underlying implementation and only exposing objects or actions the developer needs.
 
-![API visual](./images/api.png)
+![image](images/001.png)
 
 </details>
 
-<li>How does Continuous Integration (CI) differ from Continuous Delivery (CD)?</li>
+---
+
+Q. How does Continuous Integration (CI) differ from Continuous Delivery (CD)?
 
 <details><summary>Answer</summary>
 
@@ -35,4 +36,4 @@ CI helps development teams avoid "integration hell" where the software works on 
 
 </details>
 
-</ol>
+---

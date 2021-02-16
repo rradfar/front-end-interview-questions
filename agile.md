@@ -1,7 +1,5 @@
 ## Agile Methodologies Interview Questions
 
----
-
 Q. What is Agile?
 
 <details><summary>Answer</summary>

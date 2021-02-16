@@ -1,9 +1,6 @@
-<div align="center">
-<h1>CSS</h1>
-</div>
-<ol>
+## CSS Interview Questions
 
-<li>What are attribute selectors in CSS?</li>
+Q. What are attribute selectors in CSS?
 
 <details><summary>Answer</summary>
 
@@ -24,7 +21,9 @@ input[type="text"] {
 ```
 </details>
 
-<li>Are you familiar with any CSS methodologies for writing modular and reusable code?</li>
+---
+
+Q. Are you familiar with any CSS methodologies for writing modular and reusable code?
 
 <details><summary>Answer</summary>
 
@@ -32,7 +31,9 @@ The three most popular CSS methodologies are BEM, SMACSS, and OOCSS. See below f
 
 </details>
 
-<li>Are you familiar with BEM?</li>
+---
+
+Q. Are you familiar with BEM?
 
 <details><summary>Answer</summary>
 
@@ -60,7 +61,9 @@ The Block, Element, Modifier methodology (BEM) is a popular naming convention fo
 
 </details>
 
-<li>Are you familiar with SMACSS?</li>
+---
+
+Q. Are you familiar with SMACSS?
 
 <details><summary>Answer</summary>
 
@@ -68,7 +71,9 @@ Scalable and Modular Architecture for CSS (SMACSS) is a style guide that focuses
 
 </details>
 
-<li>Are you familiar with OOCSS?</li>
+---
+
+Q. Are you familiar with OOCSS?
 
 <details><summary>Answer</summary>
 
@@ -76,7 +81,9 @@ Scalable and Modular Architecture for CSS (SMACSS) is a style guide that focuses
 
 </details>
 
-<li>What is BFC?</li>
+---
+
+Q. What is BFC?
 
 <details><summary>Answer</summary>
 
@@ -84,7 +91,9 @@ A new Block Formatting Context (BFC) is created whenever we use floats, absolute
 
 </details>
 
-<li>Is it possible to use an image as a border for an element?</li>
+---
+
+Q. Is it possible to use an image as a border for an element?
 
 <details><summary>Answer</summary>
 
@@ -96,17 +105,21 @@ border-image: url(border.png) 30 round;
 
 </details>
 
-<li>Describe the CSS Box model.</li>
+---
+
+Q. Describe the CSS Box model.
 
 <details><summary>Answer</summary>
 
 All HTML elements can be considered as boxes. The CSS box model is essentially a box that wraps around every HTML element and consists of margins, borders, padding, and the actual content.
 
-![box-model](./images/box-model.png)
+![image](images/002.png)
 
 </details>
 
-<li>When setting a box shadow in CSS, what is the difference between blur radius and spread radius?</li>
+---
+
+Q. When setting a box shadow in CSS, what is the difference between blur radius and spread radius?
 
 <details><summary>Answer</summary>
 
@@ -120,17 +133,21 @@ box-shadow: (offset-x | offset-y | blur-radius(optional) | spread-radius(optiona
 
 </details>
 
-<li>What does adding the `inset` keyword to the CSS box-shadow property do?
+---
+
+Q. What does adding the `inset` keyword to the CSS box-shadow property do?
 
 <details><summary>Answer</summary>
 
 The `inset` keyword changes the shadow from an outer shadow (outset) to an inner shadow.
 
-![inset](images/inset.png)
+![image](images/003.png)
 
 </details>
 
-<li>Describe the CSS Box-sizing property</li>
+---
+
+Q. Describe the CSS Box-sizing property
 
 <details><summary>Answer</summary>
 
@@ -144,7 +161,9 @@ The width and height properties include the content, padding, and border, but do
 
 </details>
 
-<li>CSS stands for Cascading Style Sheets. What is Cascading?</li>
+---
+
+Q. CSS stands for Cascading Style Sheets. What is Cascading?
 
 <details><summary>Answer</summary>
 
@@ -160,7 +179,9 @@ For instance,
 
 </details>
 
-<li>Are you familiar with CSS Combinators?</li>
+---
+
+Q. Are you familiar with CSS Combinators?
 
 <details><summary>Answer</summary>
 
@@ -192,7 +213,9 @@ div ~ p {
 
 </details>
 
-<li>What are some of the pros and cons of using CSS animations instead of doing them with JavaScript?</li>
+---
+
+Q. What are some of the pros and cons of using CSS animations instead of doing them with JavaScript?
 
 <details><summary>Answer</summary>
 
@@ -204,7 +227,9 @@ CSS keyframe animations are great for sequencing transitions however they only a
 
 </details>
 
-<li>What were some new features that were introduced with CSS3? Which ones are your favorite?</li>
+---
+
+Q. What were some new features that were introduced in CSS3? Which ones are your favorite?
 
 <details><summary>Answer</summary>
 
@@ -220,4 +245,4 @@ Pick your favorite(s) and be able to explain why.
 
 </details>
 
-</ol>
+---
