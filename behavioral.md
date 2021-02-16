@@ -1,4 +1,4 @@
-![Interview logo](images/logo-Interview.jpg)
+![Interview logo](images/logo-Interview.png)
 
 # Common Non-technical Interview Questions
 
