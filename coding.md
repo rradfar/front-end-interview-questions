@@ -299,3 +299,77 @@ console.log(
 </details>
 
 ---
+
+Q. What is the output?
+
+```js
+const arr = [1, 2, 3, 4];
+
+console.log(arr.fill(0, 2, 4)); // ?
+console.log(arr.fill(5, 1));    // ?
+console.log(arr.fill(6));       // ?
+```
+
+<details><summary>Solution</summary>
+
+```js
+const arr = [1, 2, 3, 4];
+
+console.log(arr.fill(0, 2, 4)); // [1, 2, 0, 0]
+console.log(arr.fill(5, 1));    // [1, 5, 5, 5]
+console.log(arr.fill(6));       // [6, 6, 6, 6]
+```
+
+The array `fill()` method can take three parameters. A value to fill the array with. An optional start index (default is 0), and an optional end index (default is array's length).
+
+```js
+arr.fill(value, start(optional), end(optional))
+```
+
+`fill()` is a mutator method: it will change the original array and return it, not a copy of it.
+
+</details>
+
+---
+
+Q. What method is used on the array below?
+
+```js
+const arr = [1, 2, , , 4, 5];
+console.log(arr.?); // [1, 2, 4, 5]
+```
+
+<details><summary>Solution</summary>
+
+```js
+const arr = [1, 2, , , 4, 5];
+console.log(arr.flat()); // [1, 2, 4, 5]
+```
+
+The `flat()` method can be used to remove empty slots in an array.
+
+</details>
+
+---
+
+Q. What parameter is passed to the `flat()` method below?
+
+```js
+const arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+console.log(arr.flat(?)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+<details><summary>Solution</summary>
+
+```js
+const arr = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+console.log(arr.flat(Infinity)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+The `flat()` method can receive an optional depth level parameter specifying how deep a nested array structure should be flattened. `Infinity` will flatten all nested arrays.
+
+In this particular example, `arr.flat(4)` would also be a correct answer.
+
+</details>
+
+---

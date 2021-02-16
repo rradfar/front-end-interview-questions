@@ -246,3 +246,17 @@ Pick your favorite(s) and be able to explain why.
 </details>
 
 ---
+
+Q. What is the difference between block, inline, and inline-block when displaying elements?
+
+<details><summary>Answer</summary>
+
+**Inline**: An inline element does not start on a new line and only takes up as much width as necessary. Some examples of inline elements are `<span>` , `<strong>`, and `<img>`. You can add space to the left and right of an inline element, but you cannot add height to the top or bottom padding or margin of an inline element. Inline elements can appear within block elements.
+
+**Inline-Block**: Compared to `display: inline`, the major difference is that `display: inline-block` allows to set a width and height on the element. Also, the top and bottom margins/paddings are respected. Compared to `display: block`, the major difference is that `display: inline-block` does not add a line-break after the element, so the element can sit next to other elements. One common use for `display: inline-block` is to display list items horizontally instead of vertically.
+
+**Block**: Unlike inline or inline-block elements, a block-level element always starts on a new line and takes up the full width available.
+
+</details>
+
+---
