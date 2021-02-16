@@ -1,4 +1,6 @@
-## HTML Interview Questions
+![HTML logo](images/logo-html.png)
+
+# HTML Interview Questions
 
 Q. Can a webpage contain multiple `<header>` or `<footer>` elements?
 

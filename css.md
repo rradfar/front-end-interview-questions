@@ -1,4 +1,6 @@
-## CSS Interview Questions
+![CSS logo](images/logo-css.png)
+
+# CSS Interview Questions
 
 Q. What are attribute selectors in CSS?
 

@@ -1,4 +1,6 @@
-## General Web Development Interview Questions
+![Web Development logo](images/logo-webdev.png)
+
+# General Web Development Interview Questions
 
 Q. What is A/B testing?
 

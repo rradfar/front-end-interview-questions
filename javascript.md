@@ -1,4 +1,6 @@
-## JavaScript Interview Questions
+![JavaScript logo](images/logo-js.png)
+
+# JavaScript Interview Questions
 
 Q. What are some ways to create a new array in JavaScript?
 

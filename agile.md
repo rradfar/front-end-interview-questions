@@ -1,4 +1,6 @@
-## Agile Methodologies Interview Questions
+![Agile logo](images/logo-agile.png)
+
+# Agile Methodologies Interview Questions
 
 Q. What is Agile?
 

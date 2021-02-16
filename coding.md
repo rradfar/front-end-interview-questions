@@ -1,4 +1,6 @@
-## Front-End Coding Challenges
+![Coding logo](images/logo-coding.png)
+
+# Front-End Coding Challenges
 
 Q. Write a function that accepts an array of integers and counts the number of its unique values. Can you solve this in one line of code?
 

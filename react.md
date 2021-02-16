@@ -1,3 +1,5 @@
+![React logo](images/logo-react.png)
+
 # React Interview Questions
 
 Q. When do we use `useEffect()`?

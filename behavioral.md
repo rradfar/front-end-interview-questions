@@ -1,4 +1,6 @@
-## Common Non-technical Interview Questions
+![Interview logo](images/logo-Interview.jpg)
+
+# Common Non-technical Interview Questions
 
 Q. Tell me about yourself?
 

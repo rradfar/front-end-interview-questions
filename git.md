@@ -1,4 +1,6 @@
-## Git Interview Questions
+![Git logo](images/logo-git.png)
+
+# Git Interview Questions
 
 Q. How does Git differ from SVN?
 
