@@ -1,4 +1,4 @@
-![CSS logo](images/logo-css.png)
+![CSS logo](images/logos/logo-css.png)
 
 # CSS Interview Questions
 

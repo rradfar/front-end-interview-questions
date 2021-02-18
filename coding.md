@@ -1,4 +1,4 @@
-![Coding logo](images/logo-coding.png)
+![Coding logo](images/logos/logo-coding.png)
 
 # Front-End Coding Challenges
 

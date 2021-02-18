@@ -1,4 +1,4 @@
-![React logo](images/logo-react.png)
+![React logo](images/logos/logo-react.png)
 
 # React Interview Questions
 
@@ -139,6 +139,48 @@ Q. Why can't you update state directly without using the `setState()` method?
 <details><summary>Answer</summary>
 
 Mutating the state without using `setState()` can lead to bugs and affect performance. In addition, the component may not be able to detect the change in the state object and therefore not re-render.
+
+</details>
+
+---
+
+Q. When would you use React fragments?
+
+<details><summary>Answer</summary>
+
+A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM. Fragments are not rendered to the DOM so they can be used where you would normally use a wrapper div and eliminate the need to add extra tags or wrapper div tags.
+
+```js
+render() {
+  return (
+    <React.Fragment>
+      <ChildA />
+      <ChildB />
+      <ChildC />
+    </React.Fragment>
+  );
+}
+```
+
+</details>
+
+---
+
+Q. What is code-splitting?
+
+<details><summary>Answer</summary>
+
+TBA
+
+</details>
+
+---
+
+Q. How do controlled and uncontrolled input elements differ from each other?
+
+<details><summary>Answer</summary>
+
+TBA
 
 </details>
 

@@ -1,4 +1,4 @@
-![JavaScript logo](images/logo-js.png)
+![JavaScript logo](images/logos/logo-js.png)
 
 # JavaScript Interview Questions
 

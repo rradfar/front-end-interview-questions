@@ -1,4 +1,4 @@
-![Git logo](images/logo-git.png)
+![Git logo](images/logos/logo-git.png)
 
 # Git Interview Questions
 

@@ -1,4 +1,4 @@
-![Agile logo](images/logo-agile.png)
+![Agile logo](images/logos/logo-agile.png)
 
 # Agile Methodologies Interview Questions
 

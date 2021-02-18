@@ -1,4 +1,4 @@
-![HTML logo](images/logo-html.png)
+![HTML logo](images/logos/logo-html.png)
 
 # HTML Interview Questions
 
