@@ -262,3 +262,43 @@ Q. What is the difference between block, inline, and inline-block when displayin
 </details>
 
 ---
+
+Q. Have you ever played around with Blend Modes in CSS?
+
+<details><summary>Answer</summary><p>
+
+There are two properties that allow us to blend colors together in CSS: `mix-blend-mode` and `background-blend-mode`. With mix-blend-mode, we define the blending between the element and the elements that are behind it. With background-blend-mode, we define the blending between the element's background image and its background color.
+
+Some common blend modes for are darken, multiply, overlay, screen and soft-light.
+
+```css
+.cover {
+    background-image: url(blend-mode-example.jpg);
+    background-color: #51B7D3;
+    background-blend-mode: luminosity;
+}
+```
+
+![background-blend-mode example](images/010.png)
+
+```html
+<style>
+  .blend1 img:first-child {
+    position: absolute;
+    mix-blend-mode: soft-light;
+  }
+</style>
+
+<div class="blend1">
+  <img src="/images/css/blend-modes/monkey.jpg" width="400" height="600">
+  <img src="/images/css/blend-modes/sky.jpg" width="400" height="600">
+</div>
+```
+
+![mix-blend-mode original](images/011.png)
+
+![mix-blend-mode blended](images/012.png)
+
+</p></details>
+
+---

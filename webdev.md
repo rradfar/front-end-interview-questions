@@ -52,6 +52,18 @@ CI helps development teams avoid "integration hell" where the software works on 
 
 ---
 
+Q. What is the Software Development Life Cycle (SDLC)?
+
+<details><summary>Answer</summary>
+
+In software engineering, the SDLC is a process for planning, creating, testing, and deploying an information system.
+
+![SDLC](images/013.png)
+
+</details>
+
+---
+
 Q. What is Object-oriented programming (OOP)?
 
 <details><summary>Answer</summary>
@@ -97,6 +109,18 @@ In object-oriented programming, SOLID is a mnemonic acronym for five design prin
 **Interface segregation principle**: The principle states that many client-specific interfaces are better than one general-purpose interface. Clients should not be forced to implement a function they do no need. For example an interface for an ATM which handles all requests such as a deposit request or a withdrawal request, needs to be segregated into individual and more specific interfaces.
 
 **Dependency inversion principle**: It states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.
+
+</details>
+
+---
+
+Q. What is a MVC?
+
+<details><summary>Answer</summary>
+
+Model-View-Controller or MVC is a design pattern used to separate user-interface (view), data (model), and application logic (controller). Controller acts as a liaison between the Model and the View, receiving user input and deciding what to do with it.
+
+![MVC](images/014.png)
 
 </details>
 
