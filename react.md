@@ -2,6 +2,16 @@
 
 # React Interview Questions
 
+Q. React is considered a JavaScript library and Angular is a framework. What would you say are some ways that a library differs from a framework?
+
+<details><summary>Answer</summary>
+
+TBA
+
+</details>
+
+---
+
 Q. What is the difference between state and props in React?
 
 <details><summary>Answer</summary>
