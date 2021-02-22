@@ -6,7 +6,7 @@ Q. React is considered a JavaScript library and Angular is a framework. What wou
 
 <details><summary>Answer</summary>
 
-TBA
+A framework integrates your code and data into its own control flow, whereas a library provides a repository of code or data for you to integrate into your own control flow. Your application works inside a framework, but a library works within your application.
 
 </details>
 
@@ -144,7 +144,7 @@ Often there will be a need to share state between different components. The comm
 
 ---
 
-Q. Why can't you update state directly without using the `setState()` method?
+Q. Why can't you update state directly without using Re `setState()` method?
 
 <details><summary>Answer</summary>
 
@@ -176,21 +176,35 @@ render() {
 
 ---
 
-Q. What is code-splitting?
+Q. What is a Higher-Order Component (HOC) in React?
 
 <details><summary>Answer</summary>
 
-TBA
+A higher-order component is a function that takes a component and returns a new component. Whereas a component transforms props into UI, a higher-order component transforms a component into another component. A HOC doesn't modify the input component. Rather, it wraps the original component in a container component.
 
 </details>
 
 ---
 
-Q. How do controlled and uncontrolled input elements differ from each other?
+Q. What is code-splitting and how would you go about implementing it in your React app?
 
 <details><summary>Answer</summary>
 
-TBA
+Code-splitting is a performance improvement technique to keep bundles (i.e. imported and merged files) from getting too large. It allows us to "lazy-load" only that things that are currently needed by the user and avoid loading code that the user may never need.
+
+One of the ways to incorporate code-splitting into our app is through dynamic imports.
+
+</details>
+
+---
+
+Q. How do controlled and uncontrolled components differ when implementing forms in React?
+
+<details><summary>Answer</summary>
+
+In a controlled component, form data is handled by a React component. In an uncontrolled components data is handled by the DOM itself.
+
+Since an uncontrolled component keeps the source of truth in the DOM, it is sometimes easier to integrate React and non-React code when using uncontrolled components. It can also be slightly less code if we want to be quick and dirty. Otherwise, it is recommended to use controlled components.
 
 </details>
 

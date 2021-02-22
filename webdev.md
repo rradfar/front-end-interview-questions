@@ -126,6 +126,16 @@ A/B testing (also known as split testing) is a process of showing two variants o
 
 ---
 
+Q. What would cause a 403 error in the browser?
+
+<details><summary>Answer</summary>
+
+A 403 Forbidden Error occurs when a web server forbids the user from accessing the page they are trying to open in their browser. Sometimes the user really does not have the right permission to access the resource, other times, there might be an error on the server side of things.
+
+</details>
+
+---
+
 Q. Are you familiar with the factory design pattern?
 
 <details><summary>Answer</summary>
@@ -198,7 +208,44 @@ Q. Are you familiar with the observer design pattern?
 
 <details><summary>Answer</summary>
 
-TBA
+In the observer design pattern, an object (called Subject)maintains a list of its dependents (observers), and notifies them automatically of any state changes, usually by calling one of their methods.
+
+```js
+var Subject = function() {
+    this.observers = [];
+
+    return {
+    subscribeObserver: function(observer) {
+        this.observers.push(observer);
+    },
+    unsubscribeObserver: function(observer) {
+        var index = this.observers.indexOf(observer);
+        if(index > -1) {
+        this.observers.splice(index, 1);
+        }
+    },
+    notifyObserver: function(observer) {
+        var index = this.observers.indexOf(observer);
+        if(index > -1) {
+        this.observers[index].notify(index);
+        }
+    },
+    notifyAllObservers: function() {
+        for(var i = 0; i < this.observers.length; i++){
+        this.observers[i].notify(i);
+        };
+    }
+    };
+};
+
+var Observer = function() {
+    return {
+    notify: function(index) {
+        console.log("Observer " + index + " is notified!");
+    }
+    }
+}
+```
 
 </details>
 
