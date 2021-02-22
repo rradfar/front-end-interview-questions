@@ -134,7 +134,7 @@ Prop Drilling is the process by which you pass data from one part of the React C
 
 ---
 
-Q. What do we mean by *lifting the state up* in React?
+Q. What do we mean by "lifting the state up" in React?
 
 <details><summary>Answer</summary>
 
@@ -144,7 +144,7 @@ Often there will be a need to share state between different components. The comm
 
 ---
 
-Q. Why can't you update state directly without using Re `setState()` method?
+Q. Why can't you update state directly without using React's `setState()` method?
 
 <details><summary>Answer</summary>
 
@@ -190,7 +190,7 @@ Q. What is code-splitting and how would you go about implementing it in your Rea
 
 <details><summary>Answer</summary>
 
-Code-splitting is a performance improvement technique to keep bundles (i.e. imported and merged files) from getting too large. It allows us to "lazy-load" only that things that are currently needed by the user and avoid loading code that the user may never need.
+Code-splitting is a performance improvement technique to keep bundles (imported and merged files) from getting too large. It allows us to "lazy-load" only the things that are currently needed by the user and avoid loading code that the user may need later or never need.
 
 One of the ways to incorporate code-splitting into our app is through dynamic imports.
 

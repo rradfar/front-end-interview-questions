@@ -375,3 +375,81 @@ In this particular example, `arr.flat(4)` would also be a correct answer.
 </details>
 
 ---
+
+Q. What are the outputs?
+
+```js
+console.log(typeof 3.14);           // ?
+console.log(typeof Number(42));     // ?
+console.log(typeof NaN);            // ?
+console.log(typeof 42n);            // ?
+console.log(typeof typeof 42);      // ?
+console.log(typeof false);          // ?
+console.log(typeof Symbol('foo'));  // ?
+console.log(typeof undefined);      // ?
+console.log(typeof null);           // ?
+console.log(typeof [1, 2, 3]);      // ?
+console.log(typeof new Number(42)); // ?
+console.log(typeof function() {});  // ?
+console.log(typeof Math.sin);       // ?
+```
+
+<details><summary>Solution</summary>
+
+```js
+console.log(typeof 3.14);           // 'number'
+console.log(typeof Number(42));     // 'number'
+console.log(typeof NaN);            // 'number'
+console.log(typeof 42n);            // 'bigint'
+console.log(typeof '3.14');         // 'string'
+console.log(typeof typeof 42);      // 'string'
+console.log(typeof false);          // 'boolean'
+console.log(typeof Symbol('foo'));  // 'symbol'
+console.log(typeof undefined);      // 'undefined'
+console.log(typeof null);           // 'object'
+console.log(typeof [1, 2, 3]);      // 'object'
+console.log(typeof new Number(42)); // 'object'
+console.log(typeof function() {});  // 'function'
+console.log(typeof Math.sin);       // 'function'
+```
+
+Some observations:
+
+- Currently there are 8 possible return values of the `typeof` operator: number, bigint, string, boolean, symbol, undefined, object, and function.
+- While both functions and arrays are considered objects in JavaScripts, `typeof` an array returns object, whereas `typeof` a function returns function.
+- `typeof undefined` is undefined, whereas `typeof null` is object. This is a popular interview questions and is often followed up by asking how we can check if something is specifically null since using `typeof` does not seem to help.
+- `typeof NaN` is number. So how can we check if a user input is NaN or not? Thankfully JavaScript has a built-in `isNan()` method.
+
+</details>
+
+---
+
+Q. Can you think of ways to check if a JavaScript variable is a number?
+
+<details><summary>Solution</summary>
+
+By using `isNaN()`. If `isNaN()` returns false, the value is a number:
+
+```js
+console.log(!isNaN('test'));  // false
+console.log(!isNaN(1.2));     // true
+console.log(!isNaN('1.2'));   // true (if input can be coerced into a number, it is a number)
+```
+
+By using `typeof`:
+
+```js
+console.log(typeof 123 === 'number');      // true
+console.log(typeof 'hello' === 'number');  // false
+```
+
+By using the `Number.isInteger()` method (only works for integers):
+
+```js
+console.log(Number.isInteger(123));     // true
+console.log(Number.isInteger(-123));    // true
+console.log(Number.isInteger('123'));   // false
+console.log(Number.isInteger('123.5')); // false (doesn't work for floats)
+```
+
+</details>

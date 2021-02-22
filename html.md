@@ -59,3 +59,13 @@ The `<datalist>` element specifies a list of pre-defined options and allows user
 </details>
 
 ---
+
+Q. What is an empty element in HTML?
+
+<details><summary>Answer</summary>
+
+An empty HTML element, has a tag but no children or content. For example `<br>`, `<hr>`, `<img>`, `<input>`, `<link>`, and `<video>` are considered empty elements.
+
+</details>
+
+---
