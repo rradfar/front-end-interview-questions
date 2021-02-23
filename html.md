@@ -69,3 +69,72 @@ An empty HTML element, has a tag but no children or content. For example `<br>`,
 </details>
 
 ---
+
+Q. What is the purpose of using defer or async when loading a JavaScript file in your HTML?
+
+<details><summary>Answer</summary>
+
+With `defer` the script is fetched asynchronously, and it's executed only after the HTML parsing is done. Therefore defer does not block the parsing of the page. Scripts marked defer are executed (after parsing completes) in the order which they are defined in the markup.
+
+`<script defer src="script.js"></script>`
+
+With `async` the script is fetched asynchronously, and when it's ready the HTML parsing is paused to execute the script, then it's resumed. Therefore async blocks the parsing of the page. With async, scripts are executed when they are available without any regard for order.
+
+`<script async src="script.js"></script>`
+
+![image](images/015.png)
+
+</details>
+
+---
+
+Q. Are you familiar with description lists in HTML?
+
+<details><summary>Answer</summary>
+
+A description list is a list of terms, with a description of each term. The `<dl>` tag defines the description list, the `<dt>` tag defines the term (name), and the `<dd>` tag describes each term. Common uses for description lists are to implement a glossary or to display metadata (a list of key-value pairs).
+
+```html
+<dl>
+    <dt>Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+</dl>
+```
+
+![image](images/016.png)
+
+</details>
+
+---
+
+Q. Have you ever used any of the Open Graph meta tags in your HTML code?
+
+<details><summary>Answer</summary>
+
+The Open Graph protocol was first introduced by Facebook but is now used by most social media platforms to control how webpages are displayed when shared. The OG properties are added to to the `<meta>` tags in the `<head>` of the page. For example,
+
+```html
+<html prefix="og: https://ogp.me/ns#">
+<head>
+<title>The Rock (1996)</title>
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+...
+</head>
+...
+</html>
+```
+
+![image](images/017.png)
+
+</details>
+
+---

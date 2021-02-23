@@ -276,3 +276,28 @@ There are two properties that allow us to blend colors together in CSS: `mix-ble
 </p></details>
 
 ---
+
+Q. Are you familiar with the HSL color model and why one would want to use it in their CSS?
+
+<details><summary>Answer</summary>
+
+HSL (hue, saturation, lightness) is an alternative representation of the RGB color model.
+
+Hue ranges from 0 to 360 degrees on the color wheel. 0 is red, 120 is green, 240 is blue. Saturation and Lightness are percentages. 0% saturation means a shade of gray and 100% is the full color. 100% lightness is white, 0% lightness is black, and 50% lightness is "normal."
+
+![image](images/018.png)
+
+Using HSL is a great way of making a color scheme for a website using complementary colors. e.g.
+
+```css
+hsl(0, 100%, 50%); /* base colour */
+hsl(90, 100%, 50%);
+hsl(180, 100%, 50%);
+hsl(270, 100%, 50%);
+```
+
+![image](images/019.png)
+
+</details>
+
+---
