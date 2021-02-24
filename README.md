@@ -1,19 +1,21 @@
 # Front-End Web Development <br/> Interview Questions
 
-## 🔷 [Coding Challenges](https://github.com/rradfar/study-notes/blob/master/coding.md)  
+## 🔷 [General Web Development](webdev.md)
 
-## 🔷 [HTML](https://github.com/rradfar/study-notes/blob/master/html.md)  
+## 🔷 [Coding Challenges](coding.md)
 
-## 🔷 [CSS](https://github.com/rradfar/study-notes/blob/master/css.md)  
+## 🔷 [HTML](html.md)
 
-## 🔷 [JavaScript](https://github.com/rradfar/study-notes/blob/master/javascript.md)  
+## 🔷 [CSS](css.md)
 
-## 🔷 [React](https://github.com/rradfar/study-notes/blob/master/react.md)  
+## 🔷 [JavaScript](javascript.md)
 
-## 🔷 [Redux](https://github.com/rradfar/study-notes/blob/master/redux.md)  
+## 🔷 [React](react.md)
 
-## 🔷 [Git](https://github.com/rradfar/study-notes/blob/master/git.md)  
+## 🔷 [Redux](redux.md)
 
-## 🔷 [Agile Methodologies](https://github.com/rradfar/study-notes/blob/master/agile.md)  
+## 🔷 [Git](git.md)
 
-## 🔷 [General Web Development](https://github.com/rradfar/study-notes/blob/master/webdev.md)  
+## 🔷 [Agile Methodologies](agile.md)
+
+## 🔷 [Behavioral](behavioral.md)
