@@ -453,3 +453,51 @@ console.log(Number.isInteger('123.5')); // false (doesn't work for floats)
 ```
 
 </details>
+
+Q. What is the output?
+
+```js
+let x = [1, 2, 3] + [4, 5, 6];
+console.log(x); // ?
+```
+
+<details><summary>Solution</summary>
+
+```js
+let x = [1, 2, 3] + [4, 5, 6];
+console.log(x); // '1,2,34,5,6'
+```
+
+Note that `x` is a string not an array.
+
+</details>
+
+---
+
+Q. What value can we assign to `i` to obtain the following outputs?
+
+```js
+let i = ?;
+
+console.log(i * i); // 0
+console.log(i + 1); // 1
+console.log(i - 1); // -1
+console.log(i / i); // 1
+```
+
+<details><summary>Solution</summary>
+
+```js
+let i = Number.MIN_VALUE;
+
+console.log(i * i); // 0
+console.log(i + 1); // 1
+console.log(i - 1); // -1
+console.log(i / i); // 1
+```
+
+The `Number.MIN_VALUE` property represents the smallest positive numeric value representable in JavaScript. You can think of it as the closest possible value to 0 (but not 0!).
+
+</details>
+
+---

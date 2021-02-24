@@ -28,6 +28,18 @@ With Ajax, web applications can send and retrieve data from a server asynchronou
 
 ---
 
+Q. Can you describe CORS?
+
+<details><summary>Answer</summary>
+
+Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
+
+CORS relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+
+</details>
+
+---
+
 Q. What is a MVC?
 
 <details><summary>Answer</summary>
@@ -131,6 +143,38 @@ Q. What would cause a 403 error in the browser?
 <details><summary>Answer</summary>
 
 A 403 Forbidden Error occurs when a web server forbids the user from accessing the page they are trying to open in their browser. Sometimes the user really does not have the right permission to access the resource, other times, there might be an error on the server side of things.
+
+</details>
+
+---
+
+Q. What are some things you can do to improve the performance of your webpage?
+
+<details><summary>Answer</summary>
+
+- Reducing or delaying HTTP calls
+- Minifying files
+- Loading CSS & JS resources asynchronously
+- Making use of a Content Delivery Network (CDN)
+- Compressing images
+- Making use of browser caching
+- Prioritizing above-the-fold content (lazy loading)
+- Minimizing redirects as well as 404s
+
+</details>
+
+---
+
+Q. What are some of the things you can do to ensure that your front-end code will work on different browsers?
+
+<details><summary>Answer</summary>
+
+- Use CSS & HTML validation tools
+- Use CSS reset or normalize
+- Do proper testing across multiple browsers. Tools like BrowserStack can help with that.
+- Use various browser extensions that audit code both for compatibility and accessibility.
+- Add CSS prefixes for different browsers.
+- Use a polyfill JavaScript library that goes through the code and takes care of some of the compatibility issues.
 
 </details>
 

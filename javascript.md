@@ -31,7 +31,7 @@ Promise.allSettled([
   .then(result => console.log('All profile settled'));
 ```
 
-**String#matchAll**  
+**String.matchAll()**  
 The `matchAll()` method returns an iterator of all results matching a string against a regular expression, including capturing groups.
 
 ```javascript
@@ -79,6 +79,63 @@ const student = {
 
 const streetNumber = student?.address?.street?.number;
 ```
+
+</details>
+
+---
+
+Q. Can you name some of the new features introduced in ES2021 (ES12)?
+
+<details><summary>Answer</summary>
+
+**String.replaceAll()**  
+```js
+const str = "Backbencher sits at the Back";
+const newStr = str.replaceAll("Back", "Front");
+console.log(newStr); // "Frontbencher sits at the Front"
+```
+
+**Promise.any()**  
+Promise.any() is settled as soon as any promises are fulfilled, or they are all rejected.
+
+**Numeric separators**  
+`const money = 1_000_000_000_000;`
+
+**Logical Assignment Operator**  
+```js
+let x = 1;
+let y = 2;
+x &&= y;
+console.log(x); // 2
+
+// which is the same as:
+if(x) {
+  x = y;
+}
+```
+
+**Private Methods**  
+```js
+class Person {
+
+  // Private method
+  #setType() {
+    console.log("I am Private");
+  }
+
+  // Public method
+  show() {
+    this.#setType();
+  }
+}
+
+const personObj = new Person();
+personObj.show(); // "I am Private";
+personObj.setType(); // TypeError: personObj.setType is not a function
+```
+
+**WeakRef**  
+A WeakRef object contains a weak reference to an object. A weak reference to an object is a reference that does not prevent the object from being recovered by the garbage collector.
 
 </details>
 
@@ -144,6 +201,133 @@ Q. Can you think of two possible disadvantages of using Closures in JavaScript?
 As long as the closures are active, the memory can't be garbage collected. For instance, if we are using closure in ten places then unless all the ten processes complete, the memory will be held which can cause memory leaks. As a countermeasure, if there comes a point in our program where we are done using closures then we can set them to null.
 
 Creating a function inside a function leads to duplicity in memory and can slow down the application. We need to be selective about using closures in our application and use them mainly when we need data privacy, otherwise we can use the module pattern to create new objects with shared methods.
+
+</details>
+
+---
+
+Q. What is a promise in JavaScript?
+
+<details><summary>Answer</summary>
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value. A promise may be in one of three possible states: pending, fulfilled, or rejected.
+
+</details>
+
+---
+
+Q. How does event bubbling differ from event capturing when using the DOM API?
+
+<details><summary>Answer</summary>
+
+Event bubbling and capturing are two ways of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event.
+
+With bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements. With capturing, the event is first captured by the outermost element and propagated to the inner elements.
+
+By default javascript is set the event propagation to bubble. If we want to use capture we have to set the third argument in `addEventListener(type, listener, useCapture)` function to true.
+
+</details>
+
+---
+
+Q. Is JavaScript asynchronous?
+
+<details><summary>Answer</summary>
+
+JavaScript is synchronous and single-threaded with various callback mechanisms. It can seem as though it is asynchronous with the help from the browser engine and the event loop.
+
+</details>
+
+---
+
+Q. Are you familiar with the `eval()` function?
+
+<details><summary>Answer</summary>
+
+It is a global function that evaluates JavaScript code represented as a string.
+
+```js
+console.log(eval('2 + 2')); // 4
+```
+
+Using the `eval()` function is generally considered a security risk. For example, invoking it can crash a system if we use `eval()` server-side and a mischievous user decides to use an infinite loop as their username. `window.Function()` is the safer recommended alternative.
+
+</details>
+
+---
+
+Q. When is the `defineProperty()` method used and how does it differ from `defineProperties()`?
+
+<details><summary>Answer</summary>
+
+`Object.defineProperty(obj, prop, descriptor)`
+
+With the `defineProperty` method, we can add new properties to an object, or modify existing ones. By default, properties added using the defineProperty method are not writable, enumerable, or configurable. But we can override this behavior using the writable, configurable and enumerable properties.
+
+```js
+const obj = {};
+Object.defineProperty(obj, 'name', {
+  value: 'John',
+  configurable: true,
+});
+console.log(obj.name); // John
+```
+
+The JavaScript `Object.defineProperties()` method adds or modifies multiple properties on an object.
+
+```js
+let obj = {};
+Object.defineProperties(obj, {
+  property1: {
+    value: true,
+    writable: true,
+  },
+  property2: {
+    value: 'Hello',
+    writable: false,
+  },
+});
+
+console.log(obj); // {property1: true, property2: "Hello"}
+```
+
+</details>
+
+---
+
+Q. When is the delete operator used in JavaScript?
+
+<details><summary>Answer</summary>
+
+The delete operator removes a given property from an object and will return true if successful. The delete operator is designed to be used on object properties. It has no effect on variables or functions.
+
+```js
+const Employee = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+console.log(Employee.firstName); // "John"
+
+delete Employee.firstName;
+console.log(Employee.firstName); // undefined
+```
+
+</details>
+
+---
+
+Q. Explain the `this` keyword in JavaScript?
+
+<details><summary>Answer</summary>
+
+The JavaScript `this` keyword refers to the object it belongs to. It has different values depending on where it is used:
+
+- In a method, `this` refers to the owner object.
+- In a function, `this` refers to the global object.
+- In a function, in strict mode, `this` is undefined.
+- In an event, `this` refers to the element that received the event.
+- Methods like `call()`, and `apply()` can refer `this` to any object.
 
 </details>
 

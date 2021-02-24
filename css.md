@@ -239,6 +239,24 @@ Q. What is the difference between block, inline, and inline-block when displayin
 
 ---
 
+Q. What are the five possible values that can be assigned to the position property in CSS?
+
+<details><summary>Answer</summary>
+
+`static`: Default value. Static doesn't mean much; it just means that the element will flow into the page as it normally would.
+
+`relative`: An element's original position remains in the flow of the document, just like the static value. But now left/right/top/bottom/z-index will work. So `left: 20px;` adds 20 pixels to the element's left position. Two things to note: Even if we don't set a z-index value, the relatively positioned element will now appear on top of any other statically positioned elements. In addition, a relatively positioned element limits the scope of absolutely positioned child elements. Any element that is a child of the relatively positioned element can be absolutely positioned within that block.
+
+`absolute`: The element is removed from the normal document flow and no space is created for it in the page layout. It is positioned relative to its closest relatively positioned ancestor (if any), otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
+
+`fixed`: The element is displayed with respect to the viewport or the browser window itself. It always stays in the same place even if the page is scrolled. It is out of the flow of the rest of the document.
+
+`sticky`: The element is positioned based on the user's scroll position. It basically acts like `position: relative` until an element is scrolled beyond a specific offset, in which case it turns into `position: fixed`. When it is scrolled back it gets back to its previous (relative) position.
+
+</details>
+
+---
+
 Q. Have you ever played around with blend modes in CSS?
 
 <details><summary>Answer</summary><p>
@@ -297,6 +315,69 @@ hsl(270, 100%, 50%);
 ```
 
 ![image](images/019.png)
+
+</details>
+
+---
+
+Q. When would you use a mixin in Sass?
+
+<details><summary>Answer</summary>
+
+Mixins are blocks of code that can be re-used throughout the stylesheet.
+
+A mixin is defined with the `@mixin` directive. To use a mixin, we simply use `@include` followed by the name of the mixin and a semi-colon.
+
+```scss
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}
+```
+
+</details>
+
+---
+
+Q. When would you make use of CSS variables in your code?
+
+<details><summary>Answer</summary>
+
+CSS variables contain specific values to be reused throughout a CSS document. They are set using custom property notation that begins with a double hyphen e.g. `--main-color: black;` and are accessed using the `var()` function e.g. `color: var(--main-color);`.
+
+CSS variables can have a global or local scope. Global variables can be accessed/used through the entire document, while local variables can be used only inside the selector where it is declared. To create a variable with global scope, declare it inside the `:root` selector. To create a variable with local scope, declare it inside the selector that is going to use it.
+
+```css
+:root {
+  --blue: #6495ed;
+  --white: #faf0e6;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+```
 
 </details>
 
