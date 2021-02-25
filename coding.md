@@ -424,7 +424,7 @@ Some observations:
 
 ---
 
-Q. Can you think of ways to check if a JavaScript variable is a number?
+Q. Can you think of a few ways to check if a JavaScript variable is a number?
 
 <details><summary>Solution</summary>
 
@@ -453,6 +453,8 @@ console.log(Number.isInteger('123.5')); // false (doesn't work for floats)
 ```
 
 </details>
+
+---
 
 Q. What is the output?
 
@@ -496,7 +498,7 @@ console.log(i - 1); // -1
 console.log(i / i); // 1
 ```
 
-The `Number.MIN_VALUE` property represents the smallest positive numeric value representable in JavaScript. You can think of it as the closest possible value to 0 (but not 0!).
+The `Number.MIN_VALUE` property represents the smallest positive numeric value representable in JavaScript. You can think of it as the closest possible value to 0 (but not 0).
 
 </details>
 

@@ -16,6 +16,94 @@ An API simplifies programming by abstracting the underlying implementation and o
 
 ---
 
+Q. What is REST?
+
+<details><summary>Answer</summary>
+
+REST is acronym for REpresentational State Transfer. It is an architectural style that developers follow when they create their RESTful APIs.
+
+In order to be a true RESTful API, a web service must adhere to the six REST architectural constraints (see below).
+
+</details>
+
+---
+
+Q. What does it mean for an API to be RESTful?
+
+<details><summary>Answer</summary>
+
+In order to be a true RESTful API, a web service must adhere to the following six REST architectural constraints:
+
+1. **Client-Server based**:  
+The client and the server should be separate from each other and allowed to evolve individually and independently.
+
+2. **Use of a uniform interface (UI)**:  
+The key to the decoupling client from server is having a uniform interface that allows independent evolution of the application without having the application’s services, models, or actions tightly coupled to the API layer itself. The uniform interface lets the client talk to the server in a single language, independent of the architectural backend of either.
+
+3. **Stateless operations**:  
+Meaning that requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully. A REST API should not rely on data being stored on the server or sessions to determine what to do with a request, but rather solely rely on the data that is provided in that request itself. Identifying information is not being stored on the server when making requests. Instead, each request has the necessary data in itself, such as the API key, access token, user ID, etc.
+
+4. **Caching**:  
+A REST API should be designed to encourage the storage of cacheable data on the client side in order to reduce the number of interactions with the API. This means that when data is cacheable, the response should indicate that the data can be stored up to a certain time (expires-at), or in cases where data needs to be real-time, that the response should not be cached by the client.
+
+5. **Layered system**:  
+REST allows for an architecture composed of multiple layers of servers. The requesting client need not know whether it’s communicating with the actual server, a proxy, or any other intermediary.
+
+6. **Code on demand (optional)**:  
+Most of the time, a server will send back static representations of resources in the form of XML or JSON. However, when necessary, servers can send executable code to the client.
+
+</details>
+
+---
+
+Q. RESTful APIs are stateless. What does this mean?
+
+<details><summary>Answer</summary>
+
+It means that API requests can be made independently of one another, and each request contains all of the data necessary to complete itself successfully.
+
+A REST API should not rely on data being stored on the server or sessions to determine what to do with a request, but rather solely rely on the data that is provided in that request itself.
+
+Identifying information is not being stored on the server when making requests. Instead, each request has the necessary data in itself, such as the API key, access token, user ID, etc.
+
+</details>
+
+---
+
+Q. What are the four parts of a RESTful web service request?
+
+<details><summary>Answer</summary>
+
+1. Endpoint URL:  
+The root-endpoint is the starting point of the API you're requesting from. The root-endpoint of GitHub's API is `https://api.github.com` while the root-endpoint Twitter's API is `https://api.twitter.com`.
+
+2. The HTTP method:  
+The method is the type of request you send to the server. You can choose from these five types: GET, POST, PUT, PATCH, and DELETE. These are used to perform create, read, update, and delete (CRUD) operations.
+
+3. HTTP headers:  
+Information such as authentication tokens or cookies can be contained in the HTTP request header. HTTP Headers are key-value pairs. E.g. `Content-Type: application/json`
+
+4. Body Data:  
+The data (sometimes called "body" or "message") contains information you want to be sent to the server. Data is normally transmitted in the HTTP body in an identical way to HTML `<form>` submissions or by sending a single JSON-encoded data string.
+
+</details>
+
+---
+
+Q. How does REST differ from SOAP?
+
+<details><summary>Answer</summary>
+
+SOAP is a standardized protocol that sends messages using other protocols such as HTTP and SMTP. The SOAP specifications are official web standards, maintained and developed by the World Wide Web Consortium (W3C). As opposed to SOAP, REST is not a protocol but an architectural style. The REST architecture lays down a set of guidelines you need to follow if you want to provide a RESTful web service, for example, stateless existence and the use of HTTP status codes.
+
+As SOAP is an official protocol, it comes with strict rules and advanced security features such as built-in ACID compliance and authorization. Higher complexity, it requires more bandwidth and resources which can lead to slower page load times.
+
+REST was created to address the problems of SOAP. Therefore it has a more flexible architecture. It consists of only loose guidelines and lets developers implement the recommendations in their own way. It allows different messaging formats, such as HTML, JSON, XML, and plain text, while SOAP only allows XML. REST is also a more lightweight architecture, so RESTful web services have a better performance. Because of that, it has become incredibly popular in the mobile era where even a few seconds matter a lot (both in page load time and revenue).
+
+</details>
+
+---
+
 Q. What is AJAX?
 
 <details><summary>Answer</summary>
@@ -175,6 +263,24 @@ Q. What are some of the things you can do to ensure that your front-end code wil
 - Use various browser extensions that audit code both for compatibility and accessibility.
 - Add CSS prefixes for different browsers.
 - Use a polyfill JavaScript library that goes through the code and takes care of some of the compatibility issues.
+
+</details>
+
+---
+
+Q. What does it mean for a database transaction to be ACID compliant?
+
+<details><summary>Answer</summary>
+
+ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties of database transactions intended to guarantee validity even in the event of system crashes, power failures, and other errors.
+
+**Atomic**: Guarantees that all operations in a transaction are treated as a single unit, which either succeeds completely or fails completely. For example, in an application that transfers funds from one account to another, the atomicity property ensures that, if a debit is made successfully from one account, the corresponding credit is made to the other account.
+
+**Consistent**: Ensures that a transaction can only bring the database from one valid state to another by preventing data corruption. For example, in an application that transfers funds from one account to another, the consistency property ensures that the total value of funds in both the accounts is the same at the start and end of each transaction.
+
+**Isolation**: Determines how and when changes made by one transaction become visible to the other. For example, in an application that transfers funds from one account to another, the isolation property ensures that another transaction sees the transferred funds in one account or the other, but not in both, nor in neither.
+
+**Durable**: Ensures that the results of the transaction are permanently stored in the system. The modifications must persist even in case of power loss or system failures. For example, in an application that transfers funds from one account to another, the durability property ensures that the changes made to each account will not be reversed.
 
 </details>
 
