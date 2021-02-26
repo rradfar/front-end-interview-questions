@@ -382,3 +382,161 @@ h2 {
 </details>
 
 ---
+
+Q. What is the difference between pseudo-classes and pseudo-elements in CSS?
+
+<details><summary>Answer</summary>
+
+A pseudo-class is a selector that selects existing elements that are in a specific state, e.g. hovered over, checked, focused, etc. Pseudo-classes start with a colon `:`. Some common pseudo-classes are `:active`, `:checked`, `:enabled`, `:first-child`, `:first-of-type`, `:focus`, `:hover`, `:last-child`, `:last-of-type`, `:nth-of-type`, `:visited`, etc.
+
+```css
+article a:hover {
+  font-size: 120%;
+  font-weight: bold;
+}
+```
+
+Pseudo-elements behave in a similar way, however they act as if you had added a whole new HTML element into the markup, rather than applying a class to existing elements. Pseudo-elements start with a double colon `::`. Most common pseudo-elements are `::after`, `::before`, `::first-letter`, and `::first-line`.
+
+```css
+article p::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+```
+
+</details>
+
+---
+
+Q. Are you aware of any accessibility concerns when using CSS pseudo-elements such as `::before` and `::after`?
+
+<details><summary>Answer</summary>
+
+Due to the inconsistencies in how assistive technologies (such as screen readers) interpret pseudo-elements, they may be either completely ignored or misunderstood, causing confusion for users.
+
+W3C recommends using these elements for decorative purposes only, and not for inserting meaningful content into the DOM.
+
+</details>
+
+---
+
+Q. How do the `rem` and `em` CSS units differ from each other?
+
+<details><summary>Answer</summary>
+
+rem (root em) is relative to the html (root) font-size. This means `1rem` is always equal to the font-size defined in `<html>`. For instance, if the font size defined in the root of the document is `16px`,
+
+```css
+h1 {
+  font-size: 2rem;      /* 2rem = 32px */
+  margin-bottom: 1rem;  /* 1rem = 16px */
+}
+
+p {
+  font-size: 1rem;      /* 1rem = 16px */
+  margin-bottom: 1rem;  /* 1rem = 16px */
+}
+```
+
+em is relative to the font-size of its direct or nearest parent:
+
+```css
+h1 {
+  font-size: 2em;       /* 1em = 16px */
+  margin-bottom: 1em;   /* 1em = 32px */
+}
+```
+
+The above phenomenon occurs because `1em` is equal to its current font-size. Since the font-size in `<h1>` is now set to `2em`, other properties computed with em in `<h1>` would see that `1em = 32px`.
+
+```css
+p {
+  font-size: 1em;       /* 1em = 16px */
+  margin-bottom: 1em;   /* 1em = 16px */
+}
+```
+
+</details>
+
+---
+
+Q. What is the difference between RGB and RGBA?
+
+<details><summary>Answer</summary>
+
+They are both functions that define colors in the Red-Green-Blue (RGB) model. RGB is a 3-channel format containing data for Red, Green, and Blue. RGBA is a 4-channel format containing data for Red, Green, Blue, and Alpha. E.g. `background-color:rgba(255,0,0,0.3);`
+The value for A (alpha) is from `0` completely transparent, to `1` completely opaque.
+
+</details>
+
+---
+
+Q. Using CSS, what style can we add to the selector below to position the circles seen in the first image, in the center of the page like the second image?
+
+![image1](images/020.png) 
+
+![image2](images/021.png)
+
+```css
+.circles {
+ /* Your code here */
+}
+```
+
+<details><summary>Answer</summary>
+
+```css
+.circles {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+You may also achieve this using the translate function:
+
+```css
+.circles {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+</details>
+
+---
+
+Q. We commonly come across the following code at the beginning of the primary styles for a page. What does this piece of code do and why is it used?
+
+```css
+* {
+  padding: 0;
+  margin: 0;
+}
+```
+
+<details><summary>Answer</summary>
+
+This is known as the universal reset. Since we are using the universal selector (`*`), it resets the margins and padding of all HTML elements to 0.
+
+CSS resets are used to override the default stylesheets that modern browsers use. Because each browser uses a different stylesheet, certain elements (submit buttons, links, etc) don't always have consistent styling across all browsers. A CSS reset will wipe out some of the browser's default styling and allows us developers set our own.
+
+</details>
+
+---
+
+Q. How does resetting browser default styles differ from normalizing them in CSS?
+
+<details><summary>Answer</summary>
+
+All browsers come with a set of default styles. With resetting, we remove (reset) those default styles and start from scratch on a blank slate. With normalizing, we keep the default styles but modify some of them to make them look consistent across different browsers.
+
+For example, with resetting, all headings (H1 to H6) can become the same font size, whereas with normalizing, the H1 tags will have the same font size across different browsers and will be larger than for example H2 tags.
+
+</details>
+
+---

@@ -59,3 +59,15 @@ No. Agile is a philosophy or mindset and a set of principles. It is an umbrella 
 </details>
 
 ---
+
+Q. What is the role of the scrum master in a scrum team?
+
+<details><summary>Answer</summary>
+
+The Scrum Master is accountable for a scrum Team's effectiveness. They focus on coaching the team members in self-management and cross-functionality, eliminating impediments to the team's progress and shielding them from outside interference, and making sure that all scrum events and ceremonies take place and are positive, productive, and kept within the alloted time.
+
+In addition to working with team members, scrum masters also work with project owners as well as stakeholders to ensure that everyone understands and follows scrum practices and is clear about what the team is working on and what the objectives are.
+
+</details>
+
+---
