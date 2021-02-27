@@ -120,9 +120,31 @@ Q. Can you describe CORS?
 
 <details><summary>Answer</summary>
 
-Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
+Cross-Origin Resource Sharing (CORS) is a security mechanism that prevents a malicious site from reading or modifying another site's data.
+
+A request for a resource (like an image or a font) outside of the origin is known as a cross-origin request. CORS manages cross-origin requests. With CORS, a server can specify who can access its assets and which HTTP request methods are allowed from external resources.
 
 CORS relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+
+</details>
+
+---
+
+Q. What is JSONP?
+
+<details><summary>Answer</summary>
+
+JSONP (JSON with Padding) is a simple way to overcome browser restrictions when sending JSON responses from different domains from the client.
+
+JSONP wraps up a JSON response into a JavaScript function and sends that back as a script to the browser. A script is not subject to the Same Origin Policy and when loaded into the client, the function acts just like the JSON object that it contains.
+
+```js
+// an example of JSON
+ {"weapon":"nunchucks","headband":"yellow"}
+
+ // an example of JSONP
+ myCallback({"weapon":"nunchucks","headband":"yellow"});
+ ```
 
 </details>
 
