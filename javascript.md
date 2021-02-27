@@ -630,3 +630,68 @@ The `Number.MIN_VALUE` property represents the smallest positive numeric value r
 </details>
 
 ---
+
+Q. what are the outputs?
+
+```js
+const originalColors = ['red', 'green', 'blue', 'yellow', 'purple'];
+
+const colors2 = originalColors.slice(1);
+console.log(originalColors);  // ?
+console.log(colors2);         // ?
+
+const colors3 = originalColors.slice(1, 4);
+console.log(originalColors);  // ?
+console.log(colors3);         // ?
+```
+
+```js
+const originalColors = ['red', 'green', 'blue'];
+
+const colors2 = originalColors.splice(0, 1);
+console.log(originalColors);  // ?
+console.log(colors2);         // ?
+
+const colors3 = originalColors.splice(1, 0, 'yellow', 'orange');
+console.log(originalColors);  // ?
+console.log(colors3);         // ?
+
+const colors4 = originalColors.splice(1, 1, 'red', 'purple');
+console.log(originalColors);  // ?
+console.log(colors4);         // ?
+```
+
+<details><summary>Solution</summary>
+
+```js
+const originalColors = ['red', 'green', 'blue', 'yellow', 'purple'];
+
+const colors2 = originalColors.slice(1);
+console.log(originalColors); // ['red', 'green', 'blue', 'yellow', 'purple']
+console.log(colors2); // ['green', 'blue', 'yellow', 'purple']
+
+const colors3 = originalColors.slice(1, 4);
+console.log(originalColors); // ['red', 'green', 'blue', 'yellow', 'purple']
+console.log(colors3); // ['green', 'blue', 'yellow']
+```
+
+```js
+const originalColors = ['red', 'green', 'blue'];
+
+const colors2 = originalColors.splice(0, 1);
+console.log(originalColors); // ['green', 'blue']
+console.log(colors2); // ['red']
+
+const colors3 = originalColors.splice(1, 0, 'yellow', 'orange');
+console.log(originalColors); // ['green', 'yellow', 'orange', 'blue']
+console.log(colors3); // []
+
+const colors4 = originalColors.splice(1, 1, 'red', 'purple');
+console.log(originalColors); // ['green', 'red', 'purple', 'orange', 'blue']
+console.log(colors4); // ['yellow']
+```
+Some observations:
+
+- The `splice()` method changes (mutates) the original array, `slice()` does not.
+- The `splice()` method returns the removed items in an array. The `slice()` method returns the selected element(s) in an array, as a new array object.
+- The `splice()` method can take `n` number of arguments: index, optional number of items to be removed, and optional item(s) to be added to the array. The `slice()` method can take up to `2` arguments: the starting index and an optional end index.

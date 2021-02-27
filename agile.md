@@ -71,3 +71,37 @@ In addition to working with team members, scrum masters also work with project o
 </details>
 
 ---
+
+Q. What is a Scrum Sprint?
+
+<details><summary>Answer</summary>
+
+A Scrum Sprint is a recurring time-box of one month or less during which a "Done", useable, and potentially releasable product Increment is created.
+
+![image](images/023.png)
+
+</details>
+
+---
+
+Q. What are the four Scrum events or ceremonies?
+
+<details><summary>Answer</summary>
+
+1. **Sprint Planning**  
+During Sprint Planning, the entire Scrum Team collaborates and discusses the desired high-priority work for the Sprint and defines the Sprint Goal. The ScrumMaster's role is primarily to facilitate the meeting. The Product Owner describes the objective of the Sprint and also answers questions from the Development Team about execution and acceptance criteria / criteria of satisfaction. The development team has the final say in how much of the high-priority work it can accomplish during the Sprint.
+
+2. **Daily Scrum**  
+The Development Team meets for 15 minutes (or less) every day of the Sprint to inspect progress toward the Sprint Goal. They describe for each other how their own work is going, ask for help when needed, and consider whether they are still on track to meet the Sprint Goal. This is not a status meeting but is instead an opportunity for the Development Team to inspect and adapt the product and process on a daily basis.
+
+3. **Sprint Review**  
+Sprint reviews focus on the product being developed, specifically on the potentially shippable product increment created during the sprint. During a sprint review, the Scrum Team invites stakeholders to discuss what was completed during the Sprint. They adapt the Product Backlog as needed based on this feedback. The Product Owner has the option to release any of the completed functionality. Though a demo might be part of this meeting, the primary purpose of the Sprint Review is the inspect and adapt capability provided by the discussion.
+
+4. **Sprint Retrospective**  
+Sprint retrospectives focus on the process. During a sprint retrospective the Scrum Team discusses what went right and areas for improvement in the Sprint. They make tangible plans for how to improve their own process, tools and relationships.
+
+![image](images/022.png)
+
+</details>
+
+---
