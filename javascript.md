@@ -333,6 +333,44 @@ The JavaScript `this` keyword refers to the object it belongs to. It has differe
 
 ---
 
+Q. What is a prototypal inheritance in JavaScript?
+
+<details><summary>Answer</summary>
+
+In JavaScript, objects can have other objects associated with them known as their "prototype" object. So if we attempt to access a property (or method) from an object, and that object doesn't have that property, the version of that property in the object's prototype object can be returned instead.
+
+For example, let's say we have two objects:
+
+```js
+const mother = { firstName: 'Anne', lastName: 'Adams' }
+const daughter = { firstName: 'Bella' }
+```
+
+Both objects have a firstName property but only mother has a lastName property.
+
+```js
+console.log(daughter.firstName) // 'Bella'
+console.log(daughter.lastName)  // undefined
+```
+
+One way to set up a prototype association in JavaScript is using `Object.setPrototypeOf()`:
+
+```js
+Object.setPrototypeOf(daughter, mother) // daughter's prototype is now mother
+```
+
+Now, if we try to get the lastName from the daughter object we will no longer get undefined. Instead we'll get the value of lastName from the mother object since mother is daughter's prototype.
+
+```js
+console.log(daughter.lastName) // 'Adams'
+```
+
+The process of looking to a prototype for values happens automatically by JavaScript every time we access a property. If the property doesn't exist, the prototype of that object is checked. If that prototype doesn't have the property either, JavaScript will look to that prototype's prototype object, and so on until there are no more prototype objects to check. This sequence represents what is known as the prototype chain or prototypal inheritance.
+
+</details>
+
+---
+
 Q. Can you think of a few ways to check if a JavaScript variable is a number?
 
 <details><summary>Solution</summary>
