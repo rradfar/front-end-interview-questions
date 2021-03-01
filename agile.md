@@ -48,6 +48,18 @@ Q. What are some potential drawbacks of using an Agile methodology?
 
 ---
 
+Q. What is Scrum?
+
+<details><summary>Answer</summary>
+
+Scrum is an agile framework for developing, delivering, and sustaining software products and services, although since its inception it has gained popularity in other fields as well such as research, sales, marketing and advanced technologies.
+
+The Scrum framework is designed for teams of ten or fewer members, who break their work into goals that can be completed within time-boxed iterations, called sprints, no longer than one month and most commonly two weeks. The Scrum Team track progress in 15-minute time-boxed daily meetings, called daily scrums. At the end of the sprint, the team holds sprint review, to demonstrate the work done, and sprint retrospective to improve continuously.
+
+</details>
+
+---
+
 Q. Are Agile and Scrum the same thing?
 
 <details><summary>Answer</summary>
@@ -60,18 +72,6 @@ No. Agile is a philosophy or mindset and a set of principles. It is an umbrella 
 
 ---
 
-Q. What is the role of the scrum master in a scrum team?
-
-<details><summary>Answer</summary>
-
-The Scrum Master is accountable for a scrum Team's effectiveness. They focus on coaching the team members in self-management and cross-functionality, eliminating impediments to the team's progress and shielding them from outside interference, and making sure that all scrum events and ceremonies take place and are positive, productive, and kept within the alloted time.
-
-In addition to working with team members, scrum masters also work with project owners as well as stakeholders to ensure that everyone understands and follows scrum practices and is clear about what the team is working on and what the objectives are.
-
-</details>
-
----
-
 Q. What is a Scrum Sprint?
 
 <details><summary>Answer</summary>
@@ -79,6 +79,25 @@ Q. What is a Scrum Sprint?
 A Scrum Sprint is a recurring time-box of one month or less during which a "Done", useable, and potentially releasable product Increment is created.
 
 ![image](images/023.png)
+
+</details>
+
+---
+
+Q. What are the three Scrum artifacts?
+
+<details><summary>Answer</summary>
+
+1. **Product Backlog**  
+The Product Backlog is an ordered list of everything that is known to be needed in a product. It is constantly evolving and is never complete.
+
+2. **Sprint Backlog**  
+The Sprint Backlog is a list of everything that the team commits to achieve in a given Sprint. Once created, no one can add to the Sprint Backlog except the Development Team. If the Development Team needs to drop an item from the Sprint Backlog, they must negotiate it with the Product Owner. During this negotiation, the ScrumMaster should work with the Development Team and Product Owner to try to find ways to create some smaller increment of an item rather than drop it altogether.
+
+3. **Product Increment**  
+At the end of every Sprint, the team must complete a product increment that is potentially releasable, meaning that meets their agreed-upon definition of done.
+
+![image](images/024.png)
 
 </details>
 
@@ -101,6 +120,18 @@ Sprint reviews focus on the product being developed, specifically on the potenti
 Sprint retrospectives focus on the process. During a sprint retrospective the Scrum Team discusses what went right and areas for improvement in the Sprint. They make tangible plans for how to improve their own process, tools and relationships.
 
 ![image](images/022.png)
+
+</details>
+
+---
+
+Q. What is the role of the scrum master in a scrum team?
+
+<details><summary>Answer</summary>
+
+The Scrum Master is accountable for a scrum Team's effectiveness. They focus on coaching the team members in self-management and cross-functionality, eliminating impediments to the team's progress and shielding them from outside interference, and making sure that all scrum events and ceremonies take place and are positive, productive, and kept within the alloted time.
+
+In addition to working with team members, scrum masters also work with project owners as well as stakeholders to ensure that everyone understands and follows scrum practices and is clear about what the team is working on and what the objectives are.
 
 </details>
 
