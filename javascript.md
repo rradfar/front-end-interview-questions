@@ -621,6 +621,21 @@ Some observations:
 
 ---
 
+Q. What is the difference between the `typeof` and the `instanceof` operators in JavaScript?
+
+<details><summary>Answer</summary>
+
+The `typeof` operator is a way to determine if a variable is a primitive type. It determines if a variable is a string, number, boolean, undefined, etc. The `instanceof` operator tests to see if the right operand appears anywhere in the prototype chain of the left one. It returns a boolean.
+
+```js
+const person = new Chef();
+console.log(typeof person)          // object
+console.log(person instanceof Chef) // true
+```
+</details>
+
+---
+
 Q. What is the output?
 
 ```js
