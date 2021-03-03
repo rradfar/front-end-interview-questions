@@ -629,9 +629,30 @@ The `typeof` operator is a way to determine if a variable is a primitive type. I
 
 ```js
 const person = new Chef();
-console.log(typeof person)          // object
-console.log(person instanceof Chef) // true
+console.log(typeof person); // object
+console.log(person instanceof Chef); // true
 ```
+
+</details>
+
+---
+
+Q. What does the `hasOwnProperty` method do in JavaScript?
+
+<details><summary>Answer</summary>
+
+The `Object.hasOwnProperty()` method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
+
+```javascript
+obj = new Object();
+console.log(obj.hasOwnProperty('prop')); // false
+obj.prop = 'foo';
+console.log(obj.hasOwnProperty('prop')); // true
+console.log(obj.hasOwnProperty('toString')); // false
+```
+
+Note: Every object in JavaScript has a `toString()` method which is by default inherited from `Object` and can be overridden.
+
 </details>
 
 ---
