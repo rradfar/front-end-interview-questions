@@ -540,3 +540,15 @@ For example, with resetting, all headings (H1 to H6) can become the same font si
 </details>
 
 ---
+
+Q. What is the difference between `display: none` and `visibility: hidden` in CSS?
+
+<details><summary>Answer</summary>
+
+`display: none` removes the element from the layout flow whereas `visibility:hidden` hides it but leaves the space.
+
+![image](images/025.png)
+
+</details>
+
+---

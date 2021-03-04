@@ -51,7 +51,7 @@ Q. If we called your previous employer/coworkers, what would they say about you?
 
 <details><summary>Answer</summary>
 
-Think of specific examples that can back up your claims. For example, instead of saying "they would say that I have great attention to details", think of a specific situation or example where you displayed this quality in action.
+Think of specific examples that can support your claims. For example, instead of saying "they would say that I have great attention to details", think of a specific situation or example where you displayed this quality in action.
 
 </details>
 
@@ -101,7 +101,7 @@ Q. Why did you decide to use this stack or technology in this particular project
 
 <details><summary>Answer</summary>
 
-Be ready to speak about your personal projects in detail and to touch on your decision-making process.
+Be ready to speak about your personal projects in detail and to explain your decision-making process.
 
 </details>
 
@@ -113,9 +113,9 @@ Q. How do you stay up-to-date with the latest industry trends and technology new
 
 - YouTube (feel free to name any well-known channels that you follow)
 - Online courses (Udemy, LinkedIn Learning, etc.)
-- Podcasts (name any you listen to)
-- Newsletters (name any you are subscribed to)
-- Reddit (name any subreddits you follow: r/webdev, etc.)
+- Podcasts (name any that you listen to)
+- Newsletters (name any that you are subscribed to)
+- Reddit (name any subreddits that you follow: r/webdev, etc.)
 - Hacker News, etc.
 - Tech influencers on Twitter & LinkedIn
 
