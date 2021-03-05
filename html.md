@@ -138,3 +138,19 @@ The Open Graph protocol was first introduced by Facebook but is now used by most
 </details>
 
 ---
+
+Q. What is a Canonical URL and how do you set it?
+
+<details><summary>Answer</summary>
+
+If you have a single page accessible by multiple URLs, or different pages with similar content, Google (or other search engines) see these as duplicate versions of the same page. If you don't explicitly tell Google which URL is canonical, Google will make the choice for you. Some benefits of setting a canonical URL explicitly:  
+- To specify which URL you want people to see in the search results.
+- To simplify tracking metrics for a single product/topic.
+
+```html
+<link rel="canonical" href="https://example.com/dresses/green-dresses" />
+```
+
+</details>
+
+---
