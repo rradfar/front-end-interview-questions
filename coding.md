@@ -180,3 +180,34 @@ console.log(
 </details>
 
 ---
+
+Q. Write a function that determines if a string has all unique characters. 
+
+```js
+const isUnique = str => {
+  // Your solution
+}
+
+console.log(isUnique('abcd'));  // true
+console.log(isUnique('aabcd')); // false
+```
+
+<details><summary>Solution</summary>
+
+```js
+const isUnique = str => {
+  let obj = {};
+  for (let char of str) {
+    if (obj[char]) return false;
+    obj[char] = true;
+  }
+  return true;
+}
+
+console.log(isUnique('abcd'));  // true
+console.log(isUnique('aabcd')); // false
+```
+
+</details>
+
+---
