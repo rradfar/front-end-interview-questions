@@ -25,3 +25,13 @@ Not quite. Git is installed locally, whereas GitHub is a web-based hosting servi
 </details>
 
 ---
+
+Q. What is the difference between `git pull` and `git fetch`?
+
+<details><summary>Answer</summary>
+
+`git fetch` is the command that tells your local git repository to retrieve the latest metadata info from a remote repository, but it doesn't integrate any of this new data into your working files. It's more like just checking to see if there are any changes available. `git pull` on the other hand does that AND brings a copy of those changes from the remote repository and updates your current HEAD branch.
+
+</details>
+
+---
