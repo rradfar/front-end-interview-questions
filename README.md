@@ -12,8 +12,6 @@
 
 ## 🔷 [React](react.md)
 
-## 🔷 [Redux](redux.md)
-
 ## 🔷 [Git](git.md)
 
 ## 🔷 [Agile Methodologies](agile.md)
