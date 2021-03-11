@@ -290,6 +290,16 @@ Q. What are some of the things you can do to ensure that your front-end code wil
 
 ---
 
+Q. Are you familiar with WCAG?
+
+<details><summary>Answer</summary>
+
+The Web Content Accessibility Guidelines (WCAG) explain how to make web content more accessible to people with disabilities. In some countries and jurisdictions there are legal requirements to implement Web Content Accessibility Guidelines.
+
+</details>
+
+---
+
 Q. What does it mean for a database transaction to be ACID compliant?
 
 <details><summary>Answer</summary>
