@@ -136,3 +136,15 @@ In addition to working with team members, scrum masters also work with project o
 </details>
 
 ---
+
+Q. What Is a Sprint Burndown Chart?
+
+<details><summary>Answer</summary>
+
+Sprint burndowns are a graphical way of showing how much work is remaining in the sprint, typically in terms of task hours. It is typically updated at the daily scrum. As the sprint progresses, the amount of work remaining should steadily decrease and should trend toward being complete on the last day of the sprint. Burndowns that show increasing work or few completed tasks are signals to the Scrum Master and the team that the sprint is not going well. Sprint burndown charts helps teams gauge whether they will complete the work of a sprint. Burndown charts also reinforce the Scrum values of commitment, focus and openness and one of the three pillars of empirical process control: transparency.
+
+![image](images/026.png)
+
+</details>
+
+---
