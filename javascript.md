@@ -769,3 +769,18 @@ Some observations:
 - The `splice()` method changes (mutates) the original array, `slice()` does not.
 - The `splice()` method returns the removed items in an array. The `slice()` method returns the selected element(s) in an array, as a new array object.
 - The `splice()` method can take `n` number of arguments: index, optional number of items to be removed, and optional item(s) to be added to the array. The `slice()` method can take up to `2` arguments: the starting index and an optional end index.
+
+</details>
+
+---
+
+Q. How does `let` differ from `const` in JavaScript?
+
+<details><summary>Answer</summary>
+
+1. Unlike `let`, variables declared with `const` cannot be reassigned a new value since `const` defines a constant reference to a value.
+2. Unlike `let`, variables declared with `const` must be assigned a value as soon as they are declared.
+
+</details>
+
+---
