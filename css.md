@@ -552,3 +552,13 @@ Q. What is the difference between `display: none` and `visibility: hidden` in CS
 </details>
 
 ---
+
+Q. What do we mean by mobile first design?
+
+<details><summary>Answer</summary>
+
+Mobile first design is a design philosophy that aims to create better experiences for users by starting the design process from the smallest of screens: mobile. Designing for mobile is often times more challenging due to the limited space on small screens, which forces designers to focus on the content and essential features. Once the mobile design questions are answered, designing for other devices tends to be easier.
+
+</details>
+
+---
